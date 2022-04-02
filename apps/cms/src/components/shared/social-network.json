@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_social_networks",
+  "info": {
+    "displayName": "SocialLink",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SocialNetworks": {
+      "type": "enumeration",
+      "enum": [
+        "soundcloud",
+        "facebook",
+        "youtube",
+        "instagram",
+        "twitter"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "regex": "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)",
+      "required": true
+    }
+  }
+}
