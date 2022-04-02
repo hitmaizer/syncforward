@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "@strapi/plugin-graphql": "^4.0.0",
+    "lodash.set": "^4.3.2",
+    "mime-types": "^2.1.27",
+    "@strapi/strapi": "4.1.7",
+    "@strapi/plugin-users-permissions": "4.1.7",
+    "@strapi/plugin-i18n": "4.1.7",
+    "better-sqlite3": "7.4.6"
+  },
+  "name": "cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Sync Forward CMS",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "author": {
+    "name": "Sync Forward"
+  },
+  "strapi": {
+    "uuid": "67b98d41-152d-4fed-8d13-4310fe9fdfdc"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

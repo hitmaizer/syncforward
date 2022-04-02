@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_stores",
+  "info": {
+    "displayName": "StoreLink",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Store": {
+      "type": "enumeration",
+      "enum": [
+        "soundcloudPlaylist",
+        "spotify",
+        "beatport",
+        "appleMusic",
+        "youtubeMusic",
+        "bandcamp"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "regex": "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)",
+      "required": true
+    }
+  }
+}
