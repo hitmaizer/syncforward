@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "releases",
+  "info": {
+    "singularName": "release",
+    "pluralName": "releases",
+    "displayName": "Release",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "track": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.track"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.stores"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "catalogue": {
+      "type": "integer"
+    },
+    "artwork": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "designBy": {
+      "type": "string"
+    },
+    "masterBy": {
+      "type": "string"
+    },
+    "releaseDate": {
+      "type": "date"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}

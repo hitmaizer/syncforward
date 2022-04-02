@@ -62,22 +62,6 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
-    },
-    "articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article",
-      "mappedBy": "author"
-    },
-    "SocialLinks": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.social-network"
-    },
-    "StoreLinks": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.stores"
     }
   }
 }

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_tracks",
+  "info": {
+    "displayName": "Track",
+    "icon": "angry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "artists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::artist.artist"
+    },
+    "remixers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::artist.artist"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.track-link"
+    }
+  }
+}

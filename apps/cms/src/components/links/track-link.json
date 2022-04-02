@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_links_track_links",
+  "info": {
+    "displayName": "TrackLink",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "soundcloud": {
+      "type": "string",
+      "required": false
+    },
+    "youtube": {
+      "type": "string"
+    }
+  }
+}
