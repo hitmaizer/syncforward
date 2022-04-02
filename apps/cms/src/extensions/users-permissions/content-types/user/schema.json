@@ -68,6 +68,12 @@
       "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "author"
+    },
+    "artists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::artist.artist",
+      "mappedBy": "user"
     }
   }
 }
