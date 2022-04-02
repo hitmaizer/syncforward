@@ -1,21 +1,23 @@
 {
-  "collectionName": "components_shared_social_networks",
+  "collectionName": "components_shared_stores",
   "info": {
-    "displayName": "SocialLink",
-    "icon": "adjust",
+    "displayName": "ReleaseLink",
+    "icon": "address-card",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "SocialNetworks": {
+    "name": {
       "type": "enumeration",
       "enum": [
         "soundcloud",
-        "facebook",
-        "youtube",
-        "instagram",
-        "twitter"
-      ]
+        "spotify",
+        "beatport",
+        "appleMusic",
+        "youtubeMusic",
+        "bandcamp"
+      ],
+      "required": true
     },
     "url": {
       "type": "string",

@@ -50,19 +50,6 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.seo"
-    },
-    "ready": {
-      "type": "boolean",
-      "default": false
-    },
-    "author": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "articles"
-    },
-    "publish_at": {
-      "type": "datetime"
     }
   }
 }
