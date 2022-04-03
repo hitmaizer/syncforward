@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-extraneous-dependencies */
 module.exports = {
-  ...require('../config/eslint-react'),
+  ...require('config/eslint-react'),
   parserOptions: {
     root: true,
     tsconfigRootDir: __dirname,
