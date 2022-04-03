@@ -25,6 +25,11 @@
       "type": "component",
       "repeatable": false,
       "component": "links.track-link"
+    },
+    "genre": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::genre.genre"
     }
   }
 }
