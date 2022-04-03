@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { color, space, style, typography } from 'styled-system';
+
 import { TextProps } from './types';
 import { size } from './variants';
 
