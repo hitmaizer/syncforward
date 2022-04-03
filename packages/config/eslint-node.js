@@ -6,25 +6,23 @@ module.exports = {
     commonjs: true,
     node: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:prettier/recommended',
-    'airbnb',
-  ],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended', 'airbnb'],
   globals: {
-    "strapi": true
+    strapi: true,
   },
   rules: {
-    'prettier/prettier': ['error',
+    'prettier/prettier': [
+      'error',
       {
-        endOfLine: 'auto'
-      }
+        endOfLine: 'auto',
+      },
     ],
     'no-param-reassign': ['error', { props: false }],
     'consistent-return': 'off',
     'no-unused-vars': 'off',
     'import/prefer-default-export': 'off',
     'no-use-before-define': 'off',
+    'comma-dangle': ['error', 'never'],
     'import/order': [
       'error',
       {

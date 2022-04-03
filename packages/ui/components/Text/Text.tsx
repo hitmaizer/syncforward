@@ -1,7 +1,7 @@
-import { TextProps } from './types';
+import { forwardRef, ForwardRefRenderFunction } from 'react';
 
 import * as S from './styles';
-import { forwardRef, ForwardRefRenderFunction } from 'react';
+import { TextProps } from './types';
 
 type TextWithRefType = ForwardRefRenderFunction<HTMLElement, TextProps>;
 
