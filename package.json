@@ -11,9 +11,12 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "storybook": "yarn workspace ui storybook"
+    "storybook": "yarn workspace ui storybook",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
@@ -21,5 +24,13 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "yarn@1.22.17"
+  "packageManager": "yarn@1.22.17",
+  "lint-staged": {
+    "apps/**/*.{ts,tsx}": [
+      "eslint --fix"
+    ],
+    "packages/ui/!(icons)/*.{ts,tsx}": [
+      "eslint --fix"
+    ]
+  }
 }
