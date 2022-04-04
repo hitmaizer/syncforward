@@ -41,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
 
   @supports (font-variation-settings: normal) {
     html {
-      font-family: 'Integral CF', sans-serif;
+      font-family: "Barlow", sans-serif;
     }
   }
 
