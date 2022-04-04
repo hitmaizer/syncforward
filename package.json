@@ -1,5 +1,6 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "syncforward-monorepo",
+  "description": "Monorepo with Sync Forward javascript packages and applications",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -11,7 +12,8 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "storybook": "yarn workspace ui storybook"
+    "storybook": "yarn workspace ui storybook",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
@@ -20,6 +22,11 @@
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "packageManager": "yarn@1.22.17"
 }
