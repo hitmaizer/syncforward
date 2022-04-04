@@ -1,3 +1,26 @@
+## [1.1.0](https://github.com/syncforward/syncforward/compare/v1.0.0...v1.1.0) (2022-04-04)
+
+
+### 🎨 Style
+
+* **text component:** add fontWeight prop ([d03c3ca](https://github.com/syncforward/syncforward/commit/d03c3ca1558ecdeaafb75ae576d104a9c10ce028))
+* **text component:** renders different text + weight ([b5d7f41](https://github.com/syncforward/syncforward/commit/b5d7f4174c3300842d62df18207c60f6a7842749))
+* **theme:** renaming fonts ([db5b05f](https://github.com/syncforward/syncforward/commit/db5b05ffdf9cee25de08996d4af1510d63c8efbd))
+
+
+### 🚀 Features
+
+* **custom font:** add Integral-DemiBold font file ([e700698](https://github.com/syncforward/syncforward/commit/e700698bbd68806230ce39d560df8b21270c1bf5))
+* **Fontsource:** fontWeight imports ([0687928](https://github.com/syncforward/syncforward/commit/0687928259e460a136b96229a757d999fd68f3f9))
+* **fontsource:** install Barlow ([d6d0783](https://github.com/syncforward/syncforward/commit/d6d0783459b8515e88d80cbb17a72934c80b7d08))
+* **GlobalStyles:** Barlow as default font ([2946e03](https://github.com/syncforward/syncforward/commit/2946e0330e54123e0eb02e720eb58ee4d1c3c355))
+* **storybook:** barlow variants import ([2fbc3e5](https://github.com/syncforward/syncforward/commit/2fbc3e5c24dcfa1c12f053bd1f98ffcd939c5b12))
+* **storybook:** decorators for stories ([b8b1ef5](https://github.com/syncforward/syncforward/commit/b8b1ef5290b038f1cf58405c28438b3ad7229ad1))
+* **storybook:** public folder ([735cbce](https://github.com/syncforward/syncforward/commit/735cbce3654cddf04e26ae5c830874b8a83af08d))
+* **styled-components:** createGlobalStyle ([65a6c8e](https://github.com/syncforward/syncforward/commit/65a6c8e8a7a476f90be5d205949a74f4c96d8528))
+* **styled-system:** styled-system defaults + exports ([792fed7](https://github.com/syncforward/syncforward/commit/792fed7908830d17104ad2cec6ca0b4981e5627e))
+* **theme:** both fonts on theme file ([8b23f80](https://github.com/syncforward/syncforward/commit/8b23f807ec80fdf792a8b0fb43eeef51134ceee9))
+
 ## [1.0.0](https://github.com/syncforward/syncforward/compare/...v1.0.0) (2022-04-04)
 
 
