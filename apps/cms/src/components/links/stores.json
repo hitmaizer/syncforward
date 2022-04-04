@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_stores",
+  "info": {
+    "displayName": "ReleaseLink",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "soundcloud",
+        "spotify",
+        "beatport",
+        "appleMusic",
+        "youtubeMusic",
+        "bandcamp"
+      ],
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "regex": "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)",
+      "required": true
+    }
+  }
+}

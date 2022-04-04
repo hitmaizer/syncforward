@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_social_networks",
+  "info": {
+    "displayName": "ArtistLink",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "soundcloud",
+        "facebook",
+        "youtube",
+        "instagram",
+        "twitter",
+        "beatport",
+        "spotify",
+        "website"
+      ],
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "regex": "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)",
+      "required": true
+    }
+  }
+}

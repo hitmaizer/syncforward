@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "demos",
+  "info": {
+    "singularName": "demo",
+    "pluralName": "demos",
+    "displayName": "Demo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "artistName": {
+      "type": "string",
+      "required": true
+    },
+    "soundcloudUrl": {
+      "type": "string",
+      "required": true
+    },
+    "beatportUrl": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.country"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    }
+  }
+}
