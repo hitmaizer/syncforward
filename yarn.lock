@@ -1650,6 +1650,11 @@
   dependencies:
     tslib "^2.0.1"
 
+"@fontsource/barlow@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@fontsource/barlow/-/barlow-4.5.6.tgz#056516370e79ab2cf2d0d326d34d2e136f4858f6"
+  integrity sha512-T7ixL3eNfxSv0Gqo1/kCIQQdv1t3+FwbEEt6ug7or/OArKDO7NBo6OGfv/7J1cYS6cDDLkaYETPsiJCja5lFcQ==
+
 "@formatjs/ecma402-abstract@1.9.3":
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.9.3.tgz#00892014c805935b5b1345d238246e9bf3a2de50"
