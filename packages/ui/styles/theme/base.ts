@@ -5,6 +5,11 @@ const theme = {
   breakpoints,
   mediaQueries,
 
+  fonts: {
+    main: '"Barlow", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+    integral: '"Integral CF", sans-serif',
+  },
+
   // default fontSizes
   fontSizes: [11, 13, 16, 20, 24, 30, 40, 64],
 
