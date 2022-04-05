@@ -1,3 +1,44 @@
+## [1.2.0](https://github.com/syncforward/syncforward/compare/v1.1.0...v1.2.0) (2022-04-05)
+
+
+### :octocat: CI/CD
+
+* **apps:** remove web and docs apps ([d2072ce](https://github.com/syncforward/syncforward/commit/d2072ce40c09d37049db5ff5cbbf9d7a75a6b0d2))
+
+
+### ✂️ Refactor
+
+* **eslint:** eslint ([dd629db](https://github.com/syncforward/syncforward/commit/dd629db1cf9b6a0514c6e77df75096b93ea2cdb8))
+* **husky:** refactor husky pre-commit hooks ([813634b](https://github.com/syncforward/syncforward/commit/813634be8a1166b5ee429463a4e5927d983af13c))
+* **prettier:** prettier changes ([59dbc72](https://github.com/syncforward/syncforward/commit/59dbc72256ae242f3fa848608d7481c3dc4471b9))
+* **text:** format Text component ([bb62044](https://github.com/syncforward/syncforward/commit/bb62044f543602c184cae46d44cbb9a18d57b287))
+
+
+### 🎨 Style
+
+* **HUSKY:** text adjust ([5bfad6b](https://github.com/syncforward/syncforward/commit/5bfad6bac7c06ea6d02ba0714651a8d7fa1a6339))
+
+
+### 🏍️ Performance
+
+* **REPO:** boilerplate file ([93cc733](https://github.com/syncforward/syncforward/commit/93cc7334dea0e0ef56df4b9bdc349cf75a85d7c7))
+
+
+### 🐛 Fixes
+
+* **cms:** remove yarn.lock from cms app ([bc9f6ba](https://github.com/syncforward/syncforward/commit/bc9f6baf8d5e076d6de03c0f63f4d9c71e013a1b))
+* **heroku:** fix heroku clearing users on deploy ([b7ab996](https://github.com/syncforward/syncforward/commit/b7ab996dd0a11160c61bf60c41429ab87ac0c3a9))
+* **husky:** add permissions to husky folder ([0773112](https://github.com/syncforward/syncforward/commit/0773112f9a351b689e641ddce44eb56df632ccc6))
+
+
+### 🚀 Features
+
+* **husky:** add lint-staged ([f900403](https://github.com/syncforward/syncforward/commit/f9004030b5ead0908d73a7949bdd5f47c2f57014))
+* **husky:** pre-commit hooks ([d8bd94d](https://github.com/syncforward/syncforward/commit/d8bd94d7cc00952f95ae856077313dab544fede4))
+* **husky:** scripts ([1e3f838](https://github.com/syncforward/syncforward/commit/1e3f8380c918cd7685197e9e7d93ba58c79d0724))
+* **prettier :** add .prettierignore file ([4c6636b](https://github.com/syncforward/syncforward/commit/4c6636bf90ddde26727f4a3fe8dd4139dca5b4f8))
+* **REPO:** Install & Setup Husky ([e72b958](https://github.com/syncforward/syncforward/commit/e72b9583431c6e912cd8304949b71f44c311744b))
+
 ## [1.1.0](https://github.com/syncforward/syncforward/compare/v1.0.0...v1.1.0) (2022-04-04)
 
 
