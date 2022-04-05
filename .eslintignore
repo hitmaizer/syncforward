@@ -1,3 +1,5 @@
 packages/ui/icons/*.tsx
 packages/ui/icon-index-template.js
 packages/ui/icon-template.js
+apps/cms
+
