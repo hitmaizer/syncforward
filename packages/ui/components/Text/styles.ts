@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, space, style, typography } from 'styled-system';
+import { color, fontWeight, space, style, typography } from 'styled-system';
 
 import { TextProps } from './types';
 import { size } from './variants';
@@ -16,4 +16,5 @@ export const Text = styled.p<TextProps>`
   ${typography}
   ${space}
   ${textTransform}
+  ${fontWeight}
 `;

@@ -1,5 +1,6 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "syncforward-monorepo",
+  "description": "Monorepo with Sync Forward javascript packages and applications",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -16,7 +17,8 @@
     "check-types": "yarn workspace ui tsc --pretty --noEmit",
     "check-format": "yarn workspace ui prettier --check \"**/*.{ts,tsx,md,json}\"",
     "check-lint": "yarn workspace ui eslint . --ext ts --ext tsx --ext js",
-    "test-all": "yarn check-format && yarn check-lint && yarn check-types && yarn build"
+    "test-all": "yarn check-format && yarn check-lint && yarn check-types && yarn build",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "husky": "^7.0.4",
@@ -28,7 +30,6 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "yarn@1.22.17",
   "lint-staged": {
     "apps/**/*.{ts,tsx}": [
       "eslint --fix"
@@ -36,5 +37,11 @@
     "packages/ui/!(icons)/*.{ts,tsx}": [
       "eslint --fix"
     ]
-  }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "packageManager": "yarn@1.22.17"
 }
