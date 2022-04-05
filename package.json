@@ -15,9 +15,9 @@
     "storybook": "yarn workspace ui storybook",
     "prepare": "husky install",
     "check-types": "yarn workspace ui tsc --pretty --noEmit",
-    "check-format": "yarn workspace ui prettier --check \"**/*.{ts,tsx,md,json}\"",
-    "check-lint": "yarn workspace ui eslint . --ext ts --ext tsx --ext js",
-    "test-all": "yarn check-format && yarn check-lint && yarn check-types && yarn build",
+    "check-format": "prettier --check \"**/*.{ts,tsx,md,json}\"",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "test-all": "yarn check-format && yarn lint && yarn check-lint && yarn check-types && yarn build",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
@@ -31,10 +31,10 @@
     "node": ">=14.0.0"
   },
   "lint-staged": {
-    "apps/**/*.{ts,tsx}": [
+    "apps/**/*.{ts,tsx,js}": [
       "eslint --fix"
     ],
-    "packages/ui/!(icons)/*.{ts,tsx}": [
+    "packages/ui/!(icons)/*.{ts,tsx,js}": [
       "eslint --fix"
     ]
   },
