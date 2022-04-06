@@ -15,6 +15,7 @@ node_modules
 # production
 *build/
 
+
 # misc
 .DS_Store
 *.pem
@@ -58,3 +59,5 @@ storybook-static
 exports
 *.cache
 .strapi-updater.json
+
+tsconfig.tsbuildinfo
