@@ -1,17 +1,7 @@
 import { forwardRef, ForwardRefRenderFunction } from 'react';
 
-import styled from 'styled-components';
-import { layout, flexbox, space, color, position } from 'styled-system';
-
+import * as S from './Box.styles';
 import { BoxProps } from './types';
-
-const StyledBox = styled.div`
-  ${layout}
-  ${flexbox}
-  ${space}
-  ${color}
-  ${position}
-`;
 
 const BoxElement: ForwardRefRenderFunction<HTMLDivElement, BoxProps> = (
   props,
@@ -20,9 +10,9 @@ const BoxElement: ForwardRefRenderFunction<HTMLDivElement, BoxProps> = (
   const { children, ...rest } = props;
 
   return (
-    <StyledBox ref={ref} {...rest}>
+    <S.Box ref={ref} {...rest}>
       {children}
-    </StyledBox>
+    </S.Box>
   );
 };
 
