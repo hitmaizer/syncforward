@@ -1,15 +1,7 @@
 import { forwardRef, ForwardRefRenderFunction } from 'react';
 
-import styled from 'styled-components';
-import { gridGap } from 'styled-system';
-
-import { Box } from '..';
+import * as S from './Stack.styles';
 import { StackProps } from './types';
-
-const StyledStack = styled(Box)<StackProps>`
-  flex-direction: ${(props) => (props.vertical ? 'column' : 'row')};
-  ${gridGap}
-`;
 
 const StackElement: ForwardRefRenderFunction<HTMLDivElement, StackProps> = (
   props,
@@ -18,9 +10,9 @@ const StackElement: ForwardRefRenderFunction<HTMLDivElement, StackProps> = (
   const { children, ...rest } = props;
 
   return (
-    <StyledStack ref={ref} display="flex" alignItems="flex-start" {...rest}>
+    <S.Stack ref={ref} display="flex" alignItems="flex-start" {...rest}>
       {children}
-    </StyledStack>
+    </S.Stack>
   );
 };
 const Stack = forwardRef(StackElement);
