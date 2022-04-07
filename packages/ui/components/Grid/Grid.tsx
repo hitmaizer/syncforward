@@ -1,13 +1,13 @@
-import StyledGrid from './StyledGrid';
+import * as S from './Grid.styles';
 import { GridProps } from './types';
 
 const Grid = (props: GridProps) => {
   const { children } = props;
 
   return (
-    <StyledGrid display="grid" {...props}>
+    <S.Grid display="grid" {...props}>
       {children}
-    </StyledGrid>
+    </S.Grid>
   );
 };
 
