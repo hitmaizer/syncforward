@@ -1,7 +1,7 @@
 import { forwardRef, ForwardRefRenderFunction } from 'react';
 
 import * as S from './Box.styles';
-import { BoxProps } from './types';
+import { BoxProps } from './Box.types';
 
 const BoxElement: ForwardRefRenderFunction<HTMLDivElement, BoxProps> = (
   props,
