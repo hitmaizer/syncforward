@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { color, fontWeight, space, style, typography } from 'styled-system';
 
-import { TextProps } from './types';
+import { TextProps } from './Text.types';
 import { size } from './variants';
 
 const textTransform = style({
