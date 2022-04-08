@@ -1,5 +1,5 @@
 import * as S from './Grid.styles';
-import { GridProps } from './types';
+import { GridProps } from './Grid.types';
 
 const Grid = (props: GridProps) => {
   const { children } = props;
