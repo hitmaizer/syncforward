@@ -1,7 +1,7 @@
 import { forwardRef, ForwardRefRenderFunction } from 'react';
 
 import * as S from './Stack.styles';
-import { StackProps } from './types';
+import { StackProps } from './Stack.types';
 
 const StackElement: ForwardRefRenderFunction<HTMLDivElement, StackProps> = (
   props,
