@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "files": [
-    "eslint-react.js",
-    "eslint-node.js"
+    "eslint-node.js",
+    "eslint-react.js"
   ],
   "dependencies": {
     "@typescript-eslint/parser": "^5.14.0",
@@ -20,5 +20,9 @@
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-storybook": "^0.5.3"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^12.1.4",
+    "babel-eslint": "^10.1.0"
   }
 }

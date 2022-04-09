@@ -4,7 +4,8 @@
   "info": {
     "singularName": "podcast",
     "pluralName": "podcasts",
-    "displayName": "Podcast"
+    "displayName": "Podcast",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,12 +15,14 @@
     "episode": {
       "type": "integer",
       "required": true,
-      "default": 0
+      "default": 0,
+      "unique": true
     },
     "artwork": {
-      "allowedTypes": ["images", "files", "videos", "audios"],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "description": {
       "type": "richtext"
@@ -39,7 +42,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::artist.artist",
-      "inversedBy": "podcasts"
+      "mappedBy": "podcasts"
     }
   }
 }

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Article",
+    "displayName": "Blog / Article",
     "name": "article",
     "description": ""
   },
@@ -43,11 +43,6 @@
       "multiple": false,
       "required": false,
       "allowedTypes": ["images"]
-    },
-    "SEO": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.seo"
     }
   }
 }

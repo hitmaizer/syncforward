@@ -26,3 +26,4 @@ LICENSE
 *.toml
 *.prisma
 .cache
+.strapi-updater.json
