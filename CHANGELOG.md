@@ -1,3 +1,10 @@
+### [1.3.1](https://github.com/syncforward/syncforward/compare/v1.3.0...v1.3.1) (2022-04-09)
+
+
+### 🐛 Fixes
+
+* **heroku:** update heroku deploy action ([0db33a3](https://github.com/syncforward/syncforward/commit/0db33a35fa2132b5cd669a76f0dbb16b62e9bb4d))
+
 ## [1.3.0](https://github.com/syncforward/syncforward/compare/v1.2.0...v1.3.0) (2022-04-09)
 
 
