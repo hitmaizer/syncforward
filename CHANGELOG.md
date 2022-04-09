@@ -1,3 +1,16 @@
+### [1.3.2](https://github.com/syncforward/syncforward/compare/v1.3.1...v1.3.2) (2022-04-09)
+
+
+### ✂️ Refactor
+
+* **heroku:** refactor heroku action ([4e4cf2b](https://github.com/syncforward/syncforward/commit/4e4cf2b20e96b045d63bd47aeef7e27ebe46f1b4))
+* **text:** refactor text component ([7a3bb01](https://github.com/syncforward/syncforward/commit/7a3bb018789ec1868b215dcb720ae0c5d14c51e7))
+
+
+### 🐛 Fixes
+
+* **heroku:** revert heroku action ([2643147](https://github.com/syncforward/syncforward/commit/264314777d684759abbb57814bb63df337f72b07))
+
 ### [1.3.1](https://github.com/syncforward/syncforward/compare/v1.3.0...v1.3.1) (2022-04-09)
 
 
