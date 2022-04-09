@@ -1,3 +1,53 @@
+## [1.3.0](https://github.com/syncforward/syncforward/compare/v1.2.0...v1.3.0) (2022-04-09)
+
+
+### :octocat: CI/CD
+
+* **postgres:** change db from sql to postgres ([e8f3c8d](https://github.com/syncforward/syncforward/commit/e8f3c8da2ea7f6a9066fa2d57c0dd6c798824966))
+
+
+### ✂️ Refactor
+
+* refactor build script ([3b1bb09](https://github.com/syncforward/syncforward/commit/3b1bb0967417d7e568035a669a3b20db6f01edbd))
+* **box component:** better naming on types file + imports ([b52f7da](https://github.com/syncforward/syncforward/commit/b52f7da3aa1d4f0f20ba19fae5db6153b489ef6c))
+* **box component:** better naming refactor ([58f7ac9](https://github.com/syncforward/syncforward/commit/58f7ac9b2cb3465f53d21bf8571be8abdec74ec9))
+* **eslint:** update eslint configuration ([54f8482](https://github.com/syncforward/syncforward/commit/54f84822346e6e222e35494055c91374c61ed92b))
+* **gitignore:** add *.tsbuildinfo to gitignore ([b447c52](https://github.com/syncforward/syncforward/commit/b447c528e729bd7715b55f7a2de6679305a185d1))
+* **grid component:** better naming on types file + updated imports ([59b50f6](https://github.com/syncforward/syncforward/commit/59b50f62ed93ab1e3d9d7b42b7aa1850aac08e9b))
+* **grid component:** better naming refactor ([c7656cc](https://github.com/syncforward/syncforward/commit/c7656ccc6b68ba028aae803095e1152d52e1af06))
+* **husky:** refactor husky configuration to improve speed ([366414f](https://github.com/syncforward/syncforward/commit/366414f20c766af4853c8b6f3845f04d178fc1f0))
+* **stack component:** better naming on types file + imports update ([e4f6463](https://github.com/syncforward/syncforward/commit/e4f6463621e5a850f1c1d15d944925bc1d044592))
+* **stack component:** better naming refactor ([eb960a8](https://github.com/syncforward/syncforward/commit/eb960a8f803e6ecba7c88a544e2b12809fcf8565))
+* **strapi:** schema changes ([a677a82](https://github.com/syncforward/syncforward/commit/a677a828b8f47ea5f782c5408a5eab00ba43528d))
+* **text component:** better naming on types file + imports update ([1f8bf8d](https://github.com/syncforward/syncforward/commit/1f8bf8df223d3112f2d638e20cf7fecf3165ecc7))
+* **text component:** better naming refactor ([9397817](https://github.com/syncforward/syncforward/commit/9397817907eb3f82538a864feba3fffb38298897))
+
+
+### 🏍️ Performance
+
+* **husky:** pre-commit hook running format before check ([69620e3](https://github.com/syncforward/syncforward/commit/69620e332bb48ace3116c5774ff418d4c86eca5c))
+
+
+### 🐛 Fixes
+
+* **file upload:** fix file upload ([7b9c69a](https://github.com/syncforward/syncforward/commit/7b9c69a0d8c4d35e8678dad3c720958058413094))
+
+
+### 🚀 Features
+
+* **box component:** box component markup styles and types ([f9fd2d9](https://github.com/syncforward/syncforward/commit/f9fd2d9829906c2007a01df622c489319496186c))
+* **gitignore:** update file to ignore tsconfig.tsbuildinfo ([abc56ef](https://github.com/syncforward/syncforward/commit/abc56ef83e95de9fce1a7de5efcd85fb66188697))
+* **grid component:** markup styles types and props ([9278010](https://github.com/syncforward/syncforward/commit/9278010945ca4db06650354f956911f4d6d64832))
+* **husky:** pre-commit and prettierignore update ([23bdac2](https://github.com/syncforward/syncforward/commit/23bdac2076391d0249d47da7e5a9b6ef56432341))
+* **imageupload:** image upload to cloudinary with blurhash ([b3c4e3a](https://github.com/syncforward/syncforward/commit/b3c4e3a1ed0f4882b0eb2fa2d745fed03461b3dd))
+* **prettier:** prettify files ([610da59](https://github.com/syncforward/syncforward/commit/610da593c18825ef4b83213408a25bb8c4f35fd3))
+* **stack component:** markup style and types ([0d88955](https://github.com/syncforward/syncforward/commit/0d889550d88450b4bb9636413d56fda3fe4e8a8f))
+
+
+### Other
+
+* **eslint:** remove cms from eslintignore ([a94e63c](https://github.com/syncforward/syncforward/commit/a94e63c2a9b47a914b5294a509a04b2f06a3cd5f))
+
 ## [1.2.0](https://github.com/syncforward/syncforward/compare/v1.1.0...v1.2.0) (2022-04-05)
 
 
