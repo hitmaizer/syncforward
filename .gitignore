@@ -60,4 +60,7 @@ exports
 *.cache
 .strapi-updater.json
 
-tsconfig.tsbuildinfo
+*.tsbuildinfo
+
+# Sentry
+.sentryclirc
