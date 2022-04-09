@@ -1,9 +1,9 @@
-'use strict';
-
-const boostrap = require('./bootstrap');
+const extendFileUpload = require('./extensions/extendFileUpload');
 
 module.exports = {
-  async bootstrap() {
-    await boostrap();
+  register({ strapi }) {
+    extendFileUpload.generatePlaceholder(strapi);
   },
+
+  bootstrap(/* { strapi } */) {},
 };
