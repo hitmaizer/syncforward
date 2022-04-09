@@ -12,11 +12,11 @@ export const size = variant({
       letterSpacing: '-0.003em',
     },
     md: {
-      fontSize: 2,
+      fontSize: [1, 2],
       letterSpacing: '-0.01em',
     },
     lg: {
-      fontSize: 3,
+      fontSize: [2, 3],
       letterSpacing: '-0.017em',
     },
   },
