@@ -1,4 +1,3 @@
-const boostrap = require('./bootstrap');
 const extendFileUpload = require('./extensions/extendFileUpload');
 
 module.exports = {
@@ -6,7 +5,5 @@ module.exports = {
     extendFileUpload.generatePlaceholder(strapi);
   },
 
-  async bootstrap() {
-    await boostrap();
-  },
+  bootstrap(/* { strapi } */) {},
 };
