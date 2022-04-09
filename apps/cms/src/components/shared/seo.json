@@ -1,15 +1,15 @@
 {
   "collectionName": "components_shared_seos",
   "info": {
-    "displayName": "SEO",
-    "icon": "atlas",
+    "displayName": "seo",
+    "icon": "search",
     "description": ""
   },
   "options": {},
   "attributes": {
     "metaTitle": {
-      "type": "string",
       "required": true,
+      "type": "string",
       "maxLength": 60
     },
     "metaDescription": {
@@ -22,7 +22,7 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": ["images"]
+      "allowedTypes": ["images", "files", "videos"]
     }
   }
 }

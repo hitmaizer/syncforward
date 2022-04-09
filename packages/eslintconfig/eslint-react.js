@@ -40,6 +40,7 @@ module.exports = {
     'no-param-reassign': ['error', { props: false }],
     'consistent-return': 'off',
     'no-unused-vars': 'off',
+    "@typescript-eslint/comma-dangle": ["error", "only-multiline"],
     '@typescript-eslint/no-unused-vars': [
       'warn',
       {

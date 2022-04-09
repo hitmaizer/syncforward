@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -35,11 +35,6 @@
       "repeatable": false,
       "component": "shared.country"
     },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.seo"
-    },
     "biography": {
       "type": "richtext"
     },
@@ -53,6 +48,10 @@
       "relation": "manyToMany",
       "target": "api::podcast.podcast",
       "inversedBy": "artists"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
