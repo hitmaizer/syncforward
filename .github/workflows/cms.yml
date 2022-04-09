@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'apps/cms/**'
-      - '.github/workflows/cms.yml'
 
 jobs:
   build:
@@ -18,3 +15,4 @@ jobs:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
+          appdir: 'apps/cms'
