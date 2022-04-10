@@ -2,7 +2,7 @@
   "name": "ui",
   "version": "1.0.0",
   "description": "Sync Forward Design System",
-  "main": "index.js",
+  "main": "index.ts",
   "author": "José Alves, Henrique Caiano",
   "license": "MIT",
   "devDependencies": {
