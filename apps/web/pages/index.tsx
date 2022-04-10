@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import { Stack, Text } from 'ui/components';
 
 const Cenas = styled(Text).attrs({})``;
