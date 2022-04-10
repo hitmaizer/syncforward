@@ -4,8 +4,9 @@ import SEO from '@config/next-seo';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
+import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from 'ui/styles';
-
+import theme from 'ui/styles/theme/base';
 import '@config/fontsource';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
@@ -21,18 +22,20 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <>
-      <DefaultSeo
-        canonical={canonicalUrl}
-        openGraph={{
-          url: canonicalUrl,
-          type: 'website',
-          site_name: 'Polkastarter',
-        }}
-        dangerouslySetAllPagesToNoIndex
-        {...SEO}
-      />
-      <GlobalStyle />
-      {mounted && <Component {...pageProps} />}
+      <ThemeProvider theme={theme}>
+        <DefaultSeo
+          canonical={canonicalUrl}
+          openGraph={{
+            url: canonicalUrl,
+            type: 'website',
+            site_name: 'Polkastarter',
+          }}
+          dangerouslySetAllPagesToNoIndex
+          {...SEO}
+        />
+        <GlobalStyle />
+        {mounted && <Component {...pageProps} />}
+      </ThemeProvider>
     </>
   );
 };
