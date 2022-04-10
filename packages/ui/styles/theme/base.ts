@@ -11,7 +11,7 @@ const theme = {
   },
 
   // default fontSizes
-  fontSizes: [11, 13, 16, 20, 24, 30, 40, 64],
+  fontSizes: [12, 14, 17, 22, 26, 32, 44, 64],
 
   // default LineHeights
   lineHeights: {
