@@ -11,6 +11,7 @@
     "build": "turbo run build --scope=*ui* --scope=*cms* --no-deps",
     "dev": "turbo run dev --parallel",
     "web:dev": "turbo run dev --scope=*web* --no-deps",
+    "cms:dev": "turbo run dev --scope=*cms* --no-deps",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
     "storybook": "yarn workspace ui storybook",

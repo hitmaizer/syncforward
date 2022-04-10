@@ -1,4 +1,8 @@
 {
+  "name": "cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Sync Forward CMS",
   "dependencies": {
     "@strapi/plugin-graphql": "^4.0.0",
     "@strapi/plugin-i18n": "4.1.7",
@@ -17,10 +21,6 @@
     "strapi-plugin-react-editorjs": "^2.0.0",
     "strapi-plugin-transformer": "^2.0.1"
   },
-  "name": "cms",
-  "private": true,
-  "version": "0.1.0",
-  "description": "Sync Forward CMS",
   "scripts": {
     "dev": "strapi develop",
     "start": "strapi start",
