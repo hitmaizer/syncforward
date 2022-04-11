@@ -1,3 +1,26 @@
+## [1.4.0](https://github.com/syncforward/syncforward/compare/v1.3.2...v1.4.0) (2022-04-11)
+
+
+### ✂️ Refactor
+
+* **storybook:** refactor storybook files ([0375a01](https://github.com/syncforward/syncforward/commit/0375a015ab1be2bd05cd3220a1bdc9859a026a11))
+* **theme:** refactor theme files ([4871bd1](https://github.com/syncforward/syncforward/commit/4871bd109f6421bbf436ca533259aab01db4a01b))
+
+
+### 🐛 Fixes
+
+* fix eslint error ([0072a6f](https://github.com/syncforward/syncforward/commit/0072a6fdb3e002048d6cd79f4de8d0602212b9d6))
+* **cms:** fix cms dev script ([63b493a](https://github.com/syncforward/syncforward/commit/63b493ab78aa7403bc262598e24a6cf897c41771))
+* **heroku:** update heroku github actions ([b6a8678](https://github.com/syncforward/syncforward/commit/b6a8678da7097cbccf24808b5428bc6af2e9a326))
+
+
+### 🚀 Features
+
+* **fonts:** add custom font files ([d484108](https://github.com/syncforward/syncforward/commit/d4841082d95d14de40bbd7ea4f172a1b3d55f7cf))
+* **heading:** create Heading component ([9e9d22d](https://github.com/syncforward/syncforward/commit/9e9d22d62a6bdef22495409007bd759c1d47eb57))
+* **web:** create web app with nextjs and styled components ([2491b23](https://github.com/syncforward/syncforward/commit/2491b23f73d7617ebb0d87abc42c69745b179a58))
+* **web:** wrap ThemeProvider around web app ([72568f4](https://github.com/syncforward/syncforward/commit/72568f42b29dc15ab1238b86a1614d0940666091))
+
 ### [1.3.2](https://github.com/syncforward/syncforward/compare/v1.3.1...v1.3.2) (2022-04-09)
 
 
