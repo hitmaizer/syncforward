@@ -4,12 +4,18 @@ import reset from 'styled-reset';
 const GlobalStyle = createGlobalStyle`
     ${reset}
 
-    // customFontIntegral
-    @font-face {
-      font-family: 'Integral CF', sans-serif;
-      src: url('/fonts/IntegralCF-DemiBold.woff') format('woff');
-      font-weight: 600;
-      font-style: normal;
+    [data-color-scheme="dark"], .theme--dark {
+      color-scheme: dark;
+    }
+
+    [data-color-scheme="light"], .theme--light {
+      color-scheme: light;
+    }
+
+    body {
+      font-family: ${({ theme }) => theme.fonts.body};
+      overflow: hidden;
+      position: relative;
     }
 
     html {
@@ -37,12 +43,6 @@ const GlobalStyle = createGlobalStyle`
 
   * {
     box-sizing: border-box;
-  }
-
-  @supports (font-variation-settings: normal) {
-    html {
-      font-family: "Barlow", sans-serif;
-    }
   }
 
   a,
