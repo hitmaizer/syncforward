@@ -26,5 +26,5 @@ module.exports = {
     '@storybook/addon-interactions',
   ],
   framework: '@storybook/react',
-  staticDirs: ['../public'],
+  staticDirs: [{ from: '../assets', to: '/assets' }],
 };
