@@ -1,152 +1,147 @@
 @font-face {
   font-family: 'IntegralCF';
-  src: font-url('./integral-cf-regular.eot');
-  src: font-url('./integral-cf-regular.eot?#iefix') format('embedded-opentype'),
-    font-url('./integral-cf-regular.woff2') format('woff2'),
-    font-url('./integral-cf-regular.woff') format('woff'),
-    font-url('./integral-cf-regular.ttf') format('truetype'),
-    font-url('./integral-cf-regular.svg#youworkforthem') format('svg');
+  src: url('./integral-cf-regular.eot');
+  src: url('./integral-cf-regular.eot?#iefix') format('embedded-opentype'),
+    url('./integral-cf-regular.woff2') format('woff2'),
+    url('./integral-cf-regular.woff') format('woff'),
+    url('./integral-cf-regular.ttf') format('truetype'),
+    url('./integral-cf-regular.svg#youworkforthem') format('svg');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IntegralCF';
-  src: font-url('./integral-cf-regular-oblique.eot');
-  src: font-url('./integral-cf-regular-oblique.eot?#iefix')
+  src: url('./integral-cf-regular-oblique.eot');
+  src: url('./integral-cf-regular-oblique.eot?#iefix')
       format('embedded-opentype'),
-    font-url('./integral-cf-regular-oblique.woff2') format('woff2'),
-    font-url('./integral-cf-regular-oblique.woff') format('woff'),
-    font-url('./integral-cf-regular-oblique.ttf') format('truetype'),
-    font-url('./integral-cf-regular-oblique.svg#youworkforthem') format('svg');
+    url('./integral-cf-regular-oblique.woff2') format('woff2'),
+    url('./integral-cf-regular-oblique.woff') format('woff'),
+    url('./integral-cf-regular-oblique.ttf') format('truetype'),
+    url('./integral-cf-regular-oblique.svg#youworkforthem') format('svg');
   font-weight: 200;
   font-style: oblique;
 }
 
 @font-face {
   font-family: 'IntegralCF';
-  src: font-url('./integral-cf-medium.eot');
-  src: font-url('./integral-cf-medium.eot?#iefix') format('embedded-opentype'),
-    font-url('./integral-cf-medium.woff2') format('woff2'),
-    font-url('./integral-cf-medium.woff') format('woff'),
-    font-url('./integral-cf-medium.ttf') format('truetype'),
-    font-url('./integral-cf-medium.svg#youworkforthem') format('svg');
+  src: url('./integral-cf-medium.eot');
+  src: url('./integral-cf-medium.eot?#iefix') format('embedded-opentype'),
+    url('./integral-cf-medium.woff2') format('woff2'),
+    url('./integral-cf-medium.woff') format('woff'),
+    url('./integral-cf-medium.ttf') format('truetype'),
+    url('./integral-cf-medium.svg#youworkforthem') format('svg');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IntegralCF';
-  src: font-url('./integral-cf-medium-oblique.eot');
-  src: font-url('./integral-cf-medium-oblique.eot?#iefix')
+  src: url('./integral-cf-medium-oblique.eot');
+  src: url('./integral-cf-medium-oblique.eot?#iefix')
       format('embedded-opentype'),
-    font-url('./integral-cf-medium-oblique.woff2') format('woff2'),
-    font-url('./integral-cf-medium-oblique.woff') format('woff'),
-    font-url('./integral-cf-medium-oblique.ttf') format('truetype'),
-    font-url('./integral-cf-medium-oblique.svg#youworkforthem') format('svg');
+    url('./integral-cf-medium-oblique.woff2') format('woff2'),
+    url('./integral-cf-medium-oblique.woff') format('woff'),
+    url('./integral-cf-medium-oblique.ttf') format('truetype'),
+    url('./integral-cf-medium-oblique.svg#youworkforthem') format('svg');
   font-weight: 300;
   font-style: oblique;
 }
 
 @font-face {
   font-family: 'IntegralCF';
-  src: font-url('./integral-cf-demi-bold.eot');
-  src: font-url('./integral-cf-demi-bold.eot?#iefix')
-      format('embedded-opentype'),
-    font-url('./integral-cf-demi-bold.woff2') format('woff2'),
-    font-url('./integral-cf-demi-bold.woff') format('woff'),
-    font-url('./integral-cf-demi-bold.ttf') format('truetype'),
-    font-url('./integral-cf-demi-bold.svg#youworkforthem') format('svg');
+  src: url('./integral-cf-demi-bold.eot');
+  src: url('./integral-cf-demi-bold.eot?#iefix') format('embedded-opentype'),
+    url('./integral-cf-demi-bold.woff2') format('woff2'),
+    url('./integral-cf-demi-bold.woff') format('woff'),
+    url('./integral-cf-demi-bold.ttf') format('truetype'),
+    url('./integral-cf-demi-bold.svg#youworkforthem') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IntegralCF';
-  src: font-url('./integral-cf-demi-bold-oblique.eot');
-  src: font-url('./integral-cf-demi-bold-oblique.eot?#iefix')
+  src: url('./integral-cf-demi-bold-oblique.eot');
+  src: url('./integral-cf-demi-bold-oblique.eot?#iefix')
       format('embedded-opentype'),
-    font-url('./integral-cf-demi-bold-oblique.woff2') format('woff2'),
-    font-url('./integral-cf-demi-bold-oblique.woff') format('woff'),
-    font-url('./integral-cf-demi-bold-oblique.ttf') format('truetype'),
-    font-url('./integral-cf-demi-bold-oblique.svg#youworkforthem') format('svg');
+    url('./integral-cf-demi-bold-oblique.woff2') format('woff2'),
+    url('./integral-cf-demi-bold-oblique.woff') format('woff'),
+    url('./integral-cf-demi-bold-oblique.ttf') format('truetype'),
+    url('./integral-cf-demi-bold-oblique.svg#youworkforthem') format('svg');
   font-weight: 400;
   font-style: oblique;
 }
 
 @font-face {
   font-family: 'IntegralCF';
-  src: font-url('./integral-cf-bold.eot');
-  src: font-url('./integral-cf-bold.eot?#iefix') format('embedded-opentype'),
-    font-url('./integral-cf-bold.woff2') format('woff2'),
-    font-url('./integral-cf-bold.woff') format('woff'),
-    font-url('./integral-cf-bold.ttf') format('truetype'),
-    font-url('./integral-cf-bold.svg#youworkforthem') format('svg');
+  src: url('./integral-cf-bold.eot');
+  src: url('./integral-cf-bold.eot?#iefix') format('embedded-opentype'),
+    url('./integral-cf-bold.woff2') format('woff2'),
+    url('./integral-cf-bold.woff') format('woff'),
+    url('./integral-cf-bold.ttf') format('truetype'),
+    url('./integral-cf-bold.svg#youworkforthem') format('svg');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IntegralCF';
-  src: font-url('./integral-cf-bold-oblique.eot');
-  src: font-url('./integral-cf-bold-oblique.eot?#iefix')
-      format('embedded-opentype'),
-    font-url('./integral-cf-bold-oblique.woff2') format('woff2'),
-    font-url('./integral-cf-bold-oblique.woff') format('woff'),
-    font-url('./integral-cf-bold-oblique.ttf') format('truetype'),
-    font-url('./integral-cf-bold-oblique.svg#youworkforthem') format('svg');
+  src: url('./integral-cf-bold-oblique.eot');
+  src: url('./integral-cf-bold-oblique.eot?#iefix') format('embedded-opentype'),
+    url('./integral-cf-bold-oblique.woff2') format('woff2'),
+    url('./integral-cf-bold-oblique.woff') format('woff'),
+    url('./integral-cf-bold-oblique.ttf') format('truetype'),
+    url('./integral-cf-bold-oblique.svg#youworkforthem') format('svg');
   font-weight: 500;
   font-style: oblique;
 }
 
 @font-face {
   font-family: 'IntegralCF';
-  src: font-url('./integral-cf-extra-bold.eot');
-  src: font-url('./integral-cf-extra-bold.eot?#iefix')
-      format('embedded-opentype'),
-    font-url('./integral-cf-extra-bold.woff2') format('woff2'),
-    font-url('./integral-cf-extra-bold.woff') format('woff'),
-    font-url('./integral-cf-extra-bold.ttf') format('truetype'),
-    font-url('./integral-cf-extra-bold.svg#youworkforthem') format('svg');
+  src: url('./integral-cf-extra-bold.eot');
+  src: url('./integral-cf-extra-bold.eot?#iefix') format('embedded-opentype'),
+    url('./integral-cf-extra-bold.woff2') format('woff2'),
+    url('./integral-cf-extra-bold.woff') format('woff'),
+    url('./integral-cf-extra-bold.ttf') format('truetype'),
+    url('./integral-cf-extra-bold.svg#youworkforthem') format('svg');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IntegralCF';
-  src: font-url('./integral-cf-extra-bold-oblique.eot');
-  src: font-url('./integral-cf-extra-bold-oblique.eot?#iefix')
+  src: url('./integral-cf-extra-bold-oblique.eot');
+  src: url('./integral-cf-extra-bold-oblique.eot?#iefix')
       format('embedded-opentype'),
-    font-url('./integral-cf-extra-bold-oblique.woff2') format('woff2'),
-    font-url('./integral-cf-extra-bold-oblique.woff') format('woff'),
-    font-url('./integral-cf-extra-bold-oblique.ttf') format('truetype'),
-    font-url('./integral-cf-extra-bold-oblique.svg#youworkforthem')
-      format('svg');
+    url('./integral-cf-extra-bold-oblique.woff2') format('woff2'),
+    url('./integral-cf-extra-bold-oblique.woff') format('woff'),
+    url('./integral-cf-extra-bold-oblique.ttf') format('truetype'),
+    url('./integral-cf-extra-bold-oblique.svg#youworkforthem') format('svg');
   font-weight: 600;
   font-style: oblique;
 }
 
 @font-face {
   font-family: 'IntegralCF';
-  src: font-url('./integral-cf-heavy.eot');
-  src: font-url('./integral-cf-heavy.eot?#iefix') format('embedded-opentype'),
-    font-url('./integral-cf-heavy.woff2') format('woff2'),
-    font-url('./integral-cf-heavy.woff') format('woff'),
-    font-url('./integral-cf-heavy.ttf') format('truetype'),
-    font-url('./integral-cf-heavy.svg#youworkforthem') format('svg');
+  src: url('./integral-cf-heavy.eot');
+  src: url('./integral-cf-heavy.eot?#iefix') format('embedded-opentype'),
+    url('./integral-cf-heavy.woff2') format('woff2'),
+    url('./integral-cf-heavy.woff') format('woff'),
+    url('./integral-cf-heavy.ttf') format('truetype'),
+    url('./integral-cf-heavy.svg#youworkforthem') format('svg');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IntegralCF';
-  src: font-url('./integral-cf-heavy-oblique.eot');
-  src: font-url('./integral-cf-heavy-oblique.eot?#iefix')
-      format('embedded-opentype'),
-    font-url('./integral-cf-heavy-oblique.woff2') format('woff2'),
-    font-url('./integral-cf-heavy-oblique.woff') format('woff'),
-    font-url('./integral-cf-heavy-oblique.ttf') format('truetype'),
-    font-url('./integral-cf-heavy-oblique.svg#youworkforthem') format('svg');
+  src: url('./integral-cf-heavy-oblique.eot');
+  src: url('./integral-cf-heavy-oblique.eot?#iefix') format('embedded-opentype'),
+    url('./integral-cf-heavy-oblique.woff2') format('woff2'),
+    url('./integral-cf-heavy-oblique.woff') format('woff'),
+    url('./integral-cf-heavy-oblique.ttf') format('truetype'),
+    url('./integral-cf-heavy-oblique.svg#youworkforthem') format('svg');
   font-weight: 700;
   font-style: oblique;
 }
