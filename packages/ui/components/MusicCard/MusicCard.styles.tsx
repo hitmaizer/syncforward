@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 import { layout } from 'styled-system';
 
-export const Card = styled.div`
+import { MusicCardProps } from './MusicCard.types';
+
+export const Card = styled.div<MusicCardProps>`
   ${layout}
-  max-width: 550px;
-  display: flex;
+  max-width: 500px;
+  display: ${({ isClicked }) => (isClicked ? 'none' : 'flex')};
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -27,7 +29,7 @@ export const Card = styled.div`
     cursor: pointer;
     position: absolute;
     top: 0;
-    left: 25px;
+    left: 0;
     bottom: 0;
     right: 0;
     background-repeat: no-repeat;
@@ -39,4 +41,13 @@ export const Card = styled.div`
     transform: translateZ(+1px);
     display: none;
   }
+`;
+
+export const SoundCloudContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 17px;
+  left: 17px;
+  max-width: 500px;
 `;
