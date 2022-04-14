@@ -20,6 +20,7 @@ export const Card = styled.div<MusicCardProps>`
       display: block;
     }
     img {
+      filter: brightness(50%);
       -webkit-filter: brightness(50%);
     }
   }
