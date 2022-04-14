@@ -31,8 +31,6 @@ export const Card = styled.div<MusicCardProps>`
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
     background-repeat: no-repeat;
     background-image: url('assets/imgs/bx-play-circle.svg');
     background-position: 50%;
