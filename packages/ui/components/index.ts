@@ -3,3 +3,4 @@ export { default as Heading } from './Heading';
 export { default as Box } from './Box';
 export { default as Grid } from './Grid';
 export { default as Stack } from './Stack';
+export { default as MusicCard } from './MusicCard';
