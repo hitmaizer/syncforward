@@ -1,15 +1,11 @@
-import styled from 'styled-components';
-import { Stack, Text, Heading } from 'ui/components';
-
-const Cenas = styled(Text).attrs({})``;
+import { MusicCard } from 'ui/components';
 
 export default function Home() {
   return (
-    <Stack vertical>
-      <Heading>Mau criado</Heading>
-      <Cenas>My page</Cenas>
-      <Cenas>My page</Cenas>
-      <Cenas>My page</Cenas>
-    </Stack>
+    <>
+      <MusicCard imgSrc="/placeholder.jpg" iconSrc="/bx-play-circle.svg" />
+
+      <MusicCard imgSrc="/placeholder.jpg" iconSrc="/bx-play-circle.svg" />
+    </>
   );
 }
