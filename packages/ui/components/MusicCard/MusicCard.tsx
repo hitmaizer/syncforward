@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import * as S from './MusicCard.styles';
 import { MusicCardProps } from './MusicCard.types';
@@ -10,21 +10,15 @@ const MusicCard = ({
   iconSrc,
 }: MusicCardProps) => {
   const [showPlay, setShowPlay] = useState(true);
-  const [soundcloudLinkState, setSoundcloudLinkState] = useState('');
 
-  useEffect(() => {
-    setShowPlay(false);
-  }, [soundcloudLinkState]);
-
-  const handlePlay = (link: string) => {
+  const handlePlay = () => {
     setShowPlay(!showPlay);
-    setSoundcloudLinkState(link!);
   };
 
   return (
     <>
-      <S.Card onClick={() => handlePlay(soundcloudLink!)} showPlay={showPlay}>
-        {soundcloudLinkState && (
+      <S.Card onClick={() => handlePlay()} showPlay={showPlay}>
+        {!showPlay && (
           <S.SoundCloudContainer showPlay={showPlay}>
             <iframe
               title={title}
@@ -33,7 +27,7 @@ const MusicCard = ({
               scrolling="no"
               frameBorder="no"
               allow="autoplay"
-              src={soundcloudLinkState}
+              src={soundcloudLink}
             />
           </S.SoundCloudContainer>
         )}
