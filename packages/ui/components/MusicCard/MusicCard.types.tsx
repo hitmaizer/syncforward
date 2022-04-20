@@ -5,5 +5,5 @@ export interface MusicCardProps {
   soundcloudLink?: string;
   title?: string;
   iconSrc?: string;
-  onClick?: (a: string) => void;
+  onClick?: () => void;
 }
