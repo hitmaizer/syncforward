@@ -1,5 +1,3 @@
-import dark from './dark';
-import light from './light';
 import { breakpoints, mediaQueries } from './mediaQueries';
 import zIndices from './zIndices';
 
@@ -10,13 +8,6 @@ const theme = {
 
   // zIndices
   zIndices,
-
-  colors: {
-    modes: {
-      dark,
-      light,
-    },
-  },
 
   fonts: {
     body: '"Barlow", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
