@@ -1,7 +1,9 @@
 export interface MusicCardProps {
   children?: React.ReactNode;
   imgSrc?: string;
-  isClicked?: boolean;
+  showPlay?: boolean;
   soundcloudLink?: string;
   title?: string;
+  iconSrc?: string;
+  onClick?: (a: string) => void;
 }
