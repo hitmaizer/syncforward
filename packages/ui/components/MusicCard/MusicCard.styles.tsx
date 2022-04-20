@@ -6,7 +6,7 @@ import { MusicCardProps } from './MusicCard.types';
 export const Card = styled.div<MusicCardProps>`
   ${layout}
   max-width: 500px;
-  display: ${({ isClicked }) => (isClicked ? 'none' : 'flex')};
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -14,39 +14,40 @@ export const Card = styled.div<MusicCardProps>`
   transition: 0.1s all ease-in-out;
   position: relative;
   transform-style: preserve-3d;
+`;
+
+export const OpenSoundCloud = styled.div`
+  transition: 0.2s all ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
 
   &:hover {
-    &::before {
-      display: block;
-    }
-    img {
-      filter: brightness(50%);
-      -webkit-filter: brightness(50%);
-    }
-  }
-
-  &::before {
-    content: ' ';
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-image: url('assets/imgs/bx-play-circle.svg');
-    background-position: 50%;
-    background-size: 100px 100px;
-    height: 500px;
-    width: 500px;
-    transform: translateZ(+1px);
-    display: none;
+    opacity: 0.9;
   }
 `;
 
-export const SoundCloudContainer = styled.div`
+export const Icon = styled.img`
+  cursor: pointer;
+  z-index: 1;
+  width: 60px;
+  height: auto;
+`;
+
+export const SoundCloudContainer = styled.div<MusicCardProps>`
+  display: ${({ showPlay }) => (showPlay ? 'none' : 'block')};
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 17px;
-  left: 17px;
+  top: 0;
+  left: 0;
   max-width: 500px;
+  z-index: 3;
 `;
