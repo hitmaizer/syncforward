@@ -7,10 +7,16 @@ const StackElement: ForwardRefRenderFunction<HTMLDivElement, StackProps> = (
   props,
   ref
 ) => {
-  const { children, ...rest } = props;
+  const { children, placeContent, ...rest } = props;
 
   return (
-    <S.Stack ref={ref} display="flex" alignItems="flex-start" {...rest}>
+    <S.Stack
+      ref={ref}
+      display="flex"
+      alignItems="flex-start"
+      placeContent={placeContent}
+      {...rest}
+    >
       {children}
     </S.Stack>
   );
