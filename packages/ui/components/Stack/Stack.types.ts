@@ -10,4 +10,5 @@ export interface StackProps
     HTMLAttributes<HTMLDivElement> {
   vertical?: boolean;
   children: ReactNode;
+  placeContent?: 'flex-start' | 'flex-end' | 'center';
 }
