@@ -11,4 +11,5 @@ export interface StackProps
   vertical?: boolean;
   children: ReactNode;
   placeContent?: 'flex-start' | 'flex-end' | 'center';
+  placeItems?: 'flex-start' | 'flex-end' | 'center' | 'left' | 'right';
 }
