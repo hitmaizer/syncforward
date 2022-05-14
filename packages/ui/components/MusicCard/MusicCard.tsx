@@ -22,8 +22,8 @@ const MusicCard = ({
           <S.SoundCloudContainer showPlay={showPlay}>
             <iframe
               title={title}
-              width="500px"
-              height="500px"
+              width="100%"
+              height="100%"
               scrolling="no"
               frameBorder="no"
               allow="autoplay"
