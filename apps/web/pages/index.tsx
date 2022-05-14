@@ -1,4 +1,4 @@
-import { MusicCard } from 'ui/components';
+import { MusicCard } from '@ui/components';
 
 export default function Home() {
   return (

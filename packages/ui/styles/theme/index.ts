@@ -2,7 +2,7 @@ import { breakpoints, mediaQueries } from './mediaQueries';
 import zIndices from './zIndices';
 
 const theme = {
-  // default Breakpoints
+  //  default Breakpoints
   breakpoints,
   mediaQueries,
 
@@ -12,7 +12,7 @@ const theme = {
   fonts: {
     body: '"Barlow", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
     heading:
-      '"IntegralCF", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+      '"IntegralCF", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "NotoSans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
   },
 
   // default fontSizes
