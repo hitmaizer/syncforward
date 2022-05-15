@@ -25,6 +25,8 @@
     "components/**/*",
     "styles/**/*",
     "utils/**/*",
-    "next.config.js"
+    "**/*.tsx",
+    "**/*.ts",
+    "*.config.js"
   ]
 }
