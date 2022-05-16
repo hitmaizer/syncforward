@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import Image from 'next/image';
+
 import * as S from './MusicCard.styles';
 import { MusicCardProps } from './MusicCard.types';
 
@@ -32,7 +34,7 @@ const MusicCard = ({
           </S.SoundCloudContainer>
         )}
 
-        <img src={imgSrc} alt="card-img" />
+        <Image src={imgSrc!} alt="card-img" height="500px" width="500px" />
         <S.OpenSoundCloud>
           <S.Icon src={iconSrc} alt="" />
         </S.OpenSoundCloud>
@@ -44,7 +46,7 @@ const MusicCard = ({
 export default MusicCard;
 
 MusicCard.defaultProps = {
-  imgSrc: 'assets/imgs/placeholder.jpg',
+  imgSrc: '/assets/imgs/placeholder.jpg',
   soundcloudLink:
     'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1209898735&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
   iconSrc: 'assets/imgs/bx-play-circle.svg',

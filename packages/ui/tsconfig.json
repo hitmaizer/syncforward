@@ -1,10 +1,14 @@
 {
-  "extends": "tsconfig/base.json",
+  "extends": "tsconfig/nextjs.json",
   "compilerOptions": {
     "target": "es6",
     "module": "esnext",
     "jsx": "react-jsx",
-    "lib": ["es2015", "DOM"],
+    "lib": ["esnext.intl", "es2017.intl", "es2018.intl"],
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
       "@components": ["./components"],
@@ -20,6 +24,9 @@
     "icons/**/*",
     "components/**/*",
     "styles/**/*",
-    "utils/**/*"
+    "utils/**/*",
+    "**/*.tsx",
+    "**/*.ts",
+    "*.config.js"
   ]
 }

@@ -25,7 +25,7 @@
       "@onchain/*": ["./src/services/onchain/*"],
       "@styles": ["../../packages/ui/styles"],
       "@styles/*": ["../../packages/ui/styles/*"],
-      "@ui": ["../../packages/ui/"],
+      "@ui": ["../../packages/ui"],
       "@ui/*": ["../../packages/ui/*"]
     }
   },
