@@ -47,11 +47,12 @@ module.exports = {
 
         if (Array.isArray(formats) && formats.length > 0) {
           formats.forEach((format) => {
-            if (format) {
-              const { key, file } = format;
-              upload.service('provider').upload(file);
-              _.set(fileData, ['formats', key], file);
+            if (!format) {
+              return;
             }
+            const { key, file } = format;
+            upload.service('provider').upload(file);
+            _.set(fileData, ['formats', key], file);
           });
         }
 
