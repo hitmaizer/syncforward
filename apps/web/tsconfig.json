@@ -26,7 +26,8 @@
       "@styles": ["../../packages/ui/styles"],
       "@styles/*": ["../../packages/ui/styles/*"],
       "@ui": ["../../packages/ui"],
-      "@ui/*": ["../../packages/ui/*"]
+      "@ui/*": ["../../packages/ui/*"],
+      "@icons": ["../../packages/ui/icons"]
     }
   },
   "include": [".eslintrc.js", "**/*.tsx", "**/*.ts", "*.config.js"]

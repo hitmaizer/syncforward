@@ -14,7 +14,8 @@
       "@components": ["./components"],
       "@components/*": ["./components/*"],
       "@styles": ["./styles"],
-      "@styles/*": ["./styles/*"]
+      "@styles/*": ["./styles/*"],
+      "@icons": ["./icons"]
     }
   },
   "exclude": ["storybook-static", "icon-index-template.js", "icon-template.js"],
