@@ -24,6 +24,7 @@
     "@storybook/addon-interactions": "^6.4.20",
     "@storybook/addon-links": "^6.4.20",
     "@storybook/testing-library": "^0.0.9",
+    "@svgr/cli": "5.1.0",
     "@types/lodash.get": "^4.4.6",
     "@types/lodash.merge": "^4.6.6",
     "@types/node": "17.0.21",
@@ -41,7 +42,8 @@
   "scripts": {
     "lint": "eslint . --fix",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "icons": "svgr --template ./icon-template.js --index-template ./icon-index-template.js --ref --ext tsx --no-prettier --replace-attr-values \"#E5E1E1=currentColor\" --no-dimensions  ./icons/source --out-dir ./icons"
   },
   "repository": {
     "type": "git",
