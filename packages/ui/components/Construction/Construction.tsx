@@ -1,14 +1,6 @@
 import Box from '@uicomponents/Box';
 import Image from 'next/image';
 
-import {
-  SfAppleMusic,
-  SfBandcamp,
-  SfBeatport,
-  SfSoundcloud,
-  SfSpotify,
-} from '@icons';
-
 import Heading from '../Heading';
 import Stack from '../Stack';
 import * as S from './Construction.styles';
@@ -42,35 +34,35 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
             target="_blank"
             rel="noreferrer"
           >
-            <SfBandcamp size="md" color="white" />
+            <S.BandcampIcon size="md" color="gray" />
           </a>
           <a
             href="https://open.spotify.com/playlist/3OdzGZH6odwnQ47S7aHLZC?si=xh_emCWLT7aTdQ5N_7xyxQ&utm_source=copy-link"
             target="_blank"
             rel="noreferrer"
           >
-            <SfSpotify size="md" color="white" />
+            <S.SpotifyIcon size="md" color="gray" />
           </a>
           <a
             href="https://www.beatport.com/label/sync-forward/32440"
             target="_blank"
             rel="noreferrer"
           >
-            <SfBeatport size="md" color="white" />
+            <S.BeatportIcon size="md" color="gray" />
           </a>
           <a
             href="https://music.apple.com/us/album/backlash-single/1603469909"
             target="_blank"
             rel="noreferrer"
           >
-            <SfAppleMusic size="md" color="white" />
+            <S.ApplemusicIcon size="md" color="gray" />
           </a>
           <a
             href="https://soundcloud.com/syncforward"
             target="_blank"
             rel="noreferrer"
           >
-            <SfSoundcloud size="xs" color="white" />
+            <S.SoundcloudIcon size="xs" color="gray" />
           </a>
         </Stack>
         {children}
