@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <h1>hello mate!</h1>
-      <SfSync size="xl" color="black" />
+      <SfSync size="md" color="black" />
     </>
   );
 }
