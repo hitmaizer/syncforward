@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Text } from '@components';
+import { Text } from '@uicomponents';
 
 export default {
   title: 'Typography/Text',
