@@ -17,7 +17,7 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
         justifyContent="center"
         height="100%"
       >
-        <Box width="300px" height="100px" position="relative">
+        <Box width="225px" height="100px" position="relative">
           <a href="/">
             <Image src="/sync.svg" layout="fill" />
           </a>
@@ -65,6 +65,13 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
             rel="noreferrer"
           >
             <S.SoundcloudIcon size="xs" color="gray" />
+          </a>
+          <a
+            href="https://soundcloud.com/syncforward"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <S.YoutubeIcon size="xs" color="gray" />
           </a>
         </Stack>
         {children}
