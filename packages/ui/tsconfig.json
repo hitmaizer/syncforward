@@ -11,8 +11,8 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@components": ["./components"],
-      "@components/*": ["./components/*"],
+      "@uicomponents": ["./components"],
+      "@uicomponents/*": ["./components/*"],
       "@styles": ["./styles"],
       "@styles/*": ["./styles/*"],
       "@icons": ["./icons"]
