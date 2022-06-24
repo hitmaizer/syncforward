@@ -1589,10 +1589,10 @@
   dependencies:
     tslib "^2.0.1"
 
-"@fontsource/barlow@^4.5.6":
-  version "4.5.7"
-  resolved "https://registry.yarnpkg.com/@fontsource/barlow/-/barlow-4.5.7.tgz#2739217b258887002f07151f0476bddf1058fca7"
-  integrity sha512-1NliOxBjbipalO47kOv6ailiL80+BtO6bbyKtR/9KloOffxDTsPR9MhNjRlje+Y3PSk0XkW44qe8ZRDJ7jWsUA==
+"@fontsource/inter@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.11.tgz#3c45014821e8c82b247a291f1944dd2764a2d1ed"
+  integrity sha512-toizzQkfXL8YJcG/f8j3EYXYGQe4OxiDEItThSigvHU+cYNDw8HPp3wLYQX745hddsnHqOGCM4exitFSBOU8+w==
 
 "@formatjs/ecma402-abstract@1.9.3":
   version "1.9.3"

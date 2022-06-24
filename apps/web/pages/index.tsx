@@ -1,7 +1,9 @@
+import { Text } from '@ui';
+
 export default function Home() {
   return (
     <>
-      <h1>hello mate!</h1>
+      <Text>hello mate!</Text>
     </>
   );
 }
