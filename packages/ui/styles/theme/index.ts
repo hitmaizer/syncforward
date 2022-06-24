@@ -19,6 +19,7 @@ const theme = {
     white: '#fff',
     black: '#000',
     bg: '#050A18',
+    gray: '#777981',
   },
 
   // default fontSizes
