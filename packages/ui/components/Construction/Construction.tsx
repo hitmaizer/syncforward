@@ -18,7 +18,9 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
         height="100%"
       >
         <Box width="300px" height="100px" position="relative">
-          <Image src="/sync.svg" layout="fill" />
+          <a href="/">
+            <Image src="/sync.svg" layout="fill" />
+          </a>
         </Box>
         <Heading color="white" size="4xl">
           {text}
