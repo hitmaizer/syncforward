@@ -15,6 +15,12 @@ const theme = {
       '"IntegralCF", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "NotoSans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
   },
 
+  colors: {
+    white: '#fff',
+    black: '#000',
+    bg: '#050A18',
+  },
+
   // default fontSizes
   fontSizes: [13, 15, 18, 22, 26, 32, 44, 64],
 
