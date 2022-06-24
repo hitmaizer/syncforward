@@ -28,7 +28,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
           openGraph={{
             url: canonicalUrl,
             type: 'website',
-            site_name: 'Polkastarter',
+            site_name: 'Sync Forward',
           }}
           dangerouslySetAllPagesToNoIndex
           {...SEO}
