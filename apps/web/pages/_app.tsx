@@ -1,5 +1,6 @@
 import { FC, useState, useEffect } from 'react';
 
+import 'src/font-face.css';
 import SEO from '@config/next-seo';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
