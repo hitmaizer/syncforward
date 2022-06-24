@@ -1,10 +1,12 @@
+import Box from '@uicomponents/Box';
+import Image from 'next/image';
+
 import {
   SfAppleMusic,
   SfBandcamp,
   SfBeatport,
   SfSoundcloud,
   SfSpotify,
-  SfSync,
 } from '@icons';
 
 import Heading from '../Heading';
@@ -23,8 +25,12 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
         justifyContent="center"
         height="100%"
       >
-        <SfSync size="lg" color="white" />
-        <Heading color="white">{text}</Heading>
+        <Box width="300px" height="100px" position="relative">
+          <Image src="/sync.svg" layout="fill" />
+        </Box>
+        <Heading color="white" size="4xl">
+          {text}
+        </Heading>
         <Stack
           display="flex"
           alignItems="center"
@@ -39,7 +45,7 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
             <SfBandcamp size="md" color="white" />
           </a>
           <a
-            href="https://bandcamp.com/syncforward"
+            href="https://open.spotify.com/playlist/3OdzGZH6odwnQ47S7aHLZC?si=xh_emCWLT7aTdQ5N_7xyxQ&utm_source=copy-link"
             target="_blank"
             rel="noreferrer"
           >
@@ -53,7 +59,7 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
             <SfBeatport size="md" color="white" />
           </a>
           <a
-            href="https://bandcamp.com/syncforward"
+            href="https://music.apple.com/us/album/backlash-single/1603469909"
             target="_blank"
             rel="noreferrer"
           >
