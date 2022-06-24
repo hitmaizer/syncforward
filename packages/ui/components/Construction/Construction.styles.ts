@@ -6,6 +6,7 @@ import {
   SfSoundcloud,
   SfBandcamp,
   SfSpotify,
+  SfYoutube,
 } from '@icons';
 
 export const Construction = styled.div`
@@ -43,6 +44,13 @@ export const ApplemusicIcon = styled(SfAppleMusic)`
 `;
 
 export const SoundcloudIcon = styled(SfSoundcloud)`
+  transition: color 300ms ease;
+  &:hover {
+    color: ${({ theme }) => theme.colors.white};
+  }
+`;
+
+export const YoutubeIcon = styled(SfYoutube)`
   transition: color 300ms ease;
   &:hover {
     color: ${({ theme }) => theme.colors.white};
