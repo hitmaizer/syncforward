@@ -1,9 +1,10 @@
-import { Text } from '@ui';
+import { SfSync } from '@icons';
 
 export default function Home() {
   return (
     <>
-      <Text>hello mate!</Text>
+      <h1>hello mate!</h1>
+      <SfSync size="md" color="black" />
     </>
   );
 }
