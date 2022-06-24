@@ -1,9 +1,9 @@
 export default {
-  titleTemplate: '%s | Polkastarter',
-  defaultTitle: 'The fully decentralized protocol for launching new ideas',
+  titleTemplate: '%s | Sync Forward',
+  defaultTitle: 'Sync Forward',
   twitter: {
-    handle: '@polkastarter',
-    site: '@polkastarter',
+    handle: '@syncforward',
+    site: '@syncforward',
     cardType: 'summary_large_image',
   },
 };
