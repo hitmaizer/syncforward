@@ -1,6 +1,6 @@
 import 'styled-components';
 
-import theme from './theme';
+import theme from './theme/theme';
 
 export type ColorMode = 'light' | 'dark' | 'system';
 
@@ -38,5 +38,3 @@ export type WrapperElement =
   | 'div';
 
 export type ThemeType = typeof theme;
-
-declare module 'styled-components' {}
