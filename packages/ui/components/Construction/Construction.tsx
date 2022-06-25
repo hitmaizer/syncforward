@@ -18,16 +18,10 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
           <S.SyncLogo />
         </a>
 
-        <Heading color="white" size="4xl">
+        <Heading color="white" size="4xl" textAlign="center">
           {text}
         </Heading>
-        <Stack
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          gridGap="60px"
-          mt="16px"
-        >
+        <S.Stores display="flex" mt="16px">
           <a
             href="https://syncforward.bandcamp.com/"
             target="_blank"
@@ -70,7 +64,7 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
           >
             <S.YoutubeLogo />
           </a>
-        </Stack>
+        </S.Stores>
         {children}
       </Stack>
     </S.Construction>
