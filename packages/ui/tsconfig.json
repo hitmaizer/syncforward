@@ -15,7 +15,8 @@
       "@uicomponents/*": ["./components/*"],
       "@styles": ["./styles"],
       "@styles/*": ["./styles/*"],
-      "@icons": ["./icons"]
+      "@icons": ["./icons"],
+      "@logos": ["./logos"]
     }
   },
   "exclude": ["storybook-static", "icon-index-template.js", "icon-template.js"],
