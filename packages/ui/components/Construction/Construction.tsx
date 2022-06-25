@@ -1,6 +1,3 @@
-import Box from '@uicomponents/Box';
-import Image from 'next/image';
-
 import Heading from '../Heading';
 import Stack from '../Stack';
 import * as S from './Construction.styles';
@@ -12,16 +9,15 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
       <Stack
         display="flex"
         vertical
-        gridGap="16px"
+        gridGap="32px"
         alignItems="center"
         justifyContent="center"
         height="100%"
       >
-        <Box width="225px" height="100px" position="relative">
-          <a href="/">
-            <Image src="/sync.svg" layout="fill" />
-          </a>
-        </Box>
+        <a href="/">
+          <S.SyncLogo />
+        </a>
+
         <Heading color="white" size="4xl">
           {text}
         </Heading>
@@ -30,48 +26,49 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
           alignItems="center"
           justifyContent="center"
           gridGap="60px"
+          mt="16px"
         >
           <a
             href="https://syncforward.bandcamp.com/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer nofollow"
           >
-            <S.BandcampIcon size="md" color="gray" />
+            <S.BandcampLogo />
           </a>
           <a
             href="https://open.spotify.com/playlist/3OdzGZH6odwnQ47S7aHLZC?si=xh_emCWLT7aTdQ5N_7xyxQ&utm_source=copy-link"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer nofollow"
           >
-            <S.SpotifyIcon size="md" color="gray" />
+            <S.SpotifyLogo />
           </a>
           <a
             href="https://www.beatport.com/label/sync-forward/32440"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer nofollow"
           >
-            <S.BeatportIcon size="md" color="gray" />
+            <S.BeatportLogo />
           </a>
           <a
             href="https://music.apple.com/us/album/backlash-single/1603469909"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer nofollow"
           >
-            <S.ApplemusicIcon size="md" color="gray" />
+            <S.ApplemusicLogo />
           </a>
           <a
             href="https://soundcloud.com/syncforward"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer nofollow"
           >
-            <S.SoundcloudIcon size="xs" color="gray" />
+            <S.SoundcloudLogo />
           </a>
           <a
-            href="https://soundcloud.com/syncforward"
+            href="https://www.youtube.com/c/SyncForward"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer nofollow"
           >
-            <S.YoutubeIcon size="xs" color="gray" />
+            <S.YoutubeLogo />
           </a>
         </Stack>
         {children}

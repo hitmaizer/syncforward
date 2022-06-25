@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 import {
-  SfAppleMusic,
-  SfBeatport,
-  SfSoundcloud,
-  SfBandcamp,
-  SfSpotify,
-  SfYoutube,
-} from '@icons';
+  AppleMusic,
+  Bandcamp,
+  Beatport,
+  Soundcloud,
+  Spotify,
+  Sync,
+  Youtube,
+} from '../../logos/Logos';
 
 export const Construction = styled.div`
   width: 100vw;
@@ -15,44 +16,61 @@ export const Construction = styled.div`
   background-color: ${({ theme }) => theme.colors.bg};
 `;
 
-export const BandcampIcon = styled(SfBandcamp)`
+export const BandcampLogo = styled(Bandcamp)`
   transition: color 300ms ease;
+  color: ${({ theme }) => theme.colors.gray};
+  width: 200px;
   &:hover {
     color: ${({ theme }) => theme.colors.white};
   }
 `;
 
-export const SpotifyIcon = styled(SfSpotify)`
+export const SpotifyLogo = styled(Spotify)`
   transition: color 300ms ease;
+  color: ${({ theme }) => theme.colors.gray};
+  width: 150px;
   &:hover {
     color: ${({ theme }) => theme.colors.white};
   }
 `;
 
-export const BeatportIcon = styled(SfBeatport)`
+export const BeatportLogo = styled(Beatport)`
   transition: color 300ms ease;
+  color: ${({ theme }) => theme.colors.gray};
+  width: 170px;
   &:hover {
     color: ${({ theme }) => theme.colors.white};
   }
 `;
 
-export const ApplemusicIcon = styled(SfAppleMusic)`
-  transition: color 300ms ease;
+export const ApplemusicLogo = styled(AppleMusic)`
+  transition: color 100ms ease;
+  color: ${({ theme }) => theme.colors.gray};
+  width: 150px;
   &:hover {
     color: ${({ theme }) => theme.colors.white};
   }
 `;
 
-export const SoundcloudIcon = styled(SfSoundcloud)`
+export const SoundcloudLogo = styled(Soundcloud)`
   transition: color 300ms ease;
+  color: ${({ theme }) => theme.colors.gray};
+  width: 100px;
   &:hover {
     color: ${({ theme }) => theme.colors.white};
   }
 `;
 
-export const YoutubeIcon = styled(SfYoutube)`
+export const YoutubeLogo = styled(Youtube)`
   transition: color 300ms ease;
+  color: ${({ theme }) => theme.colors.gray};
+  width: 150px;
   &:hover {
     color: ${({ theme }) => theme.colors.white};
   }
+`;
+
+export const SyncLogo = styled(Sync)`
+  color: ${({ theme }) => theme.colors.white};
+  width: 225px;
 `;
