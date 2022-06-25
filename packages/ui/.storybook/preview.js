@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from '@styles/globalStyles';
-import theme from '@styles/theme/';
+import { theme } from '@styles/theme/';
 import '../styles/fonts';
 
 import * as NextImage from 'next/image';
