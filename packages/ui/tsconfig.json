@@ -28,6 +28,7 @@
     "utils/**/*",
     "**/*.tsx",
     "**/*.ts",
-    "*.config.js"
+    "*.config.js",
+    "logos/**/*"
   ]
 }
