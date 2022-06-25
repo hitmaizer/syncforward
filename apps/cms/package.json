@@ -9,6 +9,7 @@
     "@strapi/plugin-users-permissions": "4.1.7",
     "@strapi/provider-upload-cloudinary": "^4.1.7",
     "@strapi/strapi": "4.1.7",
+    "@types/react": "17.0.39",
     "blurhash": "^1.1.5",
     "lodash": "^4.17.21",
     "lodash.set": "^4.3.2",
@@ -27,6 +28,9 @@
     "strapi": "strapi"
   },
   "devDependencies": {},
+  "resolutions": {
+    "@types/react": "^17.0.39"
+  },
   "author": {
     "name": "Sync Forward"
   },
