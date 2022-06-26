@@ -3,15 +3,7 @@ import { flexbox, gridGap, layout, space } from 'styled-system';
 
 import { mediaQueries } from '@styles';
 
-import {
-  AppleMusic,
-  Bandcamp,
-  Beatport,
-  Soundcloud,
-  Spotify,
-  Sync,
-  Youtube,
-} from '../../logos/Logos';
+import { Sync } from '../../logos/Logos';
 import { ConstructionProps } from './Construction.types';
 
 export const Content = styled.div<ConstructionProps>`
@@ -60,78 +52,6 @@ export const Stores = styled.div<ConstructionProps>`
   }
 `;
 
-export const BandcampLogo = styled(Bandcamp)`
-  transition: color 300ms ease;
-  color: ${({ theme }) => theme.colors.gray};
-  width: 100px;
-  &:hover {
-    color: ${({ theme }) => theme.colors.white};
-  }
-  ${mediaQueries.lg} {
-    width: 200px;
-  }
-`;
-
-export const SpotifyLogo = styled(Spotify)`
-  transition: color 300ms ease;
-  color: ${({ theme }) => theme.colors.gray};
-  width: 100px;
-  &:hover {
-    color: ${({ theme }) => theme.colors.white};
-  }
-  ${mediaQueries.lg} {
-    width: 150px;
-  }
-`;
-
-export const BeatportLogo = styled(Beatport)`
-  transition: color 300ms ease;
-  color: ${({ theme }) => theme.colors.gray};
-  width: 100px;
-  &:hover {
-    color: ${({ theme }) => theme.colors.white};
-  }
-  ${mediaQueries.lg} {
-    width: 150px;
-  }
-`;
-
-export const ApplemusicLogo = styled(AppleMusic)`
-  transition: color 100ms ease;
-  color: ${({ theme }) => theme.colors.gray};
-  width: 100px;
-  &:hover {
-    color: ${({ theme }) => theme.colors.white};
-  }
-  ${mediaQueries.lg} {
-    width: 150px;
-  }
-`;
-
-export const SoundcloudLogo = styled(Soundcloud)`
-  transition: color 300ms ease;
-  color: ${({ theme }) => theme.colors.gray};
-  width: 75px;
-  &:hover {
-    color: ${({ theme }) => theme.colors.white};
-  }
-  ${mediaQueries.lg} {
-    width: 100px;
-  }
-`;
-
-export const YoutubeLogo = styled(Youtube)`
-  transition: color 300ms ease;
-  color: ${({ theme }) => theme.colors.gray};
-  width: 100px;
-  &:hover {
-    color: ${({ theme }) => theme.colors.white};
-  }
-  ${mediaQueries.lg} {
-    width: 150px;
-  }
-`;
-
 export const SyncLogo = styled(Sync)`
   color: ${({ theme }) => theme.colors.white};
   width: 150px;
@@ -155,4 +75,21 @@ export const Header = styled.div<ConstructionProps>`
   width: 100%;
   padding: 48px;
   justify-content: space-between;
+  position: absolute;
+  z-index: 10;
+  background-color: ${({ theme }) => theme.colors.bg};
+  backdrop-filter: saturate(130%) blur(5px);
+  // border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
+  ${mediaQueries.lg} {
+    background-color: transparent;
+    border: none;
+    backdrop-filter: none;
+  }
+`;
+
+export const HeadingContainer = styled.div`
+  display: none;
+  ${mediaQueries.lg} {
+    display: block;
+  }
 `;
