@@ -83,6 +83,6 @@ export const HamburgerContent = styled.div<HamburgerProps>`
     open === true &&
     css`
       overflow-y: hidden;
-      transform: translateY(8%);
+      transform: translateY(67.5px);
     `}
 `;
