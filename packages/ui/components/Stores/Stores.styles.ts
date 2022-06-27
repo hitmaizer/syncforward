@@ -104,7 +104,7 @@ export const BeatportLogo = styled(Beatport)<StoresProps>`
 `;
 
 export const ApplemusicLogo = styled(AppleMusic)<StoresProps>`
-  transition: color 100ms ease;
+  transition: color 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.8;
   width: 100px;
