@@ -47,10 +47,11 @@ export const Stores = styled.div<StoresProps>`
 
 export const BandcampLogo = styled(Bandcamp)<StoresProps>`
   transition: color 300ms ease;
-  color: ${({ theme }) => theme.colors.gray};
+  color: ${({ theme }) => theme.colors.white};
+  opacity: 0.8;
   width: 100px;
   &:hover {
-    color: ${({ theme }) => theme.colors.white};
+    opacity: 1;
   }
   ${mediaQueries.lg} {
     width: 200px;
@@ -64,10 +65,11 @@ export const BandcampLogo = styled(Bandcamp)<StoresProps>`
 
 export const SpotifyLogo = styled(Spotify)<StoresProps>`
   transition: color 300ms ease;
-  color: ${({ theme }) => theme.colors.gray};
+  color: ${({ theme }) => theme.colors.white};
+  opacity: 0.8;
   width: 100px;
   &:hover {
-    color: ${({ theme }) => theme.colors.white};
+    opacity: 1;
   }
 
   ${({ vertical }) =>
@@ -83,10 +85,11 @@ export const SpotifyLogo = styled(Spotify)<StoresProps>`
 
 export const BeatportLogo = styled(Beatport)<StoresProps>`
   transition: color 300ms ease;
-  color: ${({ theme }) => theme.colors.gray};
+  color: ${({ theme }) => theme.colors.white};
+  opacity: 0.8;
   width: 100px;
   &:hover {
-    color: ${({ theme }) => theme.colors.white};
+    opacity: 1;
   }
 
   ${({ vertical }) =>
@@ -102,11 +105,12 @@ export const BeatportLogo = styled(Beatport)<StoresProps>`
 
 export const ApplemusicLogo = styled(AppleMusic)<StoresProps>`
   transition: color 100ms ease;
-  color: ${({ theme }) => theme.colors.gray};
+  color: ${({ theme }) => theme.colors.white};
+  opacity: 0.8;
   width: 100px;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.white};
+    opacity: 1;
   }
 
   ${({ vertical }) =>
@@ -122,11 +126,12 @@ export const ApplemusicLogo = styled(AppleMusic)<StoresProps>`
 
 export const SoundcloudLogo = styled(Soundcloud)<StoresProps>`
   transition: color 300ms ease;
-  color: ${({ theme }) => theme.colors.gray};
+  color: ${({ theme }) => theme.colors.white};
+  opacity: 0.8;
   width: 75px;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.white};
+    opacity: 1;
   }
 
   ${({ vertical }) =>
@@ -142,10 +147,11 @@ export const SoundcloudLogo = styled(Soundcloud)<StoresProps>`
 
 export const YoutubeLogo = styled(Youtube)<StoresProps>`
   transition: color 300ms ease;
-  color: ${({ theme }) => theme.colors.gray};
+  color: ${({ theme }) => theme.colors.white};
+  opacity: 0.8;
   width: 100px;
   &:hover {
-    color: ${({ theme }) => theme.colors.white};
+    opacity: 1;
   }
 
   ${({ vertical }) =>
