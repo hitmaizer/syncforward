@@ -27,7 +27,7 @@ export const Stores = styled.div<StoresProps>`
     vertical &&
     css`
       flex-direction: column;
-      gap: 64px;
+      gap: 40px;
     `};
 
   ${({ noMob }) =>
@@ -58,7 +58,7 @@ export const BandcampLogo = styled(Bandcamp)<StoresProps>`
   ${({ vertical }) =>
     vertical &&
     css`
-      width: 200px;
+      width: 150px;
     `};
 `;
 
@@ -73,7 +73,7 @@ export const SpotifyLogo = styled(Spotify)<StoresProps>`
   ${({ vertical }) =>
     vertical &&
     css`
-      width: 150px;
+      width: 100px;
     `};
 
   ${mediaQueries.lg} {
@@ -92,7 +92,7 @@ export const BeatportLogo = styled(Beatport)<StoresProps>`
   ${({ vertical }) =>
     vertical &&
     css`
-      width: 150px;
+      width: 125px;
     `};
 
   ${mediaQueries.lg} {
@@ -112,7 +112,7 @@ export const ApplemusicLogo = styled(AppleMusic)<StoresProps>`
   ${({ vertical }) =>
     vertical &&
     css`
-      width: 150px;
+      width: 125px;
     `};
 
   ${mediaQueries.lg} {
@@ -132,7 +132,7 @@ export const SoundcloudLogo = styled(Soundcloud)<StoresProps>`
   ${({ vertical }) =>
     vertical &&
     css`
-      width: 100px;
+      width: 75px;
     `};
 
   ${mediaQueries.lg} {
@@ -151,7 +151,7 @@ export const YoutubeLogo = styled(Youtube)<StoresProps>`
   ${({ vertical }) =>
     vertical &&
     css`
-      width: 150px;
+      width: 100px;
     `};
 
   ${mediaQueries.lg} {
