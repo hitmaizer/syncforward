@@ -9,6 +9,10 @@ export const bounceAlpha = keyframes`
 `;
 
 export const Spinner = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
   width: 100vw;
   height: 100vh;
   display: flex;
