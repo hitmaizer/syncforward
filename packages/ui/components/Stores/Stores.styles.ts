@@ -46,7 +46,7 @@ export const Stores = styled.div<StoresProps>`
 `;
 
 export const BandcampLogo = styled(Bandcamp)<StoresProps>`
-  transition: color 300ms ease;
+  transition: opacity 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.8;
   width: 100px;
@@ -64,7 +64,7 @@ export const BandcampLogo = styled(Bandcamp)<StoresProps>`
 `;
 
 export const SpotifyLogo = styled(Spotify)<StoresProps>`
-  transition: color 300ms ease;
+  transition: opacity 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.8;
   width: 100px;
@@ -84,7 +84,7 @@ export const SpotifyLogo = styled(Spotify)<StoresProps>`
 `;
 
 export const BeatportLogo = styled(Beatport)<StoresProps>`
-  transition: color 300ms ease;
+  transition: opacity 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.8;
   width: 100px;
@@ -104,7 +104,7 @@ export const BeatportLogo = styled(Beatport)<StoresProps>`
 `;
 
 export const ApplemusicLogo = styled(AppleMusic)<StoresProps>`
-  transition: color 300ms ease;
+  transition: opacity 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.8;
   width: 100px;
@@ -125,7 +125,7 @@ export const ApplemusicLogo = styled(AppleMusic)<StoresProps>`
 `;
 
 export const SoundcloudLogo = styled(Soundcloud)<StoresProps>`
-  transition: color 300ms ease;
+  transition: opacity 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.8;
   width: 75px;
@@ -146,7 +146,7 @@ export const SoundcloudLogo = styled(Soundcloud)<StoresProps>`
 `;
 
 export const YoutubeLogo = styled(Youtube)<StoresProps>`
-  transition: color 300ms ease;
+  transition: opacity 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.8;
   width: 100px;
