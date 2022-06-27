@@ -26,7 +26,8 @@ export const Stores = styled.div<StoresProps>`
   ${({ vertical }) =>
     vertical &&
     css`
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 64px;
     `};
 
   ${({ noMob }) =>
@@ -44,7 +45,7 @@ export const Stores = styled.div<StoresProps>`
   }
 `;
 
-export const BandcampLogo = styled(Bandcamp)`
+export const BandcampLogo = styled(Bandcamp)<StoresProps>`
   transition: color 300ms ease;
   color: ${({ theme }) => theme.colors.gray};
   width: 100px;
@@ -54,63 +55,105 @@ export const BandcampLogo = styled(Bandcamp)`
   ${mediaQueries.lg} {
     width: 200px;
   }
+  ${({ vertical }) =>
+    vertical &&
+    css`
+      width: 200px;
+    `};
 `;
 
-export const SpotifyLogo = styled(Spotify)`
+export const SpotifyLogo = styled(Spotify)<StoresProps>`
   transition: color 300ms ease;
   color: ${({ theme }) => theme.colors.gray};
   width: 100px;
   &:hover {
     color: ${({ theme }) => theme.colors.white};
   }
+
+  ${({ vertical }) =>
+    vertical &&
+    css`
+      width: 150px;
+    `};
+
   ${mediaQueries.lg} {
     width: 150px;
   }
 `;
 
-export const BeatportLogo = styled(Beatport)`
+export const BeatportLogo = styled(Beatport)<StoresProps>`
   transition: color 300ms ease;
   color: ${({ theme }) => theme.colors.gray};
   width: 100px;
   &:hover {
     color: ${({ theme }) => theme.colors.white};
   }
+
+  ${({ vertical }) =>
+    vertical &&
+    css`
+      width: 150px;
+    `};
+
   ${mediaQueries.lg} {
     width: 150px;
   }
 `;
 
-export const ApplemusicLogo = styled(AppleMusic)`
+export const ApplemusicLogo = styled(AppleMusic)<StoresProps>`
   transition: color 100ms ease;
   color: ${({ theme }) => theme.colors.gray};
   width: 100px;
+
   &:hover {
     color: ${({ theme }) => theme.colors.white};
   }
+
+  ${({ vertical }) =>
+    vertical &&
+    css`
+      width: 150px;
+    `};
+
   ${mediaQueries.lg} {
     width: 150px;
   }
 `;
 
-export const SoundcloudLogo = styled(Soundcloud)`
+export const SoundcloudLogo = styled(Soundcloud)<StoresProps>`
   transition: color 300ms ease;
   color: ${({ theme }) => theme.colors.gray};
   width: 75px;
+
   &:hover {
     color: ${({ theme }) => theme.colors.white};
   }
+
+  ${({ vertical }) =>
+    vertical &&
+    css`
+      width: 100px;
+    `};
+
   ${mediaQueries.lg} {
     width: 100px;
   }
 `;
 
-export const YoutubeLogo = styled(Youtube)`
+export const YoutubeLogo = styled(Youtube)<StoresProps>`
   transition: color 300ms ease;
   color: ${({ theme }) => theme.colors.gray};
   width: 100px;
   &:hover {
     color: ${({ theme }) => theme.colors.white};
   }
+
+  ${({ vertical }) =>
+    vertical &&
+    css`
+      width: 150px;
+    `};
+
   ${mediaQueries.lg} {
     width: 150px;
   }
