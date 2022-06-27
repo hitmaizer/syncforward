@@ -79,12 +79,14 @@ export const Header = styled.div<ConstructionProps>`
   z-index: 10;
   background-color: ${({ theme }) => theme.colors.bg};
   backdrop-filter: saturate(130%) blur(5px);
-  // border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.white};
+  min-height: 100px;
   ${mediaQueries.lg} {
     background-color: transparent;
     border: none;
     backdrop-filter: none;
     padding: 48px;
+    border-bottom: none;
   }
 `;
 
