@@ -73,7 +73,7 @@ export const Header = styled.div<ConstructionProps>`
   ${space}
   ${gridGap}
   width: 100%;
-  padding: 48px;
+  padding: 32px;
   justify-content: space-between;
   position: absolute;
   z-index: 10;
@@ -84,6 +84,7 @@ export const Header = styled.div<ConstructionProps>`
     background-color: transparent;
     border: none;
     backdrop-filter: none;
+    padding: 48px;
   }
 `;
 
