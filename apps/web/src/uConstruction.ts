@@ -5,7 +5,6 @@ export const phrases: string[] = [
   'under construction',
   "we'll be right back",
   'we are working on it',
-  'loading, please wait',
   "you're still here?",
   'this will take a while',
   'just grab a magazine or something',
