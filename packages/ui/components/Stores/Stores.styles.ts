@@ -21,6 +21,7 @@ export const Stores = styled.div<StoresProps>`
   align-items: center;
   justify-content: center;
   gap: 32px;
+  width: 100%;
 
   ${({ vertical }) =>
     vertical &&
