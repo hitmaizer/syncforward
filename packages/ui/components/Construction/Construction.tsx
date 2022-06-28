@@ -8,7 +8,12 @@ import Heading from '../Heading';
 import * as S from './Construction.styles';
 import { ConstructionProps } from './Construction.types';
 
-const Construction = ({ children, text, ...rest }: ConstructionProps) => {
+const Construction = ({
+  children,
+  text,
+  videoSrc,
+  ...rest
+}: ConstructionProps) => {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -22,7 +27,7 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
       {loading && <Spinner />}
       <S.Construction {...rest}>
         <S.VideoBg loop muted autoPlay>
-          <source src="/neon-30.mp4" type="video/mp4" />
+          <source src={videoSrc} type="video/mp4" />
         </S.VideoBg>
         <S.Content display="flex" gridGap="32px" height="100%">
           <S.Header display="flex" width="100%">
@@ -54,3 +59,8 @@ const Construction = ({ children, text, ...rest }: ConstructionProps) => {
 };
 
 export default Construction;
+
+Construction.defaultProps = {
+  text: 'Text renders here',
+  videoSrc: '/assets/videos/neon-30.mp4',
+};
