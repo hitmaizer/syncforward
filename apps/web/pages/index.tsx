@@ -1,15 +1,18 @@
-import styled from 'styled-components';
-import { Stack, Text, Heading } from 'ui/components';
+import { useEffect, useState } from 'react';
 
-const Cenas = styled(Text).attrs({})``;
+import { phrases } from 'src/uConstruction';
+
+import { Construction } from '@uicomponents';
 
 export default function Home() {
+  const [sentence, setSentence] = useState<string>('');
+  useEffect(() => {
+    setSentence(phrases[Math.floor(Math.random() * phrases.length)]);
+  }, []);
+
   return (
-    <Stack vertical>
-      <Heading>Mau criado</Heading>
-      <Cenas>My page</Cenas>
-      <Cenas>My page</Cenas>
-      <Cenas>My page</Cenas>
-    </Stack>
+    <>
+      <Construction text={sentence} videoSrc="/neon-30.mp4" />
+    </>
   );
 }

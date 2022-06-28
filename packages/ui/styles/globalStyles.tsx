@@ -1,17 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
-const GlobalStyle = createGlobalStyle`
+import { ThemeType } from './types';
+
+const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
     ${reset}
 
-    [data-color-scheme="dark"], .theme--dark {
-      color-scheme: dark;
-    }
-
-    [data-color-scheme="light"], .theme--light {
-      color-scheme: light;
-    }
-
+    
     body {
       font-family: ${({ theme }) => theme.fonts.body};
       overflow: hidden;

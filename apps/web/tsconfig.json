@@ -24,7 +24,10 @@
       "@offchain/*": ["./src/services/offchain/*"],
       "@onchain/*": ["./src/services/onchain/*"],
       "@styles": ["../../packages/ui/styles"],
-      "@styles/*": ["../../packages/ui/styles/*"]
+      "@styles/*": ["../../packages/ui/styles/*"],
+      "@uicomponents": ["../../packages/ui/components"],
+      "@uicomponents/*": ["../../packages/ui/components/*"],
+      "@icons": ["../../packages/ui/icons"]
     }
   },
   "include": [".eslintrc.js", "**/*.tsx", "**/*.ts", "*.config.js"]

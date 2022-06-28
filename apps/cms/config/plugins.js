@@ -2,13 +2,6 @@
 module.exports = ({ env }) => ({
   upload: {
     config: {
-      breakpoints: {
-        xlarge: 2400,
-        large: 1920,
-        medium: 1000,
-        small: 500,
-        xsmall: 64,
-      },
       provider: 'cloudinary',
       providerOptions: {
         cloud_name: env('CLOUDINARY_NAME'),
@@ -37,16 +30,10 @@ module.exports = ({ env }) => ({
   seo: {
     enabled: true,
   },
-  graphql: {
+  placeholder: {
+    enabled: true,
     config: {
-      endpoint: '/graphql',
-      shadowCRUD: true,
-      playgroundAlways: false,
-      depthLimit: 7,
-      amountLimit: 100,
-      apolloServer: {
-        tracing: false,
-      },
+      size: 10,
     },
   },
 });

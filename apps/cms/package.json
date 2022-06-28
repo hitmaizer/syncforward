@@ -4,12 +4,12 @@
   "version": "0.1.0",
   "description": "Sync Forward CMS",
   "dependencies": {
-    "@strapi/plugin-graphql": "^4.0.0",
-    "@strapi/plugin-i18n": "4.1.7",
+    "@strapi/plugin-i18n": "4.1.11",
     "@strapi/plugin-seo": "^1.7.2",
-    "@strapi/plugin-users-permissions": "4.1.7",
-    "@strapi/provider-upload-cloudinary": "^4.1.7",
-    "@strapi/strapi": "4.1.7",
+    "@strapi/plugin-users-permissions": "4.1.11",
+    "@strapi/provider-upload-cloudinary": "^4.1.11",
+    "@strapi/strapi": "4.1.11",
+    "@types/react": "17.0.39",
     "blurhash": "^1.1.5",
     "lodash": "^4.17.21",
     "lodash.set": "^4.3.2",
@@ -17,7 +17,8 @@
     "pg": "^8.7.3",
     "pg-connection-string": "^2.5.0",
     "plaiceholder": "^2.3.0",
-    "sharp": "^0.30.3",
+    "sharp": "^0.30.7",
+    "strapi-plugin-placeholder": "^4.1.7",
     "strapi-plugin-react-editorjs": "^2.0.0",
     "strapi-plugin-transformer": "^2.0.1"
   },
@@ -28,6 +29,9 @@
     "strapi": "strapi"
   },
   "devDependencies": {},
+  "resolutions": {
+    "@types/react": "^17.0.39"
+  },
   "author": {
     "name": "Sync Forward"
   },

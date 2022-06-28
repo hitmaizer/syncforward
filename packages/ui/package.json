@@ -7,14 +7,17 @@
   "author": "José Alves, Henrique Caiano",
   "license": "MIT",
   "dependencies": {
-    "@fontsource/barlow": "^4.5.6",
+    "@fontsource/inter": "^4.5.11",
     "@storybook/react": "^6.4.20",
+    "@styled-icons/boxicons-regular": "^10.38.0",
+    "@types/react": "17.0.39",
+    "next": "12.1.6",
     "polished": "^4.1.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "styled-components": "^5.3.5",
     "styled-reset": "^4.3.4",
-    "styled-system": "^5.1.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
@@ -23,6 +26,7 @@
     "@storybook/addon-interactions": "^6.4.20",
     "@storybook/addon-links": "^6.4.20",
     "@storybook/testing-library": "^0.0.9",
+    "@svgr/cli": "5.1.0",
     "@types/lodash.get": "^4.4.6",
     "@types/lodash.merge": "^4.6.6",
     "@types/node": "17.0.21",
@@ -37,10 +41,14 @@
     "tsconfig-paths-webpack-plugin": "^3.5.2",
     "typescript": "^4.6.3"
   },
+  "resolutions": {
+    "@types/react": "^17.0.39"
+  },
   "scripts": {
     "lint": "eslint . --fix",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "icons": "svgr --template ./icon-template.js --index-template ./icon-index-template.js --ref --ext tsx --no-prettier --replace-attr-values \"#E5E1E1=currentColor\" --no-dimensions  ./icons/source --out-dir ./icons"
   },
   "repository": {
     "type": "git",

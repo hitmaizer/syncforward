@@ -1,5 +1,6 @@
 import { FC, useState, useEffect } from 'react';
 
+import 'src/font-face.css';
 import SEO from '@config/next-seo';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
@@ -7,7 +8,7 @@ import { useRouter } from 'next/router';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from 'ui/styles';
 import '@config/fontsource';
-import theme from 'ui/styles/theme';
+import { theme } from 'ui/styles/theme';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   const [mounted, setMounted] = useState(false);
@@ -28,7 +29,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
           openGraph={{
             url: canonicalUrl,
             type: 'website',
-            site_name: 'Polkastarter',
+            site_name: 'Sync Forward',
           }}
           dangerouslySetAllPagesToNoIndex
           {...SEO}
