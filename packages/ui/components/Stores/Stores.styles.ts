@@ -49,17 +49,21 @@ export const BandcampLogo = styled(Bandcamp)<StoresProps>`
   transition: opacity 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.5;
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
+
   &:hover {
     opacity: 1;
   }
+
   ${mediaQueries.lg} {
-    width: 200px;
+    max-width: 200px;
   }
+
   ${({ vertical }) =>
     vertical &&
     css`
-      width: 150px;
+      max-width: 150px;
     `};
 `;
 
@@ -67,7 +71,9 @@ export const SpotifyLogo = styled(Spotify)<StoresProps>`
   transition: opacity 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.5;
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
+
   &:hover {
     opacity: 1;
   }
@@ -75,11 +81,11 @@ export const SpotifyLogo = styled(Spotify)<StoresProps>`
   ${({ vertical }) =>
     vertical &&
     css`
-      width: 100px;
+      max-width: 100px;
     `};
 
   ${mediaQueries.lg} {
-    width: 150px;
+    max-width: 150px;
   }
 `;
 
@@ -87,7 +93,9 @@ export const BeatportLogo = styled(Beatport)<StoresProps>`
   transition: opacity 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.5;
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
+
   &:hover {
     opacity: 1;
   }
@@ -95,11 +103,11 @@ export const BeatportLogo = styled(Beatport)<StoresProps>`
   ${({ vertical }) =>
     vertical &&
     css`
-      width: 125px;
+      max-width: 125px;
     `};
 
   ${mediaQueries.lg} {
-    width: 150px;
+    max-width: 150px;
   }
 `;
 
@@ -107,7 +115,8 @@ export const ApplemusicLogo = styled(AppleMusic)<StoresProps>`
   transition: opacity 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.5;
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
 
   &:hover {
     opacity: 1;
@@ -116,11 +125,11 @@ export const ApplemusicLogo = styled(AppleMusic)<StoresProps>`
   ${({ vertical }) =>
     vertical &&
     css`
-      width: 125px;
+      max-width: 125px;
     `};
 
   ${mediaQueries.lg} {
-    width: 150px;
+    max-width: 150px;
   }
 `;
 
@@ -128,7 +137,8 @@ export const SoundcloudLogo = styled(Soundcloud)<StoresProps>`
   transition: opacity 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.5;
-  width: 75px;
+  max-width: 75px;
+  width: 100%;
 
   &:hover {
     opacity: 1;
@@ -137,11 +147,11 @@ export const SoundcloudLogo = styled(Soundcloud)<StoresProps>`
   ${({ vertical }) =>
     vertical &&
     css`
-      width: 75px;
+      max-width: 75px;
     `};
 
   ${mediaQueries.lg} {
-    width: 100px;
+    max-width: 100px;
   }
 `;
 
@@ -149,7 +159,9 @@ export const YoutubeLogo = styled(Youtube)<StoresProps>`
   transition: opacity 300ms ease;
   color: ${({ theme }) => theme.colors.white};
   opacity: 0.5;
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
+
   &:hover {
     opacity: 1;
   }
@@ -157,10 +169,10 @@ export const YoutubeLogo = styled(Youtube)<StoresProps>`
   ${({ vertical }) =>
     vertical &&
     css`
-      width: 100px;
+      max-width: 100px;
     `};
 
   ${mediaQueries.lg} {
-    width: 150px;
+    max-width: 150px;
   }
 `;
