@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <Construction text={sentence} />
+      <Construction text={sentence} videoSrc="/neon-30.mp4" />
     </>
   );
 }
