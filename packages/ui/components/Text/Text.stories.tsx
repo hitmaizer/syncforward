@@ -16,7 +16,7 @@ export default {
 
 const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
 
-export const Story = Template.bind({});
-Story.args = {
+export const Default = Template.bind({});
+Default.args = {
   children: 'Breach',
 };
