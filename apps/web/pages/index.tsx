@@ -1,10 +1,18 @@
-import { SfSync } from '@icons';
+import { useEffect, useState } from 'react';
+
+import { phrases } from 'src/uConstruction';
+
+import { Construction } from '@uicomponents';
 
 export default function Home() {
+  const [sentence, setSentence] = useState<string>('');
+  useEffect(() => {
+    setSentence(phrases[Math.floor(Math.random() * phrases.length)]);
+  }, []);
+
   return (
     <>
-      <h1>hello mate!</h1>
-      <SfSync size="md" color="black" />
+      <Construction text={sentence} videoSrc="/neon-30.mp4" />
     </>
   );
 }

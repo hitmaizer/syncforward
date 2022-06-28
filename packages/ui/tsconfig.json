@@ -11,11 +11,12 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@components": ["./components"],
-      "@components/*": ["./components/*"],
+      "@uicomponents": ["./components"],
+      "@uicomponents/*": ["./components/*"],
       "@styles": ["./styles"],
       "@styles/*": ["./styles/*"],
-      "@icons": ["./icons"]
+      "@icons": ["./icons"],
+      "@logos": ["./logos"]
     }
   },
   "exclude": ["storybook-static", "icon-index-template.js", "icon-template.js"],
@@ -28,6 +29,7 @@
     "utils/**/*",
     "**/*.tsx",
     "**/*.ts",
-    "*.config.js"
+    "*.config.js",
+    "logos/**/*"
   ]
 }
