@@ -1,3 +1,11 @@
+## [1.6.0](https://github.com/hitmaizer/syncforward/compare/v1.5.0...v1.6.0) (2022-06-28)
+
+
+### 🚀 Features
+
+* **assets:** updates favicon file ([660672e](https://github.com/hitmaizer/syncforward/commit/660672e8d6ecf8bcd9acf5588205d56b839c03c3))
+* **yarn.lock:** updates yarn.lock file ([e1ebf07](https://github.com/hitmaizer/syncforward/commit/e1ebf0731f491973ef50e10f2cc769d6ab4d8410))
+
 ## [1.5.0](https://github.com/hitmaizer/syncforward/compare/v1.4.0...v1.5.0) (2022-06-28)
 
 
