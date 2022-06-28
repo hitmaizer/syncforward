@@ -14,4 +14,5 @@ export interface ConstructionProps
     GridGapProps {
   children?: ReactNode;
   text?: string;
+  videoSrc?: string;
 }
