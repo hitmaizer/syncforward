@@ -79,7 +79,7 @@ export const Header = styled.div<ConstructionProps>`
   z-index: 10;
   background-color: ${({ theme }) => theme.colors.bg};
   backdrop-filter: saturate(130%) blur(5px);
-  border-bottom: 1px solid ${({ theme }) => theme.colors.white};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.whiteOpacity};
   min-height: 100px;
   ${mediaQueries.lg} {
     background-color: transparent;
