@@ -20,6 +20,7 @@ const theme = {
     black: '#000',
     bg: '#1f2043',
     gray: '#777981',
+    whiteOpacity: 'rgba(255, 255, 255, 0.2)',
   },
 
   // default fontSizes
