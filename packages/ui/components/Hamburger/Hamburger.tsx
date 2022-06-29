@@ -1,17 +1,14 @@
-import Stores from '@uicomponents/Stores';
-
 import * as S from './Hamburger.styles';
 import { HamburgerProps } from './Hamburger.types';
 
-const Hamburger = ({ children, open, ...rest }: HamburgerProps) => {
+const Hamburger = ({ children, open, web, ...rest }: HamburgerProps) => {
   return (
     <>
       <S.Container {...rest}>
         <S.Hamburger open={open} {...rest} />
-        <S.HamburgerContent open={open}>
-          <Stores vertical />
+        <S.HamburgerContent open={open} web={web}>
+          {children}
         </S.HamburgerContent>
-        {children}
       </S.Container>
     </>
   );
