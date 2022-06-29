@@ -9,4 +9,6 @@ export interface TextProps extends TypographyProps, SpaceProps, LayoutProps {
   size?: 'xs' | 'sm' | 'md' | 'lg';
   textTransform?: 'none' | 'uppercase' | 'lowercase' | 'capitalize';
   color?: string;
+  noMob?: boolean;
+  mobOnly?: boolean;
 }

@@ -19,5 +19,5 @@ export interface HeadingProps
   size?: ResponsiveValue<'lg' | 'xl' | '2xl' | '3xl' | '4xl'>;
   color?: string;
   children: ReactNode;
-  onlyMob?: boolean;
+  mobOnly?: boolean;
 }
