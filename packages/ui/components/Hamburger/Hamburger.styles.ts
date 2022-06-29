@@ -72,7 +72,7 @@ export const HamburgerContent = styled.div<HamburgerProps>`
   height: 90vh;
   left: 0;
   background-color: ${({ theme }) => theme.colors.bg};
-  transition: all 600ms ease;
+  transition: transform 600ms ease;
   overflow-y: hidden;
   z-index: -1;
   padding: 32px;
@@ -84,5 +84,10 @@ export const HamburgerContent = styled.div<HamburgerProps>`
     css`
       overflow-y: hidden;
       transform: translateY(67.5px);
+    `}
+  ${({ web }) =>
+    web &&
+    css`
+      background-color: ${({ theme }) => theme.colors.gray900};
     `}
 `;
