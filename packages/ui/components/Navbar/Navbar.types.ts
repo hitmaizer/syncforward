@@ -13,4 +13,6 @@ export interface NavbarProps
     LayoutProps,
     GridGapProps {
   children?: ReactNode;
+  mobOnly?: boolean;
+  noMob?: boolean;
 }
