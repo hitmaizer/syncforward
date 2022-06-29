@@ -14,8 +14,8 @@ export const Heading = styled.h1<HeadingProps>`
   ${size}
   ${color}
 
-  ${({ onlyMob }) =>
-    onlyMob &&
+  ${({ mobOnly }) =>
+    mobOnly &&
     css`
       display: block;
       ${mediaQueries.lg} {
