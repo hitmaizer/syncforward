@@ -17,6 +17,7 @@ const Construction = ({
   ...rest
 }: ConstructionProps) => {
   const [loading, setLoading] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -32,11 +33,11 @@ const Construction = ({
           <source src={videoSrc} type="video/mp4" />
         </S.VideoBg>
         <S.Content display="flex" gridGap="32px" height="100%">
-          <S.Header display="flex" width="100%">
+          <S.Header display="flex" width="100%" open={isOpen}>
             <a href="/">
               <S.SyncLogo />
             </a>
-            <Hamburger />
+            <Hamburger onClick={() => setIsOpen(!isOpen)} open={isOpen} />
             <S.HeadingContainer>
               <Heading color="white" size="2xl" textAlign="right">
                 {text}
@@ -47,12 +48,17 @@ const Construction = ({
             color="white"
             size="4xl"
             textAlign="center"
-            mt="70vh"
-            onlyMob
+            mt="60vh"
+            mobOnly
           >
             {text}
           </Heading>
-          <Text color="white" textAlign="center" fontWeight="400" mobOnly>
+          <Text
+            color={theme.colors.whiteOpacity}
+            textAlign="center"
+            fontWeight="400"
+            mobOnly
+          >
             Sync Forward Records — Est. 2009
           </Text>
           <Stores mt="70vh" noMob />
