@@ -76,15 +76,18 @@ export const HamburgerContent = styled.div<HamburgerProps>`
   overflow-y: hidden;
   z-index: -1;
   padding: 32px;
+
   &::-webkit-scrollbar {
     display: none;
   }
+
   ${({ open }) =>
     open === true &&
     css`
       overflow-y: hidden;
       transform: translateY(67.5px);
     `}
+
   ${({ web }) =>
     web &&
     css`
