@@ -9,11 +9,11 @@ export default function Layout() {
         <meta charSet="utf-8" />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/sync-forward/image/upload/v1656526236/seo-thumbnail_loskrk.png"
+          content="https://res.cloudinary.com/sync-forward/image/upload/v1656534796/seo-thumbnail_ibxzkz.png"
         />
         <meta
           property="og:description"
-          content="House & Techno record label based in Porto, Portugal."
+          content="Electronic dance music record label based in Porto, Portugal."
           key="ogdesc"
         />
         <link
