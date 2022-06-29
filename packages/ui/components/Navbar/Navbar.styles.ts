@@ -3,7 +3,13 @@ import { flexbox, gridGap, layout, space } from 'styled-system';
 
 import { mediaQueries } from '@styles';
 
-import { Sync } from '../../logos/Logos';
+import {
+  FacebookSm,
+  InstagramSm,
+  Sync,
+  TwitterSm,
+  YoutubeSm,
+} from '../../logos/Logos';
 import { NavbarProps } from './Navbar.types';
 
 export const Navbar = styled.nav<NavbarProps>`
@@ -36,4 +42,27 @@ export const NavLogo = styled(Sync)`
   width: 100%;
   max-width: 150px;
   color: ${({ theme }) => theme.colors.gray50};
+`;
+
+export const Facebook = styled(FacebookSm)`
+  width: 100%;
+  max-width: 32px;
+  color: ${({ theme }) => theme.colors.gray75};
+`;
+
+export const Twitter = styled(TwitterSm)`
+  width: 100%;
+  max-width: 32px;
+  color: ${({ theme }) => theme.colors.gray75};
+`;
+
+export const Instagram = styled(InstagramSm)`
+  width: 100%;
+  max-width: 32px;
+  color: ${({ theme }) => theme.colors.gray75};
+`;
+export const Youtube = styled(YoutubeSm)`
+  width: 100%;
+  max-width: 32px;
+  color: ${({ theme }) => theme.colors.gray75};
 `;
