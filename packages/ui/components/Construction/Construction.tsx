@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 
+import { theme } from '@styles/theme';
 import Hamburger from '@uicomponents/Hamburger';
 import Spinner from '@uicomponents/Spinner';
 import Stores from '@uicomponents/Stores';
+import Text from '@uicomponents/Text';
 
 import Heading from '../Heading';
 import * as S from './Construction.styles';
@@ -50,7 +52,21 @@ const Construction = ({
           >
             {text}
           </Heading>
+          <Text color="white" textAlign="center" fontWeight="400" mobOnly>
+            Sync Forward Records — Est. 2009
+          </Text>
           <Stores mt="70vh" noMob />
+          <a href="/">
+            <Text
+              color={theme.colors.whiteOpacity}
+              textAlign="center"
+              fontWeight="400"
+              mt="70px"
+              noMob
+            >
+              Sync Forward Records — Est. 2009
+            </Text>
+          </a>
           {children}
         </S.Content>
       </S.Construction>
