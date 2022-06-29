@@ -25,14 +25,60 @@ const Navbar = ({ children, ...rest }: NavbarProps) => {
           display="flex"
           vertical
           alignItems="center"
-          justifyContent="center"
           width="100%"
-          gridGap="32px"
+          height="100%"
         >
-          <NavLink text="Releases" mobOnly />
-          <NavLink text="Podcasts" mobOnly />
-          <NavLink text="Artists" mobOnly />
-          <NavLink text="Demos" mobOnly />
+          <Stack
+            display="flex"
+            vertical
+            alignItems="center"
+            justifyContent="center"
+            width="100%"
+            gridGap="32px"
+            flex={1}
+          >
+            <NavLink text="Releases" mobOnly />
+            <NavLink text="Podcasts" mobOnly />
+            <NavLink text="Artists" mobOnly />
+            <NavLink text="Demos" mobOnly />
+          </Stack>
+          <Stack
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            gridGap="16px"
+            width="100%"
+            mb="75px"
+          >
+            <a
+              href="https://www.facebook.com/SyncForward/"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <S.Facebook />
+            </a>
+            <a
+              href="https://twitter.com/sync_forward"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <S.Twitter />
+            </a>
+            <a
+              href="https://www.instagram.com/syncforward/"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <S.Instagram />
+            </a>
+            <a
+              href="https://www.youtube.com/user/syncforward"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <S.Youtube />
+            </a>
+          </Stack>
         </Stack>
       </Hamburger>
     </S.Navbar>
