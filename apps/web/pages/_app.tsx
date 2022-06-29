@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from 'react';
+import { FC, useState, useEffect, useCallback } from 'react';
 
 import 'src/font-face.css';
 import Head from '@components/Head';
@@ -13,27 +13,39 @@ import { theme } from 'ui/styles/theme';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   const [mounted, setMounted] = useState(false);
+  const [isDark, setIsDark] = useState<boolean>();
   const { asPath } = useRouter();
 
   const page = asPath === '/' ? '' : asPath;
   const [canonicalUrl] = `https://sync-forward.com${page}`.split('?');
 
+  const getDeviceScheme = useCallback(() => {
+    // Prevents SSR issues
+    if (typeof window === 'undefined') return 'dark';
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light';
+  }, []);
+
+  if (typeof window !== 'undefined') {
+    window
+      .matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', (event) => {
+        setIsDark(event.matches);
+      });
+  }
+
+  const changeFavicon = (value: string) => {
+    const faviconTag = document.getElementById('faviconTag') as HTMLLinkElement;
+    faviconTag?.setAttribute('href', `/favicon-${value}.ico`);
+  };
+
   useEffect(() => {
     setMounted(true);
-    const faviconTag = document.getElementById('faviconTag') as HTMLLinkElement;
-    const isDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-    const changeFavicon = () => {
-      if (isDark.matches) {
-        faviconTag.href = '/favicon-dark.ico';
-      } else {
-        faviconTag.href = '/favicon-light.ico';
-      }
-    };
-
-    changeFavicon();
-    setInterval(changeFavicon, 500);
-  }, []);
+    const value = getDeviceScheme();
+    changeFavicon(value);
+  }, [isDark]);
 
   return (
     <>
