@@ -42,9 +42,13 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
 
   useEffect(() => {
     setMounted(true);
-
     const value = getDeviceScheme();
     changeFavicon(value);
+    if (value === 'dark') {
+      setIsDark(true);
+    } else {
+      setIsDark(false);
+    }
   }, [isDark]);
 
   return (
