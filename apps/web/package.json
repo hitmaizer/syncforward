@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fontsource/inter": "^4.5.11",
+    "@fontsource/space-grotesk": "^4.5.8",
     "@types/react": "^17.0.47",
     "next": "12.1.6",
     "next-seo": "^5.4.0",
