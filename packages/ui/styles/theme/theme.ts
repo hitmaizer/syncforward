@@ -10,9 +10,9 @@ const theme = {
   zIndices,
 
   fonts: {
-    body: '"Inter", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+    body: '"Space Grotesk", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif',
     heading:
-      '"IntegralCF", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "NotoSans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+      '"IntegralCF", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "NotoSans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif',
   },
 
   colors: {
@@ -20,7 +20,7 @@ const theme = {
     black: '#000',
     bg: '#1f2043',
     gray: '#777981',
-    whiteOpacity: 'rgba(255, 255, 255, 0.2)',
+    whiteOpacity: 'rgba(255, 255, 255, 0.5)',
   },
 
   // default fontSizes

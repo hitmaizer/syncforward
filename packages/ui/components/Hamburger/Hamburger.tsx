@@ -1,17 +1,14 @@
-import { useState } from 'react';
-
 import Stores from '@uicomponents/Stores';
 
 import * as S from './Hamburger.styles';
 import { HamburgerProps } from './Hamburger.types';
 
-const Hamburger = ({ children, ...rest }: HamburgerProps) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+const Hamburger = ({ children, open, ...rest }: HamburgerProps) => {
   return (
     <>
-      <S.Container onClick={() => setIsOpen(!isOpen)} {...rest}>
-        <S.Hamburger open={isOpen} {...rest} />
-        <S.HamburgerContent open={isOpen}>
+      <S.Container {...rest}>
+        <S.Hamburger open={open} {...rest} />
+        <S.HamburgerContent open={open}>
           <Stores vertical />
         </S.HamburgerContent>
         {children}
