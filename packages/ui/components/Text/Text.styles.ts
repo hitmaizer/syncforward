@@ -1,5 +1,7 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { color, fontWeight, space, style, typography } from 'styled-system';
+
+import { mediaQueries } from '@styles';
 
 import { TextProps } from './Text.types';
 import { size } from './Text.variants';
@@ -17,4 +19,21 @@ export const Text = styled.p<TextProps>`
   ${space}
   ${textTransform}
   ${fontWeight}
+
+  ${({ noMob }) =>
+    noMob &&
+    css`
+      display: none;
+      ${mediaQueries.lg} {
+        display: block;
+      }
+    `}
+  ${({ mobOnly }) =>
+    mobOnly &&
+    css`
+      display: block;
+      ${mediaQueries.lg} {
+        display: none;
+      }
+    `}
 `;
