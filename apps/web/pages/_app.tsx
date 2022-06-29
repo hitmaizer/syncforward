@@ -1,6 +1,7 @@
 import { FC, useState, useEffect } from 'react';
 
 import 'src/font-face.css';
+import Head from '@components/Head';
 import SEO from '@config/next-seo';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
@@ -19,6 +20,19 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
 
   useEffect(() => {
     setMounted(true);
+    const faviconTag = document.getElementById('faviconTag') as HTMLLinkElement;
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const changeFavicon = () => {
+      if (isDark.matches) {
+        faviconTag.href = '/favicon-dark.ico';
+      } else {
+        faviconTag.href = '/favicon-light.ico';
+      }
+    };
+
+    changeFavicon();
+    setInterval(changeFavicon, 500);
   }, []);
 
   return (
@@ -35,6 +49,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
           {...SEO}
         />
         <GlobalStyle />
+        <Head />
         {mounted && <Component {...pageProps} />}
       </ThemeProvider>
     </>
