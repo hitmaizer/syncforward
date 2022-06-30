@@ -1,3 +1,37 @@
+## [1.8.0](https://github.com/hitmaizer/syncforward/compare/v1.7.0...v1.8.0) (2022-06-30)
+
+
+### ✂️ Refactor
+
+* **Hamburger:** adds dynamic height value to hamburger content ([91b0ac0](https://github.com/hitmaizer/syncforward/commit/91b0ac079f0a7e6f03af75570569e5307df2d02e))
+* **Hamburger:** adds local state with current window.innerHeight ([1b1c114](https://github.com/hitmaizer/syncforward/commit/1b1c1142d3ba4d80c4d2a8ac5f14778027ec0572))
+* **Head:** updates SEO description + thumbnail ([0c8f63e](https://github.com/hitmaizer/syncforward/commit/0c8f63e5fe712b256cb535b4f56f54fd26a42e9d))
+* **Logos:** updates Soundcloud logo component ([88b60c5](https://github.com/hitmaizer/syncforward/commit/88b60c5d7eceb08aa417979f876303affd554517))
+* **Stores:** updates Store components to same max-w and max-h ([9e07055](https://github.com/hitmaizer/syncforward/commit/9e07055baa19fad2a92fd4c190a101b2f5fc0d54))
+
+
+### 🎨 Style
+
+* **Stores:** increases gap on mobile Stores ([e72a07e](https://github.com/hitmaizer/syncforward/commit/e72a07e77e0db4cd4f353af42282702a3f572ea0))
+* **Stores:** updates Stores logos sizing ([9a873eb](https://github.com/hitmaizer/syncforward/commit/9a873eb228097d8ffda2825a6ab3a5c0f312d8a8))
+
+
+### 🐛 Fixes
+
+* **web:** fixes first favicon render ([2dff29f](https://github.com/hitmaizer/syncforward/commit/2dff29fe70bfc71f56bdd59d7756d2a6e62dde78))
+
+
+### 🚀 Features
+
+* **assets:** adds light and dark version of favicon ([80fbb64](https://github.com/hitmaizer/syncforward/commit/80fbb644a8e82906c70267797ae8e406bd794b02))
+* **assets:** adds new soundcloud svg source file ([def83a0](https://github.com/hitmaizer/syncforward/commit/def83a020f69f38bac495d4a0ffb56db4bf56827))
+* **Hamburger:** adds height number prop type ([0aacc12](https://github.com/hitmaizer/syncforward/commit/0aacc126d8cc659f91ff485e424517d14324e543))
+* **ui:** adds dom to ui tsconfig ([adfb07f](https://github.com/hitmaizer/syncforward/commit/adfb07f35de0a51087ae31c5b64e48076694f389))
+* **web:** adds dom to tsconfig lib ([bcadc68](https://github.com/hitmaizer/syncforward/commit/bcadc685542f22312dd35d852f37fe576729dc4b))
+* **web:** adds Head component for SEO ([0b35ebf](https://github.com/hitmaizer/syncforward/commit/0b35ebf4f1e3f0e58c8ffc2807443778a6d91135))
+* **web:** adds logic to change favicon dynamically ([62eff87](https://github.com/hitmaizer/syncforward/commit/62eff87e197a09f868bb0940ca6d888c420b91c0))
+* **web:** updates favicon file based on user system theme ([6ab8a12](https://github.com/hitmaizer/syncforward/commit/6ab8a125e2a7b57b70fdb780c869010860cf3248))
+
 ## [1.7.0](https://github.com/hitmaizer/syncforward/compare/v1.6.0...v1.7.0) (2022-06-29)
 
 
