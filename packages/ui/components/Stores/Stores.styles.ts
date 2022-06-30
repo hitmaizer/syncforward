@@ -39,7 +39,7 @@ export const Stores = styled.div<StoresProps>`
     vertical &&
     css`
       flex-direction: column;
-      gap: 40px;
+      gap: 56px;
 
       svg {
         max-width: 150px;
