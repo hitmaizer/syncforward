@@ -30,8 +30,8 @@ export const Stores = styled.div<StoresProps>`
     }
 
     ${mediaQueries.lg} {
-      max-width: 175px;
-      max-height: 30px;
+      max-width: 155px;
+      max-height: 32px;
     }
   }
 
