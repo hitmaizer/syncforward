@@ -5,4 +5,5 @@ export interface HamburgerProps {
   open?: boolean;
   onClick?: () => void;
   height?: number;
+  web?: boolean;
 }

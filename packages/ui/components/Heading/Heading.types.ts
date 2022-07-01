@@ -20,4 +20,5 @@ export interface HeadingProps
   color?: string;
   children: ReactNode;
   mobOnly?: boolean;
+  noMob?: boolean;
 }
