@@ -1,3 +1,4 @@
+export { default as Accordion } from './Accordion';
 export { default as Box } from './Box';
 export { default as Construction } from './Construction';
 export { default as Grid } from './Grid';
@@ -6,6 +7,7 @@ export { default as Heading } from './Heading';
 export { default as MusicCard } from './MusicCard';
 export { default as Navbar } from './Navbar';
 export { default as NavLink } from './NavLink';
+export { default as Socials } from './Socials';
 export { default as Spinner } from './Spinner';
 export { default as Stack } from './Stack';
 export { default as Stores } from './Stores';
