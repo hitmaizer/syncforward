@@ -1,5 +1,9 @@
-import { FacebookSm, InstagramSm, TwitterSm, YoutubeSm } from 'logos/Logos';
-
+import {
+  FacebookSm,
+  InstagramSm,
+  TwitterSm,
+  YoutubeSm,
+} from '../../logos/Logos';
 import * as S from './Socials.styles';
 import { SocialsProps } from './Socials.types';
 
