@@ -69,7 +69,7 @@ export const HamburgerContent = styled.div<HamburgerProps>`
   align-items: flex-start;
   justify-content: center;
   width: 100vw;
-  height: 90vh;
+  height: calc(${({ height }) => height}px - 100px);
   left: 0;
   background-color: ${({ theme }) => theme.colors.bg};
   transition: transform 600ms ease;
