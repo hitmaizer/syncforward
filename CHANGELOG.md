@@ -1,3 +1,29 @@
+## [1.7.0](https://github.com/hitmaizer/syncforward/compare/v1.6.0...v1.7.0) (2022-06-29)
+
+
+### ✂️ Refactor
+
+* **Construction:** adds Text component render ([e477933](https://github.com/hitmaizer/syncforward/commit/e47793318dfe2fcf82620d5678604cbe84228d42))
+* **font:** refactor Inter to Space Grotesk ([1644c7e](https://github.com/hitmaizer/syncforward/commit/1644c7eaa3ddfc0efcf595e5a437d482918057eb))
+* **font:** updates imports from Inter to Space Grotesk ([efa02a4](https://github.com/hitmaizer/syncforward/commit/efa02a465bd368dd518e548d1f727d665d78ea28))
+* **Hamburger:** receives open state as prop ([d88c155](https://github.com/hitmaizer/syncforward/commit/d88c155db6eec4207d96cfbea68297f0d94b5a39))
+* **Header:** updates Header to transparent and solidBg on open ([e57a5a4](https://github.com/hitmaizer/syncforward/commit/e57a5a4d1edb00ec50c7e664c40b7815115b0e7b))
+* **Heading :** updates naming to match other mobOnly props ([49d21b1](https://github.com/hitmaizer/syncforward/commit/49d21b115e958a63831e1613f4350b1e7c0b52b1))
+* **Text:** adds noMob and mobOnly prop + style rules ([36dc877](https://github.com/hitmaizer/syncforward/commit/36dc8779b11bc0261a87bc72dac7fbf9be7a57f5))
+
+
+### 🎨 Style
+
+* **theme:** updates fonts.body to Space Grotesk ([0e9d86f](https://github.com/hitmaizer/syncforward/commit/0e9d86f74f8fc9fe833778c6969ae05d5b8d8873))
+
+
+### 🚀 Features
+
+* **Construction:** adds isOpen localstate + open prop to Header ([0662e69](https://github.com/hitmaizer/syncforward/commit/0662e69f8735a6bc26e5ca2b656e6852bb3b486d))
+* **Construction:** adds open boolean prop type ([1d7f351](https://github.com/hitmaizer/syncforward/commit/1d7f351f4c7d2b282f5f5c2662d90ebc0d32625f))
+* **Hamburger:** adds onClick func prop type ([6a92819](https://github.com/hitmaizer/syncforward/commit/6a928191ca23dcfc3eeb9db338ec03105db62cfb))
+* **web:** adds RTK and react-redux ([9152d47](https://github.com/hitmaizer/syncforward/commit/9152d475ccebf478edf7ede8d7ae09356b71f4d5))
+
 ## [1.6.0](https://github.com/hitmaizer/syncforward/compare/v1.5.0...v1.6.0) (2022-06-28)
 
 
