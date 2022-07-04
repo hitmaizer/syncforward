@@ -27,9 +27,10 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
   return (
     <S.Accordion {...rest}>
       <Swiper
-        slidesPerView={5}
+        slidesPerView="auto"
         spaceBetween={8}
         style={{ transition: 'all 300ms ease' }}
+        freeMode
       >
         {data.map((item, index) => {
           return (
