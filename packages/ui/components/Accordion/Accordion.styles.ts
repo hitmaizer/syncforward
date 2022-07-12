@@ -28,7 +28,7 @@ export const AccordionContent = styled.div<AccordionProps>`
   width: 100%;
   z-index: 2;
   position: relative;
-  height: 100vh;
+  height: calc(${({ height }) => height}px - 128px);
 `;
 
 export const Slider = styled.div<AccordionProps>`
