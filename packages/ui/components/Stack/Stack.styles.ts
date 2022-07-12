@@ -1,7 +1,7 @@
+import Box from '@uicomponents/Box';
 import styled from 'styled-components';
 import { gridGap } from 'styled-system';
 
-import { Box } from '..';
 import { StackProps } from './Stack.types';
 
 export const Stack = styled(Box)<StackProps>`
