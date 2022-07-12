@@ -1,6 +1,8 @@
 import { SpaceProps, ColorProps } from 'styled-system';
 
- import SfAppleMusic from './AppleMusic';
+ import SfYoutube from './Youtube';
+import SfAppleMusic from './AppleMusic';
+import SfArrow from './Arrow';
 import SfBandcamp from './Bandcamp';
 import SfBeatport from './Beatport';
 import SfSoundcloud from './Soundcloud';
@@ -15,7 +17,9 @@ import SfYoutube from './Youtube';
   export type IconProps = BaseProps & SpaceProps & ColorProps;
 
  export {
+  SfYoutube,
   SfAppleMusic,
+  SfArrow,
   SfBandcamp,
   SfBeatport,
   SfSoundcloud,
