@@ -8,6 +8,7 @@ export const Button = styled.button<ButtonProps>`
   background-color: ${({ theme }) => theme.colors.gray75};
   color: ${({ theme }) => theme.colors.gray900};
   transition: all 300ms ease;
+  border: 1px solid ${({ theme }) => theme.colors.gray75};
   &:hover {
     background-color: ${({ theme }) => theme.colors.gray200};
   }
@@ -16,6 +17,7 @@ export const Button = styled.button<ButtonProps>`
     secondary &&
     css`
       border: 1px solid ${({ theme }) => theme.colors.gray75};
+      width: 120%;
       background-color: transparent;
       color: ${({ theme }) => theme.colors.gray75};
       &:hover {
