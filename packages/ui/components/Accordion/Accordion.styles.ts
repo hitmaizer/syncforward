@@ -58,3 +58,13 @@ export const Slide = styled(SwiperSlide)<AccordionProps>`
       width: 1200px;
     `}
 `;
+
+export const OpenContent = styled.div<AccordionProps>`
+  ${space}
+  ${flexbox}
+  ${layout}
+  ${gridGap}
+  
+  place-self: baseline;
+  justify-content: center;
+`;
