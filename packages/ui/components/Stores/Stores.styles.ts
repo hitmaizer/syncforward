@@ -60,4 +60,29 @@ export const Stores = styled.div<StoresProps>`
     flex-direction: row;
     gap: 64px;
   }
+
+  ${({ accordion }) =>
+    accordion &&
+    css`
+      width: 100%;
+
+      svg {
+        width: 100%;
+        max-width: 150px;
+        max-height: 20px;
+        transition: opacity 300ms ease;
+        color: ${({ theme }) => theme.colors.white};
+        opacity: 0.5;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        ${mediaQueries.lg} {
+          max-width: 155px;
+          max-height: 32px;
+          gap: 16px;
+        }
+      }
+    `}
 `;
