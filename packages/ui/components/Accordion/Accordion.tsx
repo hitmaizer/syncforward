@@ -5,6 +5,7 @@ import { theme } from '@styles/theme';
 import Button from '@uicomponents/Button';
 import Heading from '@uicomponents/Heading';
 import Stack from '@uicomponents/Stack';
+import Stores from '@uicomponents/Stores';
 import Text from '@uicomponents/Text';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -89,14 +90,14 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                     )}
                     {activeAccordion === index && (
                       <>
-                        <Stack
+                        <S.OpenContent
                           display="flex"
-                          vertical
-                          gridGap="16px"
+                          flexDirection="column"
+                          gridGap="48px"
                           maxWidth="715px"
                           justifyContent="flex-start"
                           alignItems="flex-start"
-                          height="max-content"
+                          height={height}
                         >
                           <Text
                             textTransform="uppercase"
@@ -105,49 +106,54 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                           >
                             available now or something
                           </Text>
-                          <Heading size="4xl" color={theme.colors.gray75}>
-                            {item.artists}
-                          </Heading>
-                          <Heading size="4xl" color={theme.colors.gray75}>
-                            {item.title}
-                          </Heading>
-                          <Text color={theme.colors.gray100}>
-                            {item.description}
-                          </Text>
-                          <iframe
-                            title={item.title}
-                            width="100%"
-                            height="166"
-                            scrolling="no"
-                            frameBorder="no"
-                            allow="autoplay"
-                            src={item.trackLink}
-                          />
-                          <Stack display="flex" gridGap="16px">
-                            <Button>
-                              <Stack
-                                display="flex"
-                                gridGap="8px"
-                                alignItems="center"
-                                justifyContent="center"
-                              >
-                                <Text>Stream/Download</Text>
-                                <Arrow size="xxs" />
-                              </Stack>
-                            </Button>
-                            <Button secondary>
-                              <Stack
-                                display="flex"
-                                gridGap="8px"
-                                alignItems="center"
-                                justifyContent="center"
-                              >
-                                <Text>More from this artist</Text>
-                                <Arrow size="xxs" />
-                              </Stack>
-                            </Button>
+                          <Stack display="flex" vertical>
+                            <Heading size="4xl" color={theme.colors.gray75}>
+                              {item.artists}
+                            </Heading>
+                            <Heading size="4xl" color={theme.colors.gray75}>
+                              {item.title}
+                            </Heading>
                           </Stack>
-                        </Stack>
+                          <Stack display="flex" vertical gridGap="32px">
+                            <Text color={theme.colors.gray100}>
+                              {item.description}
+                            </Text>
+                            <iframe
+                              title={item.title}
+                              width="100%"
+                              height="166"
+                              scrolling="no"
+                              frameBorder="no"
+                              allow="autoplay"
+                              src={item.trackLink}
+                            />
+                            <Stack display="flex" gridGap="16px">
+                              <Button>
+                                <Stack
+                                  display="flex"
+                                  gridGap="8px"
+                                  alignItems="center"
+                                  justifyContent="center"
+                                >
+                                  <Text>Stream/Download</Text>
+                                  <Arrow size="xxs" />
+                                </Stack>
+                              </Button>
+                              <Button secondary>
+                                <Stack
+                                  display="flex"
+                                  gridGap="8px"
+                                  alignItems="center"
+                                  justifyContent="center"
+                                >
+                                  <Text>More from this artist</Text>
+                                  <Arrow size="xxs" />
+                                </Stack>
+                              </Button>
+                            </Stack>
+                            <Stores />
+                          </Stack>
+                        </S.OpenContent>
                       </>
                     )}
                   </S.AccordionContent>
