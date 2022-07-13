@@ -94,7 +94,6 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                           display="flex"
                           flexDirection="column"
                           gridGap="48px"
-                          maxWidth="715px"
                           justifyContent="flex-start"
                           alignItems="flex-start"
                           height={height}
@@ -151,8 +150,8 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                                 </Stack>
                               </Button>
                             </Stack>
-                            <Stores />
                           </Stack>
+                          <Stores accordion />
                         </S.OpenContent>
                       </>
                     )}
