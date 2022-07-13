@@ -15,4 +15,5 @@ export interface StoresProps
   children?: ReactNode;
   vertical?: boolean;
   noMob?: boolean;
+  accordion?: boolean;
 }
