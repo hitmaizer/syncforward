@@ -9,6 +9,7 @@ import Text from '@uicomponents/Text';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import mockData from '../../../../apps/web/src/mockData';
+import Arrow from '../../icons/Arrow';
 import * as S from './Accordion.styles';
 import { AccordionProps } from './Accordion.types';
 
@@ -124,10 +125,26 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                           />
                           <Stack display="flex" gridGap="16px">
                             <Button>
-                              <Text>Stream/Download</Text>
+                              <Stack
+                                display="flex"
+                                gridGap="8px"
+                                alignItems="center"
+                                justifyContent="center"
+                              >
+                                <Text>Stream/Download</Text>
+                                <Arrow size="xxs" />
+                              </Stack>
                             </Button>
                             <Button secondary>
-                              <Text>More from this artist</Text>
+                              <Stack
+                                display="flex"
+                                gridGap="8px"
+                                alignItems="center"
+                                justifyContent="center"
+                              >
+                                <Text>More from this artist</Text>
+                                <Arrow size="xxs" />
+                              </Stack>
                             </Button>
                           </Stack>
                         </Stack>
