@@ -6,7 +6,7 @@ import SEO from '@config/next-seo';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
-import Script from 'next/script';
+import { GoogleAnalytics, usePageViews } from 'nextjs-google-analytics';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from 'ui/styles';
 import '@config/fontsource';
@@ -52,23 +52,11 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
     }
   }, [isDark]);
 
+  usePageViews();
+
   return (
     <>
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-
-      <Script strategy="lazyOnload" id="my-script">
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-        page_path: window.location.pathname,
-        });
-    `}
-      </Script>
+      <GoogleAnalytics strategy="lazyOnload" />
       <ThemeProvider theme={theme}>
         <DefaultSeo
           canonical={canonicalUrl}
