@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
 
-import Stores from '@uicomponents/Stores';
-
 import * as S from './Hamburger.styles';
 import { HamburgerProps } from './Hamburger.types';
 
-const Hamburger = ({ children, open, ...rest }: HamburgerProps) => {
+const Hamburger = ({ children, open, web, ...rest }: HamburgerProps) => {
   const [height, setHeight] = useState(0);
 
   const updateDimensions = () => {
@@ -24,10 +22,9 @@ const Hamburger = ({ children, open, ...rest }: HamburgerProps) => {
     <>
       <S.Container {...rest}>
         <S.Hamburger open={open} {...rest} />
-        <S.HamburgerContent open={open} height={height}>
-          <Stores vertical />
+        <S.HamburgerContent open={open} web={web} height={height}>
+          {children}
         </S.HamburgerContent>
-        {children}
       </S.Container>
     </>
   );

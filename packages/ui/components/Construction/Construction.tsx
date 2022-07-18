@@ -37,7 +37,9 @@ const Construction = ({
             <a href="/">
               <S.SyncLogo />
             </a>
-            <Hamburger onClick={() => setIsOpen(!isOpen)} open={isOpen} />
+            <Hamburger onClick={() => setIsOpen(!isOpen)} open={isOpen}>
+              <Stores vertical />
+            </Hamburger>
             <S.HeadingContainer>
               <Heading color="white" size="2xl" textAlign="right">
                 {text}

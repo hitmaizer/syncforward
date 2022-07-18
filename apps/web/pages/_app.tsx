@@ -6,6 +6,7 @@ import SEO from '@config/next-seo';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
+import { GoogleAnalytics, usePageViews } from 'nextjs-google-analytics';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from 'ui/styles';
 import '@config/fontsource';
@@ -51,8 +52,11 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
     }
   }, [isDark]);
 
+  usePageViews();
+
   return (
     <>
+      <GoogleAnalytics strategy="lazyOnload" />
       <ThemeProvider theme={theme}>
         <DefaultSeo
           canonical={canonicalUrl}
