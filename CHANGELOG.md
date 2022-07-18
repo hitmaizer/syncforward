@@ -1,3 +1,57 @@
+## [1.9.0](https://github.com/hitmaizer/syncforward/compare/v1.8.0...v1.9.0) (2022-07-18)
+
+
+### ✂️ Refactor
+
+* **Construction :** updates render of Hamburger ([2359019](https://github.com/hitmaizer/syncforward/commit/235901935132a91af28a5d89949a4b34d474694c))
+* **Hamburger:** adds spacing on code ([8e75a9e](https://github.com/hitmaizer/syncforward/commit/8e75a9e1736fad657377bd297349a2f695e7fd88))
+* **Hamburger:** updates component to use window.innerHeight ([bea0fcf](https://github.com/hitmaizer/syncforward/commit/bea0fcfde971e7d2f98e9b122207d5eaecf58091))
+* **Hamburger:** updates Hamburger component for reusability ([8f34702](https://github.com/hitmaizer/syncforward/commit/8f34702153bf88b2538144869ea52b2a30d92109))
+* **Navbar:** adds hamburger on mobile version + isOpen state ([8c8bdce](https://github.com/hitmaizer/syncforward/commit/8c8bdcef7cb790aed05766f0b535eaa6e1b7326a))
+* **Navbar:** adds Socials to Hamburger Content ([228ca7d](https://github.com/hitmaizer/syncforward/commit/228ca7d3ac7ea72e3ac5f11c949c3284211e3101))
+* **Navbar:** deletes unused code ([885e1fc](https://github.com/hitmaizer/syncforward/commit/885e1fc2019d0cc4be24e8dc577f3569fc3c1853))
+* **Navbar:** updates markup to use Socials component ([cf13c77](https://github.com/hitmaizer/syncforward/commit/cf13c77de68a519da685069e4367a2a113ded82a))
+
+
+### 🎨 Style
+
+* **Hamburger :** adds dynamic height value to Hamburger content ([2e1c2de](https://github.com/hitmaizer/syncforward/commit/2e1c2de5deabed8a461edbcde4927bb65bb8f1b0))
+* **Hamburger:** adds style rules for web prop ([a28f621](https://github.com/hitmaizer/syncforward/commit/a28f62161ed3d310314351ae5d2d2aeb3761552e))
+* **NavLink:** updates NavLink basic styling ([cb58a8b](https://github.com/hitmaizer/syncforward/commit/cb58a8b570214ef4119b47c6138d8bdf1f5494b9))
+
+
+### 🐛 Fixes
+
+* **Socials:** fixes import path from logos ([964ddc6](https://github.com/hitmaizer/syncforward/commit/964ddc6dd326a1912458ef5b3dfdefc53eadc2e3))
+
+
+### 🚀 Features
+
+* **components:** updates components index exports file ([ab06043](https://github.com/hitmaizer/syncforward/commit/ab06043a70eca77258dffb9a09832ec22950c8d2))
+* **Hamburger:** adds height number type prop ([2c60e8a](https://github.com/hitmaizer/syncforward/commit/2c60e8a7372861b24bd45e450020a7b526b74c8f))
+* **Hamburger:** adds web boolean prop type ([d6a24f6](https://github.com/hitmaizer/syncforward/commit/d6a24f6a2228f39391dbf1db859ec6df37988106))
+* **Heading:** adds noMob boolean prop type ([4dc11e0](https://github.com/hitmaizer/syncforward/commit/4dc11e0bacdcbcad27ed7cf6f343545e508b28d9))
+* **Logos:** adds new Logo components ([a6e96e6](https://github.com/hitmaizer/syncforward/commit/a6e96e6cd8235376716a1a3b9bed1b701f8c87f7))
+* **logos:** adds new logos to logo source folder ([0e7c24c](https://github.com/hitmaizer/syncforward/commit/0e7c24cddc9c941f4ef33b0b930bb094472077b9))
+* **Navbar:** adds container to Navbar links ([8b248a6](https://github.com/hitmaizer/syncforward/commit/8b248a6e25fce0a45901f899564d7b58654c4c2f))
+* **Navbar:** adds Logos components ([dc98e36](https://github.com/hitmaizer/syncforward/commit/dc98e3653958e9e1f0650f1c971babb9d3fd7e40))
+* **Navbar:** adds mobOnly and noMob boolean prop types ([1fae20a](https://github.com/hitmaizer/syncforward/commit/1fae20ae2c729b4fd6ca357ee05f899e562366e1))
+* **NavLink:** adds mobOnly and noMob prop types ([7a612ea](https://github.com/hitmaizer/syncforward/commit/7a612ea9bdbc903031088bc84148f6f981e60726))
+* **NavLink:** adds mobOnly and noMob props ([6a4ab03](https://github.com/hitmaizer/syncforward/commit/6a4ab03e4ea00678c9392d0cc95f604f760af7f7))
+* **Socials:** adds Socials component index file ([9e3b477](https://github.com/hitmaizer/syncforward/commit/9e3b4770545a6562ec0cff043c4ae03896d0bdd1))
+* **Socials:** adds Socials component markup file ([ace02dd](https://github.com/hitmaizer/syncforward/commit/ace02dd04f29ab87924e53ff346c7a8c857cfad9))
+* **Socials:** adds Socials component stories file ([84ffb48](https://github.com/hitmaizer/syncforward/commit/84ffb48ed3b4793ddf8a3b9593a6b992b65b919d))
+* **Socials:** adds Socials component styles file ([9614327](https://github.com/hitmaizer/syncforward/commit/961432760bf201e3b8d1201c62000cbb22ab9b32))
+* **SOcials:** adds Socials component types file ([c6ab0e5](https://github.com/hitmaizer/syncforward/commit/c6ab0e511c74043cbf65f246a1e07c8aae04bcea))
+* **storybook:** adds layout fullscreen to sb ([59c3f77](https://github.com/hitmaizer/syncforward/commit/59c3f775eb73c0d81fedefa2bb4d131ae7bbc8c0))
+* **theme:** adds grayscale colors to theme file ([c76928d](https://github.com/hitmaizer/syncforward/commit/c76928d5bda01b1bef44e1639f821ba58588afa7))
+* **ui:** adds dom to ui tsconfig lib ([70b11f2](https://github.com/hitmaizer/syncforward/commit/70b11f205c53f69da2daa30739ea1e27d892de14))
+* **ui:** adds Navbar component files ([a7c419f](https://github.com/hitmaizer/syncforward/commit/a7c419f090fd5f7b2007870ad821f81a450d4668))
+* **ui:** adds NavLink component files ([445b946](https://github.com/hitmaizer/syncforward/commit/445b946924e83090d70b3b4e8db7ea360396d174))
+* **web:** adds google analytics script tag ([75fad8b](https://github.com/hitmaizer/syncforward/commit/75fad8bca93d49c24042a1b555ce29658310e103))
+* **web:** adds nextjs-google-analytics ([495a86b](https://github.com/hitmaizer/syncforward/commit/495a86b5f3efea1be1d38bd354b576de2619ac5e))
+* **web:** adds nextjs-google-analytics to web app ([4290268](https://github.com/hitmaizer/syncforward/commit/4290268369e2ab471c28944fb901938b6e131131))
+
 ## [1.8.0](https://github.com/hitmaizer/syncforward/compare/v1.7.0...v1.8.0) (2022-06-30)
 
 
