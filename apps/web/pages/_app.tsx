@@ -12,16 +12,28 @@ import { GlobalStyle } from 'ui/styles';
 import '@config/fontsource';
 import { theme } from 'ui/styles/theme';
 
+import * as ga from '../lib/ga';
+
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   const [mounted, setMounted] = useState(false);
 
   const { asPath } = useRouter();
+  const router = useRouter();
 
   const page = asPath === '/' ? '' : asPath;
   const [canonicalUrl] = `https://sync-forward.com${page}`.split('?');
 
   useEffect(() => {
     setMounted(true);
+
+    const handlgeRouteChange = (url) => {
+      ga.pageView(url);
+    };
+
+    router.events.on('routeChangeComplete', handlgeRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handlgeRouteChange);
+    };
   }, []);
 
   return (
