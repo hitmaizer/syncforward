@@ -2,7 +2,7 @@
 
 import Head from 'next/head';
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
     <>
       <Head>
@@ -24,6 +24,9 @@ export default function Layout() {
           id="faviconTag"
         />
       </Head>
+      <section>
+        <main>{children}</main>
+      </section>
     </>
   );
 }
