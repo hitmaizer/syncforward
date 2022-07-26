@@ -1,3 +1,11 @@
+## [1.9.1](https://github.com/hitmaizer/syncforward/compare/v1.9.0...v1.9.1) (2022-07-18)
+
+
+### ✂️ Refactor
+
+* **web:** removes nextjs-google-analytics ([c035fd4](https://github.com/hitmaizer/syncforward/commit/c035fd41acbec44f0a1a2592035e1f9a088515d2))
+* **web:** updates app to use gtag for analytics ([5378bfe](https://github.com/hitmaizer/syncforward/commit/5378bfe5250d7e530e4540c34c704c42e919d72c))
+
 ## [1.9.0](https://github.com/hitmaizer/syncforward/compare/v1.8.0...v1.9.0) (2022-07-18)
 
 
