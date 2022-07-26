@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/hitmaizer/syncforward/compare/v1.10.1...v1.10.2) (2022-07-26)
+
+
+### 🐛 Fixes
+
+* **web:** updates google analytics ([31b8205](https://github.com/hitmaizer/syncforward/commit/31b8205f9de044260d1f66f386df61a28cd62de4))
+
 ## [1.10.1](https://github.com/hitmaizer/syncforward/compare/v1.10.0...v1.10.1) (2022-07-26)
 
 
