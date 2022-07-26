@@ -26,13 +26,13 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   useEffect(() => {
     setMounted(true);
 
-    const handlgeRouteChange = (url) => {
+    const handleRouteChange = (url) => {
       ga.pageView(url);
     };
 
-    router.events.on('routeChangeComplete', handlgeRouteChange);
+    router.events.on('routeChangeComplete', handleRouteChange);
     return () => {
-      router.events.off('routeChangeComplete', handlgeRouteChange);
+      router.events.off('routeChangeComplete', handleRouteChange);
     };
   }, [router.events]);
 
@@ -63,9 +63,10 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
           dangerouslySetAllPagesToNoIndex
           {...SEO}
         />
-        <Head />
-        <GlobalStyle />
-        {mounted && <Component {...pageProps} />}
+        <Head>
+          <GlobalStyle />
+          {mounted && <Component {...pageProps} />}
+        </Head>
       </ThemeProvider>
     </>
   );
