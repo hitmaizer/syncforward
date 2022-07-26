@@ -30,5 +30,11 @@
       "@icons": ["../../packages/ui/icons"]
     }
   },
-  "include": [".eslintrc.js", "**/*.tsx", "**/*.ts", "*.config.js"]
+  "include": [
+    ".eslintrc.js",
+    "**/*.tsx",
+    "**/*.ts",
+    "*.config.js",
+    "lib/ga/index.js"
+  ]
 }

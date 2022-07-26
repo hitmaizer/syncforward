@@ -9,13 +9,14 @@ import {
 import * as S from './Stores.styles';
 import { StoresProps } from './Stores.types';
 
-const Stores = ({ children, vertical, ...rest }: StoresProps) => {
+const Stores = ({ children, vertical, accordion, ...rest }: StoresProps) => {
   return (
     <S.Stores
       display="flex"
       vertical={vertical}
       alignItems="center"
       justifyContent="center"
+      accordion={accordion}
       {...rest}
     >
       <a

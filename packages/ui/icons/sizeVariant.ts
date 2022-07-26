@@ -3,7 +3,7 @@ import { variant } from 'styled-system';
 export const size = variant({
   prop: 'size',
   variants: {
-    xxs: { width: 8, height: 8 },
+    xxs: { width: 4, height: 4 },
     xs: { width: 16, height: 16 },
     sm: { width: 24, height: 24 },
     md: { width: 32, height: 32 },

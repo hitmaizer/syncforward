@@ -5,4 +5,5 @@ export interface NavLinkProps {
   text?: string;
   mobOnly?: boolean;
   noMob?: boolean;
+  pathName?: string;
 }
