@@ -1,5 +1,5 @@
 export const pageView = (url) => {
-  window.gtag('config', process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID, {
+  window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
     path_url: url,
   });
 };
