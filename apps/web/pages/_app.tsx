@@ -6,6 +6,7 @@ import SEO from '@config/next-seo';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
+import Script from 'next/script';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from 'ui/styles';
 import '@config/fontsource';
@@ -25,7 +26,23 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <>
+
       <Head />
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+      />
+
+      <Script id="google-analytics-script" strategy="lazyOnload">
+        {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', {
+              page_path: window.location.pathname,
+              });
+          `}
+      </Script>
       <ThemeProvider theme={theme}>
         <DefaultSeo
           canonical={canonicalUrl}
