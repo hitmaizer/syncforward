@@ -26,7 +26,6 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <>
-
       <Head />
       <Script
         strategy="lazyOnload"
