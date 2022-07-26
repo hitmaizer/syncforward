@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 
+import useFavicon from 'src/hooks/useFavicon';
 import { phrases } from 'src/uConstruction';
 
 import { Construction } from '@uicomponents';
@@ -9,6 +10,8 @@ export default function Home() {
   useEffect(() => {
     setSentence(phrases[Math.floor(Math.random() * phrases.length)]);
   }, []);
+
+  useFavicon();
 
   return (
     <>
