@@ -67,4 +67,5 @@ export const OpenContent = styled.div<AccordionProps>`
   
   place-self: baseline;
   justify-content: center;
+  width: 100%;
 `;
