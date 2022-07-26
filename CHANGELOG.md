@@ -1,3 +1,61 @@
+## [1.10.0](https://github.com/hitmaizer/syncforward/compare/v1.9.1...v1.10.0) (2022-07-26)
+
+
+### ✂️ Refactor
+
+* **Accordion:** removes max-width on content ([4c10d5b](https://github.com/hitmaizer/syncforward/commit/4c10d5b9d2c7d61e0c6dd048dc1862666472c86c))
+* **Accordion:** updates AccordionContent height value dynamic ([3a8f632](https://github.com/hitmaizer/syncforward/commit/3a8f632cb33c493d4cb44ff8a613521a7c305cbd))
+* **Head:** removes dynamic favicon logic from Head component ([ee3701c](https://github.com/hitmaizer/syncforward/commit/ee3701c86db95d8063c6d75db23b85708b6118e6))
+* **Head:** updates dynamic favicon logic to Head component ([a81d34c](https://github.com/hitmaizer/syncforward/commit/a81d34c3135286599bfd5f2e4bc1a78fa272c5e8))
+* **icons:** updates size variants on Icons ([c0550fa](https://github.com/hitmaizer/syncforward/commit/c0550fa7ee6a02761c35de0fac76ca60a6c0b9d3))
+* **NavLink:** adds active link styling ([d4f3172](https://github.com/hitmaizer/syncforward/commit/d4f3172b59271295e5ba0f57c2f77266ad651917))
+* **NavLink:** adds next/link + pathName props ([d865aaf](https://github.com/hitmaizer/syncforward/commit/d865aaf5d20715abb5beb6b3ca3339b6f8600b78))
+* **Stack:** updates Box component import ([14987d7](https://github.com/hitmaizer/syncforward/commit/14987d7b84e962f00c5cc758e750062a3ce5b247))
+* **web:** updates google analytics ([e5ed9f0](https://github.com/hitmaizer/syncforward/commit/e5ed9f0500f2eb6269684eb43d25598396c98e9c))
+
+
+### 🎨 Style
+
+* **Accordion:** adds width 100% to accordion open ([91de543](https://github.com/hitmaizer/syncforward/commit/91de5436b5c6c914e019c7edac3535e4f4878a14))
+* **Button:** updates border and width values ([738f9c7](https://github.com/hitmaizer/syncforward/commit/738f9c7674b32e9a89716f45bde5e4c8efd7e5df))
+* **Stores:** adds styling rules to Stores accordion variant ([60ec08e](https://github.com/hitmaizer/syncforward/commit/60ec08e318eb3d7191ac28a7e55d648ae994282c))
+* **web:** prettier changes ([44b8935](https://github.com/hitmaizer/syncforward/commit/44b8935c7294411b5a72283d2d2329e633ae91a2))
+
+
+### 🐛 Fixes
+
+* **Accordion:** fix slides on accordion ([ca2da0f](https://github.com/hitmaizer/syncforward/commit/ca2da0f323dbbbe8ad1e99f62202dea3bfe62f9f))
+
+
+### 🚀 Features
+
+* **Accordion:** adds Accordion component files ([c83cab3](https://github.com/hitmaizer/syncforward/commit/c83cab38f96fb2c25bce127827c557f669bdf973))
+* **Accordion:** adds Accordion component files ([a246f20](https://github.com/hitmaizer/syncforward/commit/a246f20b27b4e0c296d498f0dd3bd1d177ab3863))
+* **Accordion:** adds accordion variant styling ([12705bf](https://github.com/hitmaizer/syncforward/commit/12705bf77c97f1cbd79459db714dc8fd6b2c5788))
+* **Accordion:** adds arrow icon to Button component ([39b08a1](https://github.com/hitmaizer/syncforward/commit/39b08a1d7f413be53dbd431cfc1397adbd934911))
+* **Accordion:** adds height local state logic + height prop ([708f785](https://github.com/hitmaizer/syncforward/commit/708f785d76cd9307840863c3afb8f5f263a1bd42))
+* **Accordion:** adds OpenContent sc ([b895dae](https://github.com/hitmaizer/syncforward/commit/b895daed006d4346421f19aa554822149410e2d9))
+* **Accordion:** updates Accordion component markup ([bf669db](https://github.com/hitmaizer/syncforward/commit/bf669db50caa6e1bdda38bcff67a5977d5dbd7bb))
+* **analytics:** adds ga pageviews file ([7e559a6](https://github.com/hitmaizer/syncforward/commit/7e559a6c6e8297887b0e5ccd4c71de45ae2b603f))
+* **Arrow:** adds Arrow icon component ([fcbbc43](https://github.com/hitmaizer/syncforward/commit/fcbbc43fd67155650dbb07a5ba06df61568fad73))
+* **assets:** adds arrow svg to assets source folder ([345ed56](https://github.com/hitmaizer/syncforward/commit/345ed560589d1aef6e64b0d2fcbbacf3698a42ca))
+* **Button:** adds Button component index file ([e8002c7](https://github.com/hitmaizer/syncforward/commit/e8002c7eb6d105fa2750abf757f50b738c2813a8))
+* **Button:** adds Button component markup file ([82e0cf2](https://github.com/hitmaizer/syncforward/commit/82e0cf28077e3453257275c833b526699d08f6c0))
+* **Button:** adds Button component styles file ([b14a57b](https://github.com/hitmaizer/syncforward/commit/b14a57b69b49c07640acb0d3286da5ff3f4a05c9))
+* **Button:** adds Button component types file ([e5bce44](https://github.com/hitmaizer/syncforward/commit/e5bce446e8ddd2f90811b935a432bf2512701d45))
+* **mockData:** adds mockData to implement accordion ([625e79f](https://github.com/hitmaizer/syncforward/commit/625e79fb622106fdd926762391e4f3e1803ecccc))
+* **Navbar:** adds pathName prop to NavLink elements ([bb5c4ba](https://github.com/hitmaizer/syncforward/commit/bb5c4ba3b31bc179894089c3b299ccdcce13db51))
+* **NavLink:** adds pathName prop type ([9ae7f75](https://github.com/hitmaizer/syncforward/commit/9ae7f75113f8e1af458c9a9e68aaaeb14d847d08))
+* **Stores:** adds accordion boolean prop type ([fd70bdf](https://github.com/hitmaizer/syncforward/commit/fd70bdf0d79376af01eb36befa65b5b388829054))
+* **Stores:** adds accordion prop to Stores component ([fcc96e8](https://github.com/hitmaizer/syncforward/commit/fcc96e802f66c3ff2323e806df424929a4f73a41))
+* **ui:** adds swiperJS to ui package ([28735b3](https://github.com/hitmaizer/syncforward/commit/28735b3bfa241d1ccf7dc87597c6f0ce8b082807))
+* **web:** adds cloudinary to next.config images ([c0b27dc](https://github.com/hitmaizer/syncforward/commit/c0b27dc2302cfc879f3eaa28ba077dc3aa894a7f))
+* **web:** adds custom useFavicon hook to homepage ([2ee14f2](https://github.com/hitmaizer/syncforward/commit/2ee14f2541ec7ba3e857845973b930011faa0543))
+* **web:** adds dynamic favicon logic into custom hook ([2e4de25](https://github.com/hitmaizer/syncforward/commit/2e4de2597f9ed5df0ddebae5618bae6650ca5a03))
+* **web:** adds releases page file ([d3e029c](https://github.com/hitmaizer/syncforward/commit/d3e029cb7fee330b8cf85ec43e1370f4c0475b70))
+* **web:** adds useFavicon custom hook to releases page ([af4e68e](https://github.com/hitmaizer/syncforward/commit/af4e68edeaf8ba071bac55ff9ccfab1be44c111b))
+* **web:** updates tsconfig file to include ga ([1b268c5](https://github.com/hitmaizer/syncforward/commit/1b268c5075c4f23fecbcba4a79304433a0f271de))
+
 ## [1.9.1](https://github.com/hitmaizer/syncforward/compare/v1.9.0...v1.9.1) (2022-07-18)
 
 
