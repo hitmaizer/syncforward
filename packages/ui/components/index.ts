@@ -4,6 +4,7 @@ export { default as Construction } from './Construction';
 export { default as Grid } from './Grid';
 export { default as Hamburger } from './Hamburger';
 export { default as Heading } from './Heading';
+export { default as Hero } from './Hero';
 export { default as MusicCard } from './MusicCard';
 export { default as Navbar } from './Navbar';
 export { default as NavLink } from './NavLink';
