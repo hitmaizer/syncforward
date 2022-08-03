@@ -3,7 +3,7 @@ import React from 'react';
 import { theme } from '@styles/theme';
 import useFavicon from 'src/hooks/useFavicon';
 
-import { Accordion, Heading, Hero, Navbar, Text } from '@uicomponents';
+import { Accordion, Box, Heading, Hero, Navbar, Text } from '@uicomponents';
 
 const index = () => {
   useFavicon();
@@ -12,7 +12,7 @@ const index = () => {
       <Navbar />
       <Hero>
         <Heading
-          size="4xl"
+          size="3xl"
           color={theme.colors.white}
           textAlign="right"
           mr="40px"
@@ -20,17 +20,15 @@ const index = () => {
           This is the Homepage! <br />
           Something something
         </Heading>
-        <Text color={theme.colors.gray50} ml="40px">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
-          Consectetur maxime numquam ratione velit non in molestiae quibusdam
-          fugiat nesciunt. <br />
-          Sint reprehenderit ipsam eum voluptates, <br />
-          ut minima sit ex error fuga necessitatibus autem atque voluptatum
-          quisquam laborum? <br />
-          Quidem rerum molestiae voluptates modi sit reprehenderit earum commodi
-          at pariatur nemo.
+        <Text color={theme.colors.gray50} ml="40px" size="sm">
+          The fifth chapter of our signature VA - Sequence - has arrived. <br />
+          A mix of various electronic music styles compiled together in a strong
+          5-track EP <br />
+          featuring music by five different artists. <br />
         </Text>
-        <Accordion />
+        <Box height="52%" display="flex">
+          <Accordion />
+        </Box>
       </Hero>
     </>
   );
