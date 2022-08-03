@@ -10,7 +10,7 @@ export default function Layout({ children }) {
         <meta charSet="utf-8" />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/sync-forward/image/upload/v1656534796/seo-thumbnail_ibxzkz.png"
+          content="https://res.cloudinary.com/sync-forward/image/upload/v1659534421/Mask_group-2_vkf2pf.png"
         />
         <meta
           property="og:description"
