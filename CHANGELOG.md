@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/hitmaizer/syncforward/compare/v1.11.0...v1.11.1) (2022-08-03)
+
+
+### ✂️ Refactor
+
+* **Head:** updates SEO thumbnail url ([32f13b2](https://github.com/hitmaizer/syncforward/commit/32f13b2a4825aa9b30fa6c62a88e7e4053ad1b77))
+
 ## [1.11.0](https://github.com/hitmaizer/syncforward/compare/v1.10.2...v1.11.0) (2022-07-26)
 
 
