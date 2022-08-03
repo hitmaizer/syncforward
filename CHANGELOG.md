@@ -1,3 +1,16 @@
+## [1.11.0](https://github.com/hitmaizer/syncforward/compare/v1.10.2...v1.11.0) (2022-07-26)
+
+
+### ✂️ Refactor
+
+* **Head:** updates Head component ([ae0fdbd](https://github.com/hitmaizer/syncforward/commit/ae0fdbde3eecca5731a07c27476b64e125f8a2c7))
+* **web:** updates ga pageView func ([b09dd06](https://github.com/hitmaizer/syncforward/commit/b09dd0684e13c57302b596e101c542e8f9f924da))
+
+
+### 🚀 Features
+
+* **web:** updates Head on _app file ([45ff129](https://github.com/hitmaizer/syncforward/commit/45ff1290aae215f45edf8774687e7ea92118f67c))
+
 ## [1.10.2](https://github.com/hitmaizer/syncforward/compare/v1.10.1...v1.10.2) (2022-07-26)
 
 
