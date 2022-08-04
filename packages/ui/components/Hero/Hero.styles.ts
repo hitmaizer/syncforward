@@ -15,3 +15,9 @@ export const Hero = styled.div<HeroProps>`
   // min-height: ${({ height }) => height}px;
   height: 30vh;
 `;
+
+export const UnderHero = styled.div<HeroProps>`
+  height: 100%;
+  min-height: 60vh;
+  display: flex;
+`;
