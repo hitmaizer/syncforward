@@ -28,9 +28,9 @@ export const AccordionContent = styled.div<AccordionProps>`
   width: 100%;
   z-index: 2;
   position: relative;
-  min-height: 100%;
-  height: 55vh;
-  margin-top: 16px;
+  min-height: 70vh;
+  height: 100%;
+  margin-top: 64px;
 `;
 
 export const Slider = styled.div<AccordionProps>`
@@ -72,4 +72,5 @@ export const OpenContent = styled.div<AccordionProps>`
   justify-content: center;
   width: 100%;
   height: 100%;
+  min-height: 60vh;
 `;
