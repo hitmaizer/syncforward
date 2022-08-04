@@ -1,9 +1,10 @@
 import React from 'react';
 
 import { theme } from '@styles/theme';
+import { UnderHero } from '@uicomponents/Hero/Hero.styles';
 import useFavicon from 'src/hooks/useFavicon';
 
-import { Accordion, Box, Heading, Hero, Navbar, Text } from '@uicomponents';
+import { Accordion, Heading, Hero, Navbar, Text } from '@uicomponents';
 
 const index = () => {
   useFavicon();
@@ -28,9 +29,9 @@ const index = () => {
           through music, art and design.
         </Text>
       </Hero>
-      <Box height="60vh" display="flex">
+      <UnderHero>
         <Accordion />
-      </Box>
+      </UnderHero>
     </>
   );
 };
