@@ -12,6 +12,6 @@ export const Hero = styled.div<HeroProps>`
   flex-direction: column;
   gap: 40px;
   background-color: ${({ theme }) => theme.colors.gray900};
-  min-height: ${({ height }) => height}px;
-  height: 100%;
+  // min-height: ${({ height }) => height}px;
+  height: 30vh;
 `;
