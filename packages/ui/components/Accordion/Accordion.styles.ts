@@ -28,7 +28,9 @@ export const AccordionContent = styled.div<AccordionProps>`
   width: 100%;
   z-index: 2;
   position: relative;
-  height: calc(${({ height }) => height}px - 128px);
+  min-height: 70vh;
+  height: 100%;
+  margin-top: 64px;
 `;
 
 export const Slider = styled.div<AccordionProps>`
@@ -42,6 +44,7 @@ export const Slide = styled(SwiperSlide)<AccordionProps>`
   width: 100%;
   // transition: width 300ms ease;
   cursor: pointer;
+  height: 100%;
 
   // no select
   -webkit-touch-callout: none; /* iOS Safari */
@@ -68,4 +71,6 @@ export const OpenContent = styled.div<AccordionProps>`
   place-self: baseline;
   justify-content: center;
   width: 100%;
+  height: 100%;
+  min-height: 60vh;
 `;

@@ -20,6 +20,7 @@ export const Text = styled.p<TextProps>`
   ${textTransform}
   ${fontWeight}
 
+  line-height: 1.5;
   ${({ noMob }) =>
     noMob &&
     css`

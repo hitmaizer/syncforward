@@ -5,7 +5,6 @@ import { theme } from '@styles/theme';
 import Button from '@uicomponents/Button';
 import Heading from '@uicomponents/Heading';
 import Stack from '@uicomponents/Stack';
-import Stores from '@uicomponents/Stores';
 import Text from '@uicomponents/Text';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -71,9 +70,9 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                     display="flex"
                     alignItems="center"
                     justifyContent="space-between"
-                    padding="64px"
+                    padding="32px"
                     flexDirection="column"
-                    height={height}
+                    height="60vh"
                   >
                     {activeAccordion !== index && (
                       <>
@@ -93,7 +92,7 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                         <S.OpenContent
                           display="flex"
                           flexDirection="column"
-                          gridGap="48px"
+                          gridGap="16px"
                           justifyContent="flex-start"
                           alignItems="flex-start"
                           height={height}
@@ -102,25 +101,26 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                             textTransform="uppercase"
                             color={theme.colors.gray75}
                             fontWeight="bold"
+                            size="xs"
                           >
                             available now or something
                           </Text>
                           <Stack display="flex" vertical>
-                            <Heading size="4xl" color={theme.colors.gray75}>
+                            <Heading size="2xl" color={theme.colors.gray75}>
                               {item.artists}
                             </Heading>
-                            <Heading size="4xl" color={theme.colors.gray75}>
+                            <Heading size="3xl" color={theme.colors.gray75}>
                               {item.title}
                             </Heading>
                           </Stack>
                           <Stack display="flex" vertical gridGap="32px">
-                            <Text color={theme.colors.gray100}>
+                            <Text color={theme.colors.gray100} size="sm">
                               {item.description}
                             </Text>
                             <iframe
                               title={item.title}
                               width="100%"
-                              height="166"
+                              height="160"
                               scrolling="no"
                               frameBorder="no"
                               allow="autoplay"
@@ -151,7 +151,6 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                               </Button>
                             </Stack>
                           </Stack>
-                          <Stores accordion />
                         </S.OpenContent>
                       </>
                     )}
