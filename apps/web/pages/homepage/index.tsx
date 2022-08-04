@@ -21,15 +21,16 @@ const index = () => {
           Something something
         </Heading>
         <Text color={theme.colors.gray50} ml="40px" size="sm">
-          The fifth chapter of our signature VA - Sequence - has arrived. <br />
-          A mix of various electronic music styles compiled together in a strong
-          5-track EP <br />
-          featuring music by five different artists. <br />
+          Sync Forward Records is a House & Techno record label based in Porto,{' '}
+          <br />
+          Portugal established in 2009. <br />
+          It&apos;s an expression of our vision of the future <br />
+          through music, art and design.
         </Text>
-        <Box height="52%" display="flex">
-          <Accordion />
-        </Box>
       </Hero>
+      <Box height="60vh" display="flex">
+        <Accordion />
+      </Box>
     </>
   );
 };
