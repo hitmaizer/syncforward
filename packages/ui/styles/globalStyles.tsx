@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
     
     body {
       font-family: ${({ theme }) => theme.fonts.body};
-      overflow: hidden;
+      // overflow: hidden;
       position: relative;
     }
 
@@ -49,6 +49,17 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   a {
       text-decoration: none;
   }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
 `;
 
 export default GlobalStyle;
