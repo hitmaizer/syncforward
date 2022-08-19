@@ -7,7 +7,7 @@ import {
 import * as S from './Socials.styles';
 import { SocialsProps } from './Socials.types';
 
-const Socials = ({ children, ...rest }: SocialsProps) => {
+const Socials = ({ children, page, ...rest }: SocialsProps) => {
   return (
     <S.Socials
       display="flex"
@@ -16,6 +16,7 @@ const Socials = ({ children, ...rest }: SocialsProps) => {
       gridGap="32px"
       width="100%"
       mb="75px"
+      page={page}
       {...rest}
     >
       <a
