@@ -4,6 +4,7 @@ import Hamburger from '@uicomponents/Hamburger';
 import NavLink from '@uicomponents/NavLink';
 import Socials from '@uicomponents/Socials';
 import Stack from '@uicomponents/Stack';
+import Link from 'next/link';
 
 import * as S from './Navbar.styles';
 import { NavbarProps } from './Navbar.types';
@@ -13,7 +14,9 @@ const Navbar = ({ children, ...rest }: NavbarProps) => {
 
   return (
     <S.Navbar display="flex" justifyContent="space-between" {...rest}>
-      <S.NavLogo />
+      <Link href="/">
+        <S.NavLogo />
+      </Link>
       {children}
       <S.Links noMob>
         <NavLink text="Releases" pathName="releases" />
