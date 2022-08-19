@@ -16,13 +16,20 @@ export interface Release {
   link: string;
   img: string;
 }
+export interface Artist {
+  artists: string;
+  photo: string;
+  bio: string;
+  trackLink: string;
+  soundcloud: string;
+}
 export interface AccordionProps
   extends FlexboxProps,
     SpaceProps,
     LayoutProps,
     GridGapProps {
   children?: ReactNode;
-  data?: Release[];
+  data?: Release[] | Artist[];
   index?: number;
   active?: number;
 }
