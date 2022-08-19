@@ -21,7 +21,7 @@ export const Socials = styled.div<SocialsProps>`
     page &&
     css`
       height: 100%;
-      min-height: 120px;
+      min-height: 10vh;
       margin-bottom: 0px;
       svg {
         opacity: 0.5;
