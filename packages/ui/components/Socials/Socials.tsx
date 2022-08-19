@@ -1,6 +1,8 @@
 import {
+  BandcampSq,
   FacebookSm,
   InstagramSm,
+  SoundcloudSq,
   TwitterSm,
   YoutubeSm,
 } from '../../logos/Logos';
@@ -47,6 +49,24 @@ const Socials = ({ children, page, ...rest }: SocialsProps) => {
       >
         <YoutubeSm />
       </a>
+      {page && (
+        <>
+          <a
+            href="https://syncforward.bandcamp.com/"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+          >
+            <BandcampSq />
+          </a>
+          <a
+            href="https://soundcloud.com/syncforward"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+          >
+            <SoundcloudSq />
+          </a>
+        </>
+      )}
       {children}
     </S.Socials>
   );
