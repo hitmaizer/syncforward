@@ -15,7 +15,12 @@ const NavLink = ({
   const router = useRouter();
   return (
     <Link href={`/${pathName}`} passHref>
-      <S.NavLink pathName={router.pathname} {...rest}>
+      <S.NavLink
+        pathName={router.pathname}
+        {...rest}
+        mobOnly={mobOnly}
+        noMob={noMob}
+      >
         <S.LinkText mobOnly={mobOnly} noMob={noMob}>
           {text}
         </S.LinkText>
