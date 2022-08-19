@@ -13,4 +13,5 @@ export interface SocialsProps
     LayoutProps,
     GridGapProps {
   children?: ReactNode;
+  page?: boolean;
 }
