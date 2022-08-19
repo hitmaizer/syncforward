@@ -18,7 +18,7 @@ export const Hamburger = styled.span<HamburgerProps>`
   height: 0.1em;
   background-color: ${({ theme }) => theme.colors.white};
   position: absolute;
-  top: 50%;
+  top: 5%;
 
   &::before,
   &::after {
@@ -69,12 +69,12 @@ export const HamburgerContent = styled.div<HamburgerProps>`
   align-items: flex-start;
   justify-content: center;
   width: 100vw;
-  height: calc(${({ height }) => height}px - 100px);
+  min-height: calc(${({ height }) => height}px - 100px);
   left: 0;
   background-color: ${({ theme }) => theme.colors.bg};
   transition: transform 600ms ease;
-  overflow-y: hidden;
-  z-index: -1;
+
+  z-index: 2;
   padding: 32px;
 
   &::-webkit-scrollbar {
