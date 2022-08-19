@@ -28,9 +28,9 @@ export const AccordionContent = styled.div<AccordionProps>`
   width: 100%;
   z-index: 2;
   position: relative;
-  min-height: 70vh;
+  min-height: 75vh;
   height: 100%;
-  margin-top: 64px;
+  max-width: 750px;
 `;
 
 export const Slider = styled.div<AccordionProps>`
@@ -45,7 +45,7 @@ export const Slide = styled(SwiperSlide)<AccordionProps>`
   // transition: width 300ms ease;
   cursor: pointer;
   height: 100%;
-
+  position: relative;
   // no select
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -62,6 +62,20 @@ export const Slide = styled(SwiperSlide)<AccordionProps>`
     `}
 `;
 
+export const Overlay = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+`;
+
 export const OpenContent = styled.div<AccordionProps>`
   ${space}
   ${flexbox}
@@ -72,5 +86,5 @@ export const OpenContent = styled.div<AccordionProps>`
   justify-content: center;
   width: 100%;
   height: 100%;
-  min-height: 60vh;
+  min-height: 75vh;
 `;
