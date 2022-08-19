@@ -23,5 +23,13 @@ export const Socials = styled.div<SocialsProps>`
       height: 100%;
       min-height: 120px;
       margin-bottom: 0px;
+      svg {
+        opacity: 0.5;
+        transition: all 300ms ease;
+        &:hover {
+          opacity: 1;
+          scale: 1.1;
+        }
+      }
     `}
 `;
