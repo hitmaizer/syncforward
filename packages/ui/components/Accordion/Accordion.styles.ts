@@ -59,6 +59,7 @@ export const Slide = styled(SwiperSlide)<AccordionProps>`
     index === active &&
     css`
       width: 1200px;
+      height: 75vh;
     `}
 `;
 
