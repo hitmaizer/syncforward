@@ -15,7 +15,7 @@ const Navbar = ({ children, ...rest }: NavbarProps) => {
     <S.Navbar display="flex" justifyContent="space-between" {...rest}>
       <S.NavLogo />
       {children}
-      <S.Links gridGap="48px" noMob>
+      <S.Links noMob>
         <NavLink text="Releases" pathName="releases" />
         <NavLink text="Podcasts" pathName="podcasts" />
         <NavLink text="Artists" pathName="artists" />
