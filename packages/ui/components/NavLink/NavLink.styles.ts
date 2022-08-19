@@ -33,6 +33,14 @@ export const NavLink = styled.a<NavLinkProps>`
   &:last-child:after {
     content: none;
   }
+
+  ${({ mobOnly }) =>
+    mobOnly &&
+    css`
+      &:after {
+        content: none;
+      }
+    `}
 `;
 
 export const LinkText = styled(Text)<NavLinkProps>`
