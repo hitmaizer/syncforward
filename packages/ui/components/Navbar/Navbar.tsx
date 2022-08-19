@@ -20,7 +20,11 @@ const Navbar = ({ children, ...rest }: NavbarProps) => {
       {children}
       <S.Links noMob>
         <NavLink text="Releases" pathName="releases" />
-        <NavLink text="Podcasts" pathName="podcasts" />
+        <NavLink
+          text="Podcasts"
+          link="https://soundcloud.com/syncforward/sets/sf-podcasts"
+          outsideLink
+        />
         <NavLink text="Artists" pathName="artists" />
         <NavLink text="Demos" pathName="demos" />
       </S.Links>
