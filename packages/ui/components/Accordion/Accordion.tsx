@@ -70,7 +70,7 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                     display="flex"
                     alignItems="center"
                     justifyContent="space-between"
-                    padding="32px"
+                    ml="32px"
                     flexDirection="column"
                     height="75vh"
                   >
