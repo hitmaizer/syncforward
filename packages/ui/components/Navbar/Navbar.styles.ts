@@ -13,7 +13,7 @@ export const Navbar = styled.nav<NavbarProps>`
   ${gridGap}
   background-color: ${({ theme }) => theme.colors.gray900};
   width: 100%;
-  padding: 48px;
+  padding: 32px;
 `;
 
 export const Links = styled.div<NavbarProps>`
