@@ -30,7 +30,7 @@ export const AccordionContent = styled.div<AccordionProps>`
   position: relative;
   min-height: 75vh;
   height: 100%;
-  max-width: 750px;
+  max-width: 90%;
 `;
 
 export const Slider = styled.div<AccordionProps>`
