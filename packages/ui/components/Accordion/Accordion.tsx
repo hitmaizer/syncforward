@@ -8,7 +8,7 @@ import Stack from '@uicomponents/Stack';
 import Text from '@uicomponents/Text';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import mockData from '../../../../apps/web/src/mockData';
+import mockData from '../../../../apps/web/src/mockDataArtists';
 import Arrow from '../../icons/Arrow';
 import * as S from './Accordion.styles';
 import { AccordionProps } from './Accordion.types';
@@ -62,7 +62,7 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
               >
                 <S.Slide index={index} active={activeAccordion}>
                   <S.StyledImage
-                    src={item.img}
+                    src={item.photo}
                     alt={item.title}
                     layout="fill"
                   />
@@ -70,23 +70,10 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                     display="flex"
                     alignItems="center"
                     justifyContent="space-between"
-                    padding="32px"
+                    ml="32px"
                     flexDirection="column"
-                    height="60vh"
+                    height="75vh"
                   >
-                    {activeAccordion !== index && (
-                      <>
-                        <Text color={theme.colors.gray75} textAlign="center">
-                          {item.artists.toUpperCase()}
-                        </Text>
-                        <Heading color={theme.colors.gray75} textAlign="center">
-                          {item.title}
-                        </Heading>
-                        <Text color={theme.colors.gray75} textAlign="center">
-                          {item.catalogue}
-                        </Text>
-                      </>
-                    )}
                     {activeAccordion === index && (
                       <>
                         <S.OpenContent
@@ -100,22 +87,19 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                           <Text
                             textTransform="uppercase"
                             color={theme.colors.gray75}
-                            fontWeight="bold"
+                            // fontWeight="bold"
                             size="xs"
                           >
                             available now or something
                           </Text>
                           <Stack display="flex" vertical>
-                            <Heading size="2xl" color={theme.colors.gray75}>
+                            <Heading size="4xl" color={theme.colors.gray75}>
                               {item.artists}
-                            </Heading>
-                            <Heading size="3xl" color={theme.colors.gray75}>
-                              {item.title}
                             </Heading>
                           </Stack>
                           <Stack display="flex" vertical gridGap="32px">
                             <Text color={theme.colors.gray100} size="sm">
-                              {item.description}
+                              {item.bio}
                             </Text>
                             <iframe
                               title={item.title}

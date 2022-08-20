@@ -1,13 +1,15 @@
 import {
+  BandcampSq,
   FacebookSm,
   InstagramSm,
+  SoundcloudSq,
   TwitterSm,
   YoutubeSm,
 } from '../../logos/Logos';
 import * as S from './Socials.styles';
 import { SocialsProps } from './Socials.types';
 
-const Socials = ({ children, ...rest }: SocialsProps) => {
+const Socials = ({ children, page, ...rest }: SocialsProps) => {
   return (
     <S.Socials
       display="flex"
@@ -16,6 +18,7 @@ const Socials = ({ children, ...rest }: SocialsProps) => {
       gridGap="32px"
       width="100%"
       mb="75px"
+      page={page}
       {...rest}
     >
       <a
@@ -46,6 +49,24 @@ const Socials = ({ children, ...rest }: SocialsProps) => {
       >
         <YoutubeSm />
       </a>
+      {page && (
+        <>
+          <a
+            href="https://syncforward.bandcamp.com/"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+          >
+            <BandcampSq />
+          </a>
+          <a
+            href="https://soundcloud.com/syncforward"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+          >
+            <SoundcloudSq />
+          </a>
+        </>
+      )}
       {children}
     </S.Socials>
   );

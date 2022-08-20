@@ -14,6 +14,7 @@ export const Navbar = styled.nav<NavbarProps>`
   background-color: ${({ theme }) => theme.colors.gray900};
   width: 100%;
   padding: 0px 32px;
+  min-height: 15vh;
 `;
 
 export const Links = styled.div<NavbarProps>`

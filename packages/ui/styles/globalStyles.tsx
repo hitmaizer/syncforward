@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
     
     body {
       font-family: ${({ theme }) => theme.fonts.body};
+      background-color: ${({ theme }) => theme.colors.gray900};
       // overflow: hidden;
       position: relative;
     }

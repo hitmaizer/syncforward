@@ -10,11 +10,13 @@ const NavLink = ({
   mobOnly,
   noMob,
   pathName,
+  outsideLink,
+  link,
   ...rest
 }: NavLinkProps) => {
   const router = useRouter();
   return (
-    <Link href={`/${pathName}`} passHref>
+    <Link href={outsideLink ? link! : `/${pathName}`} passHref>
       <S.NavLink
         pathName={router.pathname}
         {...rest}

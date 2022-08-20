@@ -7,6 +7,9 @@ export const NavLink = styled.a<NavLinkProps>`
   color: ${({ theme }) => theme.colors.gray75};
   width: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   ${({ href, pathName }) =>
     href === pathName &&
@@ -49,7 +52,7 @@ export const LinkText = styled(Text)<NavLinkProps>`
   transition: opacity 300ms ease;
   text-align: center;
   text-transform: uppercase;
-  padding: 50px 64px;
+  padding: 16px 64px;
 
   &:hover {
     opacity: 1;
