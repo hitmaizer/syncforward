@@ -1,5 +1,4 @@
 import Text from '@uicomponents/Text';
-import Image from 'next/image';
 import styled from 'styled-components';
 
 export const ReleaseCard = styled.div`
@@ -16,13 +15,7 @@ export const ReleaseCard = styled.div`
   }
 `;
 
-export const SImage = styled(Image)`
-  /* width: 100%;
-  height: 100%;
-  max-width: 100px;
-  max-height: 100px; */
-`;
-
 export const CardText = styled(Text)`
   opacity: 0.5;
+  transition: opacity 300ms ease;
 `;
