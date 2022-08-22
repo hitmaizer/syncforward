@@ -24,14 +24,11 @@ const Banner = ({ children, data, ...rest }: BannerProps) => {
           width="100%"
         >
           <Text textTransform="uppercase" color={theme.colors.gray75} size="xs">
-            available now or something
+            {data?.artists}
           </Text>
           <Stack display="flex" vertical>
             <Heading size="4xl" color={theme.colors.gray75}>
               {data?.title}
-            </Heading>
-            <Heading size="4xl" color={theme.colors.gray75}>
-              {data?.artists}
             </Heading>
           </Stack>
           <Stack display="flex" vertical gridGap="32px">
@@ -56,17 +53,6 @@ const Banner = ({ children, data, ...rest }: BannerProps) => {
                   justifyContent="center"
                 >
                   <Text>Stream/Download</Text>
-                  <Arrow size="xxs" />
-                </Stack>
-              </Button>
-              <Button secondary>
-                <Stack
-                  display="flex"
-                  gridGap="8px"
-                  alignItems="center"
-                  justifyContent="center"
-                >
-                  <Text>More from this artist</Text>
                   <Arrow size="xxs" />
                 </Stack>
               </Button>
