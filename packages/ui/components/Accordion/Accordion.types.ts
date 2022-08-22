@@ -15,6 +15,7 @@ export interface Release {
   trackLink: string;
   link: string;
   img: string;
+  thumbnail: string;
 }
 export interface Artist {
   artists: string;
