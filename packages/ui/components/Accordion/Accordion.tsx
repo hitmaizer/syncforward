@@ -83,11 +83,11 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                           justifyContent="flex-start"
                           alignItems="flex-start"
                           height={height}
+                          width="100%"
                         >
                           <Text
                             textTransform="uppercase"
                             color={theme.colors.gray75}
-                            // fontWeight="bold"
                             size="xs"
                           >
                             available now or something
@@ -98,12 +98,12 @@ const Accordion = ({ children, data = mockData, ...rest }: AccordionProps) => {
                             </Heading>
                           </Stack>
                           <Stack display="flex" vertical gridGap="32px">
-                            <Text color={theme.colors.gray100} size="sm">
+                            <S.Bio color={theme.colors.gray100} size="sm">
                               {item.bio}
-                            </Text>
+                            </S.Bio>
                             <iframe
                               title={item.title}
-                              width="100%"
+                              width="1000px"
                               height="160"
                               scrolling="no"
                               frameBorder="no"
