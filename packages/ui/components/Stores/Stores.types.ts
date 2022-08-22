@@ -16,4 +16,5 @@ export interface StoresProps
   vertical?: boolean;
   noMob?: boolean;
   accordion?: boolean;
+  banner?: boolean;
 }
