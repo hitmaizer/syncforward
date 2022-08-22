@@ -10,5 +10,4 @@ export const Hero = styled.div<HeroProps>`
   ${gridGap}
   
   height: 75vh;
-  overflow-y: scroll;
 `;
