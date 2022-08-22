@@ -28,6 +28,9 @@ const Banner = ({ children, data, ...rest }: BannerProps) => {
           </Text>
           <Stack display="flex" vertical>
             <Heading size="4xl" color={theme.colors.gray75}>
+              {data?.title}
+            </Heading>
+            <Heading size="4xl" color={theme.colors.gray75}>
               {data?.artists}
             </Heading>
           </Stack>
