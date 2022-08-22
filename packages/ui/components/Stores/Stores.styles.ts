@@ -88,4 +88,12 @@ export const Stores = styled.div<StoresProps>`
         }
       }
     `}
+
+  ${({ banner }) =>
+    banner &&
+    css`
+      padding: 0;
+      gap: 32px;
+      justify-content: flex-start;
+    `}
 `;

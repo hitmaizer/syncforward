@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 
+import { Release } from '@uicomponents/Accordion/Accordion.types';
 import {
   FlexboxProps,
   GridGapProps,
@@ -7,14 +8,12 @@ import {
   SpaceProps,
 } from 'styled-system';
 
-export interface StoresProps
+export interface BannerProps
   extends FlexboxProps,
     SpaceProps,
-    LayoutProps,
-    GridGapProps {
+    GridGapProps,
+    LayoutProps {
   children?: ReactNode;
-  vertical?: boolean;
-  noMob?: boolean;
-  accordion?: boolean;
-  banner?: boolean;
+  data?: Release;
+  bg?: string;
 }
