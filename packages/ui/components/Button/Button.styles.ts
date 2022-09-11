@@ -1,8 +1,10 @@
+import Stack from '@uicomponents/Stack';
+import Text from '@uicomponents/Text';
 import styled, { css } from 'styled-components';
 
 import { ButtonProps } from './Button.types';
 
-export const Button = styled.button<ButtonProps>`
+export const Button = styled.button<Pick<ButtonProps, 'secondary'>>`
   width: 100%;
   padding: 12px 16px;
   background-color: ${({ theme }) => theme.colors.gray75};
@@ -26,3 +28,10 @@ export const Button = styled.button<ButtonProps>`
       }
     `}
 `;
+
+export const ButtonContent = styled(Stack).attrs({
+  gridGap: 4,
+  alignItems: 'center',
+})``;
+
+export const Label = styled(Text).attrs({})``;
