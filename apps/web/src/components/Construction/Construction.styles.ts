@@ -1,26 +1,57 @@
+import UIHeading from '@uicomponents/Heading';
 import styled, { css } from 'styled-components';
 import { flexbox, gridGap, layout, space } from 'styled-system';
+import { Sync } from 'ui/logos/Logos';
 
 import { mediaQueries } from '@styles';
+import { Stack, Text } from '@uicomponents';
 
-import { Sync } from '../../logos/Logos';
 import { ConstructionProps } from './Construction.types';
 
-export const Content = styled.div<ConstructionProps>`
-  ${layout}
-  ${flexbox}
-  ${space}
-  ${gridGap}
-  flex-direction: column;
-  gap: 32px;
+export const Content = styled(Stack).attrs({
+  vertical: true,
+  gridGap: 10,
+  width: '100%',
+  alignItems: 'center',
+})`
   z-index: 2;
   position: absolute;
-  width: 100%;
 
   ${mediaQueries.lg} {
     gap: 16px;
   }
 `;
+
+export const Link = styled.a``;
+
+export const DesktopHeading = styled(UIHeading).attrs({
+  color: 'gray50',
+  size: '2xl',
+  textAlign: 'right',
+})``;
+
+export const MobileHeading = styled(UIHeading).attrs({
+  color: 'gray50',
+  size: '4xl',
+  textAlign: 'center',
+  mt: '60vh',
+  mobOnly: true,
+})``;
+
+export const FooterTextMob = styled(Text).attrs({
+  color: 'whiteOpacity',
+  textAlign: 'center',
+  fontWeight: 'regular',
+  mobOnly: true,
+})``;
+
+export const FooterText = styled(Text).attrs({
+  color: 'whiteOpacity',
+  textAlign: 'center',
+  fontWeight: 'regular',
+  noMob: true,
+  mt: '70px',
+})``;
 
 export const Construction = styled.div`
   position: relative;
@@ -67,11 +98,7 @@ export const VideoBg = styled.video`
   object-fit: cover;
 `;
 
-export const Header = styled.div<ConstructionProps>`
-  ${layout}
-  ${flexbox}
-  ${space}
-  ${gridGap}
+export const Header = styled(Stack)<ConstructionProps>`
   width: 100%;
   padding: 32px;
   justify-content: space-between;
