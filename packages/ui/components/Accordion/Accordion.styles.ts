@@ -1,44 +1,37 @@
+import UIButton from '@uicomponents/Button';
+import Heading from '@uicomponents/Heading';
+import Stack from '@uicomponents/Stack';
 import Text from '@uicomponents/Text';
 import Image from 'next/image';
 import styled, { css } from 'styled-components';
-import { flexbox, gridGap, layout, space } from 'styled-system';
 import { SwiperSlide } from 'swiper/react';
 
 import { AccordionProps } from './Accordion.types';
 
-export const Accordion = styled.div<AccordionProps>`
-  ${flexbox}
-  ${layout}
-  ${space}
-  ${gridGap}
+export const Accordion = styled(Stack).attrs({
+  width: '100%',
+})`
   background-color: ${({ theme }) => theme.colors.gray900};
-  width: 100%;
 `;
 
-export const StyledImage = styled(Image)`
+export const StyledImage = styled(Image).attrs({
+  layout: 'fill',
+  objectFit: 'cover',
+})`
   top: 0;
   object-fit: cover;
 `;
 
-export const AccordionContent = styled.div<AccordionProps>`
-  ${flexbox}
-  ${layout}
-  ${space}
-  ${gridGap}
-
+export const AccordionContent = styled(Stack).attrs({
+  ml: 10,
+  vertical: true,
+  justifyContent: 'space-between',
+  height: '75vh',
+})`
   width: 100%;
   z-index: 2;
   position: relative;
-  min-height: 75vh;
-  height: 100%;
   max-width: 90%;
-`;
-
-export const Slider = styled.div<AccordionProps>`
-  display: flex;
-  width: 100%;
-  height: 100%;
-  gap: 8px;
 `;
 
 export const Slide = styled(SwiperSlide)<AccordionProps>`
@@ -64,33 +57,47 @@ export const Slide = styled(SwiperSlide)<AccordionProps>`
     `}
 `;
 
-export const Overlay = styled.div`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.1) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
-`;
-
-export const OpenContent = styled.div<AccordionProps>`
-  ${space}
-  ${flexbox}
-  ${layout}
-  ${gridGap}
-  
+export const OpenContent = styled(Stack).attrs({
+  vertical: true,
+  gridGap: 6,
+  alignItems: 'flex-start',
+  width: '100%',
+})`
   place-self: baseline;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
   min-height: 75vh;
 `;
+
+export const Subtitle = styled(Text).attrs({
+  textTransform: 'uppercase',
+  color: 'gray75',
+  size: 'xs',
+})``;
+
+export const Title = styled(Heading).attrs({
+  size: '4xl',
+  color: 'gray75',
+})``;
+
+export const Info = styled(Stack).attrs({
+  vertical: true,
+  justifyContent: 'flex-start',
+  gridGap: 10,
+})``;
 
 export const Bio = styled(Text)`
   max-width: 600px;
 `;
+
+export const Soundcloud = styled.iframe.attrs({
+  width: '1000px',
+  height: '160px',
+  scrolling: 'no',
+  frameBorder: 'no',
+  allow: 'autoplay',
+})``;
+
+export const Buttons = styled(Stack).attrs({
+  gridGap: 6,
+})``;
+
+export const Button = styled(UIButton).attrs({})``;
