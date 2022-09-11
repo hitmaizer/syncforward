@@ -12,6 +12,8 @@ import { GlobalStyle } from 'ui/styles';
 import '@config/fontsource';
 import { theme } from 'ui/styles/theme';
 
+import '../src/config/swiper';
+
 import * as ga from '../lib/ga';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
