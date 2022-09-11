@@ -5,7 +5,6 @@ import styled, { css } from 'styled-components';
 import { ButtonProps } from './Button.types';
 
 export const Button = styled.button<Pick<ButtonProps, 'secondary'>>`
-  width: 100%;
   padding: 12px 16px;
   background-color: ${({ theme }) => theme.colors.gray75};
   color: ${({ theme }) => theme.colors.gray900};

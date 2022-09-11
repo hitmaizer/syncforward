@@ -1,5 +1,4 @@
-import Arrow from 'icons/Arrow';
-
+import Arrow from '../../icons/Arrow';
 import * as S from './Button.styles';
 import { ButtonProps } from './Button.types';
 
