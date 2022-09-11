@@ -5,6 +5,9 @@ import '../styles/fonts';
 
 import * as NextImage from 'next/image';
 
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper.min.css';
+
 const OriginalNextImage = NextImage.default;
 
 Object.defineProperty(NextImage, 'default', {
