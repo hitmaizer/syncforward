@@ -10,6 +10,10 @@ export const Container = styled(Stack).attrs({
   p: 10,
 })`
   cursor: pointer;
+
+  ${mediaQueries.lg} {
+    display: none;
+  }
 `;
 
 export const Hamburger = styled.span.attrs({
@@ -43,10 +47,6 @@ export const Hamburger = styled.span.attrs({
     left: 0%;
     transform-origin: center;
     transform: rotateZ(0deg);
-  }
-
-  ${mediaQueries.lg} {
-    display: none;
   }
 
   ${({ open }) =>
