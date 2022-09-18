@@ -1,13 +1,9 @@
 import { ReactNode } from 'react';
 
-import { LayoutProps } from 'framer-motion';
-import { FlexboxProps, GridGapProps, SpaceProps } from 'styled-system';
+import { Release } from '@uicomponents/Accordion/Accordion.types';
 
-export interface HeroProps
-  extends SpaceProps,
-    LayoutProps,
-    FlexboxProps,
-    GridGapProps {
+export interface HeroProps {
   children?: ReactNode;
   height?: number;
+  releases: Release[];
 }
