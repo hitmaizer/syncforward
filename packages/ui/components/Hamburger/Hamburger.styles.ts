@@ -1,24 +1,26 @@
+import Stack from '@uicomponents/Stack';
 import styled, { css } from 'styled-components';
 
 import { mediaQueries } from '@styles';
 
 import { HamburgerProps } from './Hamburger.types';
 
-export const Container = styled.div`
-  width: 32px;
-  display: block;
+export const Container = styled(Stack).attrs({
+  position: 'relative',
+  p: 10,
+})`
   cursor: pointer;
-  ${mediaQueries.lg} {
-    display: none;
-  }
 `;
 
-export const Hamburger = styled.span<HamburgerProps>`
+export const Hamburger = styled.span.attrs({
+  right: 0,
+})<Pick<HamburgerProps, 'open'>>`
+  display: block;
   width: 2em;
   height: 0.1em;
   background-color: ${({ theme }) => theme.colors.white};
   position: absolute;
-  top: 5%;
+  top: calc(50%);
 
   &::before,
   &::after {
@@ -42,8 +44,13 @@ export const Hamburger = styled.span<HamburgerProps>`
     transform-origin: center;
     transform: rotateZ(0deg);
   }
+
+  ${mediaQueries.lg} {
+    display: none;
+  }
+
   ${({ open }) =>
-    open === true &&
+    open &&
     css`
       background-color: transparent;
       &::before,
@@ -61,20 +68,18 @@ export const Hamburger = styled.span<HamburgerProps>`
     `}
 `;
 
-export const HamburgerContent = styled.div<HamburgerProps>`
-  position: absolute;
+export const HamburgerContent = styled(Stack).attrs({
+  position: 'absolute',
+  left: 0,
+  alignItems: 'flex-start',
+  width: '100vw',
+})<Omit<HamburgerProps, 'children' | 'onClick'>>`
   transform: translateY(-110%);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100vw;
-  min-height: calc(${({ height }) => height}px - 100px);
+  height: calc(${({ height }) => height}px - 15vh);
   left: 0;
   background-color: ${({ theme }) => theme.colors.bg};
   transition: transform 600ms ease;
-
-  z-index: 2;
+  z-index: 1;
   padding: 32px;
 
   &::-webkit-scrollbar {
@@ -85,7 +90,7 @@ export const HamburgerContent = styled.div<HamburgerProps>`
     open === true &&
     css`
       overflow-y: hidden;
-      transform: translateY(67.5px);
+      transform: translateY(57.5%);
     `}
 
   ${({ web }) =>
