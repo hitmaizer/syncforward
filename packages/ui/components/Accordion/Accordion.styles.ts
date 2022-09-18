@@ -74,7 +74,7 @@ export const Subtitle = styled(Text).attrs({
 })``;
 
 export const Title = styled(Heading).attrs({
-  size: '4xl',
+  size: 'h1',
   color: 'gray75',
 })``;
 
