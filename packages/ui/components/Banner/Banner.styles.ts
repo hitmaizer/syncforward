@@ -50,7 +50,7 @@ export const Bio = styled(Text).attrs({
 `;
 
 export const Soundcloud = styled.iframe.attrs({
-  width: '1000px',
+  width: '100%',
   height: '160px',
   scrolling: 'no',
   frameBorder: 'no',
