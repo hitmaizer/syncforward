@@ -10,7 +10,7 @@ const Heading = (props: HeadingProps) => {
 Heading.defaultProps = {
   fontFamily: 'heading',
   color: 'text.primary',
-  size: 'xl',
+  size: 'h4',
   as: 'h2',
 };
 

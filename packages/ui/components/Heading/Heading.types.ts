@@ -16,7 +16,7 @@ export interface HeadingProps
     ColorProps,
     TextAlignProps {
   as?: TextElement | HeadingElement;
-  size?: ResponsiveValue<'lg' | 'xl' | '2xl' | '3xl' | '4xl'>;
+  size?: ResponsiveValue<'h6' | 'h5' | 'h4' | 'h3' | 'h2' | 'h1'>;
   color?: string;
   children: ReactNode;
   mobOnly?: boolean;
