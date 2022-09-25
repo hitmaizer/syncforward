@@ -32,7 +32,7 @@ const Construction = ({
           <Navbar text={text} />
           <S.MobileHeading>{text}</S.MobileHeading>
           <S.FooterTextMob>Sync Forward Records — Est. 2009</S.FooterTextMob>
-          <Stores mt="70vh" noMob />
+          <Stores mt="50vh" noMob />
           <S.Link href="/">
             <S.FooterText>Sync Forward Records — Est. 2009</S.FooterText>
           </S.Link>
