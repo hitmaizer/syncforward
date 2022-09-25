@@ -12,6 +12,7 @@ export const Content = styled(Stack).attrs({
 })`
   z-index: 2;
   position: absolute;
+  max-height: 100vh;
 
   ${mediaQueries.lg} {
     gap: 16px;
