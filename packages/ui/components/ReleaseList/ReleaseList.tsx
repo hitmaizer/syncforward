@@ -10,18 +10,12 @@ const ReleaseList = ({
   ...rest
 }: ReleaseListProps) => {
   return (
-    <>
-      <S.ReleaseList {...rest}>
-        {data?.map((item) => {
-          return (
-            <>
-              <ReleaseCard data={item} changeBanner={changeBanner} />
-            </>
-          );
-        })}
-        {children}
-      </S.ReleaseList>
-    </>
+    <S.ReleaseList {...rest}>
+      {data?.map((item) => (
+        <ReleaseCard data={item} changeBanner={changeBanner} />
+      ))}
+      {children}
+    </S.ReleaseList>
   );
 };
 
