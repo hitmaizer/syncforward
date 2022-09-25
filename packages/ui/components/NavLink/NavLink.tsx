@@ -19,9 +19,9 @@ const NavLink = ({
     <Link href={outsideLink ? link! : `/${pathName}`} passHref>
       <S.NavLink
         pathName={router.pathname}
-        {...rest}
         mobOnly={mobOnly}
         noMob={noMob}
+        {...rest}
       >
         <S.LinkText mobOnly={mobOnly} noMob={noMob}>
           {text}
