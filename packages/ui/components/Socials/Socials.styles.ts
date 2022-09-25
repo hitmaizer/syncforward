@@ -1,15 +1,16 @@
+import Stack from '@uicomponents/Stack';
+import NextLink from 'next/link';
 import styled, { css } from 'styled-components';
-import { flexbox, gridGap, layout, space } from 'styled-system';
 
 import { SocialsProps } from './Socials.types';
 
-export const Socials = styled.div<SocialsProps>`
-  ${flexbox}
-  ${layout}
-  ${space}
-  ${gridGap}
-
-  width: 100%;
+export const Socials = styled(Stack).attrs({
+  gridGap: 10,
+  width: '100%',
+  justifyContent: 'center',
+  alignItems: 'center',
+})<Pick<SocialsProps, 'page'>>`
+  margin-bottom: 75px;
 
   svg {
     width: 100%;
@@ -33,3 +34,12 @@ export const Socials = styled.div<SocialsProps>`
       }
     `}
 `;
+
+export const Link = styled(NextLink).attrs({
+  passHref: true,
+})``;
+
+export const Anchor = styled.a.attrs({
+  rel: 'noopener noreferrer nofollow',
+  target: '_blank',
+})``;
