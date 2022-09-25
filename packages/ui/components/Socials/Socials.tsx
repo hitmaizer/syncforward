@@ -1,3 +1,4 @@
+import { socialsLinks } from '../../constants';
 import {
   BandcampSq,
   FacebookSm,
@@ -9,62 +10,42 @@ import {
 import * as S from './Socials.styles';
 import { SocialsProps } from './Socials.types';
 
-const Socials = ({ children, page, ...rest }: SocialsProps) => {
+const Socials = ({ children, page }: SocialsProps) => {
   return (
-    <S.Socials
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-      gridGap="32px"
-      width="100%"
-      mb="75px"
-      page={page}
-      {...rest}
-    >
-      <a
-        href="https://www.facebook.com/SyncForward/"
-        rel="noopener noreferrer nofollow"
-        target="_blank"
-      >
-        <FacebookSm />
-      </a>
-      <a
-        href="https://twitter.com/sync_forward"
-        rel="noopener noreferrer nofollow"
-        target="_blank"
-      >
-        <TwitterSm />
-      </a>
-      <a
-        href="https://www.instagram.com/syncforward/"
-        rel="noopener noreferrer nofollow"
-        target="_blank"
-      >
-        <InstagramSm />
-      </a>
-      <a
-        href="https://www.youtube.com/user/syncforward"
-        rel="noopener noreferrer nofollow"
-        target="_blank"
-      >
-        <YoutubeSm />
-      </a>
+    <S.Socials page={page}>
+      <S.Link href={socialsLinks.facebook}>
+        <S.Anchor>
+          <FacebookSm />
+        </S.Anchor>
+      </S.Link>
+      <S.Link href={socialsLinks.twitter}>
+        <S.Anchor>
+          <TwitterSm />
+        </S.Anchor>
+      </S.Link>
+      <S.Link href={socialsLinks.instagram}>
+        <S.Anchor>
+          <InstagramSm />
+        </S.Anchor>
+      </S.Link>
+      <S.Link href={socialsLinks.youtube}>
+        <S.Anchor>
+          <YoutubeSm />
+        </S.Anchor>
+      </S.Link>
+
       {page && (
         <>
-          <a
-            href="https://syncforward.bandcamp.com/"
-            rel="noopener noreferrer nofollow"
-            target="_blank"
-          >
-            <BandcampSq />
-          </a>
-          <a
-            href="https://soundcloud.com/syncforward"
-            rel="noopener noreferrer nofollow"
-            target="_blank"
-          >
-            <SoundcloudSq />
-          </a>
+          <S.Link href={socialsLinks.bandcamp}>
+            <S.Anchor>
+              <BandcampSq />
+            </S.Anchor>
+          </S.Link>
+          <S.Link href={socialsLinks.soundcloud}>
+            <S.Anchor>
+              <SoundcloudSq />
+            </S.Anchor>
+          </S.Link>
         </>
       )}
       {children}

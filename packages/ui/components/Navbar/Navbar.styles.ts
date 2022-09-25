@@ -1,27 +1,27 @@
+import Stack from '@uicomponents/Stack';
+import NextLink from 'next/link';
 import styled, { css } from 'styled-components';
-import { flexbox, gridGap, layout, space } from 'styled-system';
 
 import { mediaQueries } from '@styles';
 
 import { Sync } from '../../logos/Logos';
 import { NavbarProps } from './Navbar.types';
 
-export const Navbar = styled.nav<NavbarProps>`
-  ${flexbox}
-  ${layout}
-  ${space}
-  ${gridGap}
+export const Navbar = styled(Stack).attrs({
+  width: '100vw',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  position: 'relative',
+})`
   background-color: ${({ theme }) => theme.colors.gray900};
-  width: 100%;
-  padding: 0px 32px;
+  padding: ${({ theme }) => theme.space[0]}px ${({ theme }) => theme.space[8]}px;
   min-height: 15vh;
+  z-index: 2;
 `;
 
-export const Links = styled.div<NavbarProps>`
-  ${flexbox}
-  ${layout}
-  ${space}
-  ${gridGap}
+export const Link = styled(NextLink).attrs({ passHref: true })``;
+
+export const Links = styled(Stack)<Pick<NavbarProps, 'noMob'>>`
   display: none;
 
   ${({ noMob }) =>
@@ -39,3 +39,9 @@ export const NavLogo = styled(Sync)`
   color: ${({ theme }) => theme.colors.gray50};
   cursor: pointer;
 `;
+
+export const NavLinksContainer = styled(Stack).attrs({
+  vertical: true,
+  width: '100%',
+  height: '100%',
+})``;

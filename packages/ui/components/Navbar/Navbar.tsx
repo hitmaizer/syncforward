@@ -1,22 +1,17 @@
-import { useState } from 'react';
-
 import Hamburger from '@uicomponents/Hamburger';
 import NavLink from '@uicomponents/NavLink';
 import Socials from '@uicomponents/Socials';
 import Stack from '@uicomponents/Stack';
-import Link from 'next/link';
 
 import * as S from './Navbar.styles';
 import { NavbarProps } from './Navbar.types';
 
-const Navbar = ({ children, ...rest }: NavbarProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const Navbar = ({ children }: NavbarProps) => {
   return (
-    <S.Navbar display="flex" justifyContent="space-between" {...rest}>
-      <Link href="/">
+    <S.Navbar>
+      <S.Link href="/">
         <S.NavLogo />
-      </Link>
+      </S.Link>
       {children}
       <S.Links noMob>
         <NavLink text="Releases" pathName="releases" />
@@ -28,14 +23,8 @@ const Navbar = ({ children, ...rest }: NavbarProps) => {
         <NavLink text="Artists" pathName="artists" />
         <NavLink text="Demos" pathName="demos" />
       </S.Links>
-      <Hamburger open={isOpen} onClick={() => setIsOpen(!isOpen)} web>
-        <Stack
-          display="flex"
-          vertical
-          alignItems="center"
-          width="100%"
-          height="100%"
-        >
+      <Hamburger web>
+        <S.NavLinksContainer>
           <Stack
             display="flex"
             vertical
@@ -51,7 +40,7 @@ const Navbar = ({ children, ...rest }: NavbarProps) => {
             <NavLink text="Demos" pathName="demos" mobOnly />
           </Stack>
           <Socials />
-        </Stack>
+        </S.NavLinksContainer>
       </Hamburger>
     </S.Navbar>
   );

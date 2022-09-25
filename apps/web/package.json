@@ -21,6 +21,7 @@
     "react-redux": "^8.0.2",
     "styled-components": "^5.3.5",
     "styled-system": "^5.1.5",
+    "swiper": "6.8.1",
     "ui": "*"
   },
   "devDependencies": {

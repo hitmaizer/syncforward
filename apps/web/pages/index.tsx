@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 
+import Construction from '@components/Construction';
 import useFavicon from 'src/hooks/useFavicon';
 import { phrases } from 'src/uConstruction';
-
-import { Construction } from '@uicomponents';
 
 export default function Home() {
   const [sentence, setSentence] = useState<string>('');

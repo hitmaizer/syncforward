@@ -1,7 +1,6 @@
 export { default as Accordion } from './Accordion';
 export { default as Banner } from './Banner';
 export { default as Box } from './Box';
-export { default as Construction } from './Construction';
 export { default as Grid } from './Grid';
 export { default as Hamburger } from './Hamburger';
 export { default as Heading } from './Heading';

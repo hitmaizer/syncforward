@@ -1,12 +1,5 @@
 import { ReactNode } from 'react';
 
-import {
-  FlexboxProps,
-  GridGapProps,
-  LayoutProps,
-  SpaceProps,
-} from 'styled-system';
-
 export interface Release {
   artists: string;
   title: string;
@@ -24,11 +17,7 @@ export interface Artist {
   trackLink: string;
   soundcloud: string;
 }
-export interface AccordionProps
-  extends FlexboxProps,
-    SpaceProps,
-    LayoutProps,
-    GridGapProps {
+export interface AccordionProps {
   children?: ReactNode;
   data?: Release[] | Artist[];
   index?: number;

@@ -15,6 +15,6 @@ const Template: ComponentStory<typeof Heading> = (args: HeadingProps) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  size: '2xl',
+  size: 'h3',
   children: 'Default heading',
 };

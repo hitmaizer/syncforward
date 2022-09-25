@@ -1,13 +1,12 @@
+import Stack from '@uicomponents/Stack';
 import styled from 'styled-components';
-import { flexbox, gridGap, layout, space } from 'styled-system';
 
-import { HeroProps } from './Hero.types';
+export const Hero = styled(Stack).attrs({
+  height: '75vh',
+})``;
 
-export const Hero = styled.div<HeroProps>`
-  ${flexbox}
-  ${layout}
-  ${space}
-  ${gridGap}
-  
-  height: 75vh;
-`;
+export const HeroContent = styled(Stack).attrs({})``;
+
+export const ReleaseListContainer = styled(Stack).attrs({
+  vertical: true,
+})``;

@@ -1,33 +1,45 @@
+import Box from '@uicomponents/Box';
+import Stack from '@uicomponents/Stack';
+import NextImage from 'next/image';
 import styled from 'styled-components';
-import { layout } from 'styled-system';
 
 import { MusicCardProps } from './MusicCard.types';
 
-export const Card = styled.div<MusicCardProps>`
-  ${layout}
+export const Card = styled(Stack).attrs({
+  justifyContent: 'flex-start',
+  vertical: true,
+  position: 'relative',
+})`
   max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   gap: 16px;
   transition: 0.1s all ease-in-out;
-  position: relative;
   transform-style: preserve-3d;
 `;
 
-export const OpenSoundCloud = styled.div`
+export const ImageContainer = styled(Box).attrs({
+  position: 'relative',
+  width: '500px',
+  height: '500px',
+})``;
+
+export const Image = styled(NextImage).attrs({
+  height: '100%',
+  width: '100%',
+  layout: 'responsive',
+})``;
+
+export const OpenSoundCloud = styled(Stack).attrs({
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  right: 0,
+  bottom: 0,
+  opacity: 0,
+  justifyContent: 'center',
+  alignItems: 'center',
+})`
   transition: 0.2s all ease-in-out;
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
 
   &:hover {
     opacity: 0.9;
@@ -41,13 +53,23 @@ export const Icon = styled.img`
   height: auto;
 `;
 
-export const SoundCloudContainer = styled.div<MusicCardProps>`
+export const SoundCloudContainer = styled(Box).attrs({
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
+})<Pick<MusicCardProps, 'showPlay'>>`
   display: ${({ showPlay }) => (showPlay ? 'none' : 'block')};
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+
   max-width: 500px;
   z-index: 3;
 `;
+
+export const IFrame = styled.iframe.attrs({
+  width: '100%',
+  height: '100%',
+  scrolling: 'no',
+  frameBorder: 'no',
+  allow: 'autoplay',
+})``;
